@@ -1,7 +1,7 @@
-HOST_PORT=80
+HOST_PORT=5000
 IMAGE_TAG=levensfilosofie
 ENV_FILE=.env
-CONTAINER_NAME=levensfilosofie
+CONTAINER_NAME=Levensfilosofie
 
 build:
 	docker build -t $(IMAGE_TAG) .
