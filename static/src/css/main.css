@@ -1,14 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@font-face {
+  font-family: 'Ornaments';
+  src: url('/static/fonts/OrnementsADF.ttf') format('truetype');
+}
+
 body {
   font-family: 'Cormorant', serif;
   min-height: 100vh;
+  background-color: rgb(240, 240, 245);
+  margin: 0;
 }
 
 h1.header {
-  padding-top: 30vh;
   text-align: center;
-  font-style: italic;
   font-weight: normal;
+  font-style: italic;
+  padding-top: 37vh;
+  margin-top: 0px;
   font-size: 60px;
+}
+
+h2.header {
+  text-align: center;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+.orn {
+  font-family: 'Ornaments';
+}
+
+/* http://arkandis.tuxfamily.org/docs/Ornements-Cat.pdf */
+
+.vert::before {
+  content: 'g';
+}
+
+.vert-double::before {
+  content: 'f';
+}
+
+.flower::before {
+  content: 'q';
+}
+
+.leaf::before {
+  content: 's';
 }
