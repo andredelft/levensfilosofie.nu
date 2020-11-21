@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  font-family: 'Cormorant', serif;
+  min-height: 100vh;
+}
+
+h1.header {
+  padding-top: 30vh;
+  text-align: center;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 60px;
+}

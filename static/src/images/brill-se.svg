@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 52.538692 52.538692"
+   height="52.538692mm"
+   width="52.538692mm"
+   sodipodi:docname="SE-favicon.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="755"
+     id="namedview11"
+     showgrid="false"
+     inkscape:zoom="1.1884892"
+     inkscape:cx="74.464282"
+     inkscape:cy="99.285723"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-38.825496,-29.081359)"
+     id="layer1">
+    <circle
+       r="26.269344"
+       cy="55.350704"
+       cx="65.094841"
+       id="path825"
+       style="fill:#3d5aa3;fill-opacity:0.95852535;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke" />
+    <g
+       aria-label="B"
+       transform="matrix(0.26458333,0,0,0.26458333,74.239874,34.635277)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:220px;line-height:1.25;font-family:Brill;-inkscape-font-specification:'Brill, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       id="flowRoot827">
+      <path
+         d="m -69.653906,39.244531 q 0,-7.92 -0.44,-12.32 -0.22,-4.4 -1.76,-6.6 -1.54,-2.2 -4.84,-2.64 -3.08,-0.66 -8.8,-1.1 -0.44,0 -0.66,-0.66 -0.22,-0.88 -0.22,-1.98 0,-0.88 0.22,-1.76 0.22,-1.1 0.88,-1.1 5.06,0 12.32,0.22 7.48,0.22 12.76,0.22 2.2,0 5.72,0 3.74,-0.22 7.48,-0.22 3.74,-0.22 7.26,-0.22 3.52,-0.22 5.5,-0.22 7.48,0 15.62,0.88 8.14,0.66 14.7399998,3.52 6.82,2.86 11,8.58 4.4000002,5.5 4.4000002,15.4 0,12.54 -7.9200003,21.56 -7.9199999,8.8 -22.2199997,13.2 v 1.1 q 9.4599997,1.1 16.2799998,4.18 6.8199999,2.86 11.22,7.26 4.4000002,4.4 6.3800002,9.9 1.98,5.499999 1.98,11.219999 0,6.6 -2.42,13.42 -2.2,6.82 -8.1400003,12.32 -5.71999995,5.5 -15.84,9.02 -10.1199997,3.3 -25.5199997,3.3 -2.64,0 -6.6,-0.22 -3.74,0 -7.48,-0.22 -3.74,0 -7.26,-0.22 -3.3,0 -5.28,0 -4.84,0 -11.88,0.22 -7.04,0.44 -11.88,0.44 -0.66,0 -0.88,-0.66 -0.22,-0.88 -0.22,-1.98 0,-0.88 0.22,-1.76 0.22,-1.1 0.88,-1.1 5.5,-0.22 8.58,-0.88 3.08,-0.66 4.62,-2.86 1.54,-2.2 1.76,-6.6 0.44,-4.4 0.44,-12.32 z m 19.36,87.119999 q 0,4.4 0.66,6.82 0.66,2.42 2.42,3.74 1.76,1.1 4.84,1.54 3.08,0.22 8.14,0.22 29.9199998,0 29.9199998,-28.6 0,-9.02 -3.0800001,-14.739999 -3.0799997,-5.94 -8.5799997,-9.24 -5.28,-3.52 -12.54,-4.84 -7.04,-1.32 -15.18,-1.32 h -6.6 z m 7.48,-53.239999 q 6.82,0 12.98,-0.88 6.16,-1.1 10.78,-4.18 4.62,-3.3 7.26,-9.24 2.8599998,-5.94 2.8599998,-15.84 0,-11.88 -6.5999998,-18.7 -6.38,-6.82 -20.24,-6.82 -4.84,0 -7.7,0.44 -2.86,0.44 -4.4,1.32 -1.54,0.88 -1.98,2.64 -0.44,1.54 -0.44,3.74 v 47.52 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:220px;font-family:Brill;-inkscape-font-specification:'Brill, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1"
+         id="path4507"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
