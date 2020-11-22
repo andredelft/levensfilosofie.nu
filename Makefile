@@ -1,4 +1,4 @@
-HOST_PORT=5000
+HOST_PORT=5001
 IMAGE_TAG=levensfilosofie
 ENV_FILE=.env
 CONTAINER_NAME=Levensfilosofie
