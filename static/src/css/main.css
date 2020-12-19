@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @font-face {
   font-family: 'Ornaments';
@@ -6,17 +7,45 @@
 }
 
 body {
-  font-family: 'Cormorant', serif;
+  font-family: 'Alegreya', serif;
+  font-size: 19px;
   min-height: 100vh;
-  background-color: rgb(240, 240, 245);
   margin: 0;
 }
 
+header {
+  background-color: #f2f2f2ff;
+  min-height: 60vh;
+  border-bottom: solid 2px #d3d3d3;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+footer {
+  border-top: solid 2px #d3d3d3;
+  background-color: #f2f2f2ff;
+  padding-bottom: 20px;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 h1.header {
+  font-family: 'Cormorant', serif;
   text-align: center;
   font-weight: normal;
   font-style: italic;
-  padding-top: 37vh;
+  padding-top: 20vh;
   margin-top: 0px;
   font-size: 60px;
 }
@@ -25,6 +54,25 @@ h2.header {
   text-align: center;
   font-weight: normal;
   font-size: 50px;
+}
+
+p:first-of-type {
+  font-style: italic;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  min-width: 200px;
+}
+
+.UL-logo {
+  display: block;
+  height: 150px;
+}
+
+.UL-logo img {
+  height: inherit;
 }
 
 .orn {
