@@ -1,51 +1,26 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  {% load static %}
-  <head>
-    <meta charset="utf-8">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}"/>
-    <title>Colloquium levensfilosofie</title>
-  </head>
+{% extends "site_base.html" %}
 
-  <body>
-    <header>
-      <h1 class="header">Colloquium Levensfilosofie</h1>
-      <h2 class="header"><span class="orn leaf"></span></h2>
-    </header>
-    <section class="container">
-      <p>
-        Wat leert de filosofie van Levinas ons over vriendschap? Hoe verbindt Kierkegaard de angstaanjagende ervaring van leegte met de mogelijkheid van ware vrijheid? …
-      </p>
-      <p>
-        Het doel van het Colloquium Levensfilosofie is om, verspreid over het academische jaar, vijf extra-curriculaire minisymposia te organiseren over verschillende filosofisch en maatschappelijk relevante thema’s. Daarbij staat de dialoog over de ethische, existentiële en spirituele aspecten van deze thema’s voorop.<br>
-        Het Colloquium Levensfilosofie is tevens bedoeld als brug tussen de academische filosofie en de samenleving. Het is een laagdrempelig platform voor studenten, docenten en belangstellenden van buiten de universiteit.<br>
-        De bijeenkomsten zijn gratis toegankelijk en vinden op vrijdagmiddagen plaats in een van de zalen van de Universiteit Leiden. In de regel zijn er twee of drie sprekers en een dagvoorzitter.<br>
-        De aankondigingen van de mini-symposia worden vermeld op deze website. U kunt de aankondigingen ook per e-mail ontvangen; meld u aan voor de nieuwsbrief.
-      </p>
-      <p>
-        Het Colloquium Levensfilosofie is opgericht in 2002. Het is voortgekomen uit een initiatief van dr. Gerard Visser die van 1985 tot 2015 medewerker cultuurfilosofie was aan het Instituut voor Wijsbegeerte van Universiteit Leiden. Het Colloquium Levensfilosofie bestaat thans uit:
-      </p>
-      <p>
-        André van Delft MA, MSc (filosoof en natuurkundige)<br>
-        Prof. em. dr. Hans Gerding (UL - filosoof)<br>
-        Kirsten Kalkman MA (filosoof)<br>
-        Dr. Rozemund Uljée (UL - filosoof)<br>
-        Dr. Gerard Visser (UL - filosoof)<br>
-        Drs. Barbara Zwaan MA (geestelijk verzorger)<br>
-      </p>
-    </section>
-    <footer>
-      <div class="container">
-        <a href="https://www.universiteitleiden.nl/geesteswetenschappen/instituut-voor-wijsbegeerte" class="UL-logo">
-          <img src="{% static 'images/UL.svg' %}"/>
-        </a>
-        <ul>
-          <li>Colloquium Levensfilosofie</li>
-          <li>Instituut voor Wijsbegeerte</li>
-          <li>Universiteit Leiden</li>
-        </ul>
-      </div>
-    </footer>
-  </body>
-</html>
+{% block title %}Colloquium levensfilosofie{% endblock %}
+
+{% block body %}
+<p class="intro">
+  Wat leert de filosofie van Levinas ons over vriendschap? Hoe verbindt Kierkegaard de angstaanjagende ervaring van leegte met de mogelijkheid van ware vrijheid? …
+</p>
+<p>
+  Het doel van het Colloquium Levensfilosofie is om, verspreid over het academische jaar, vijf extra-curriculaire minisymposia te organiseren over verschillende filosofisch en maatschappelijk relevante thema’s. Daarbij staat de dialoog over de ethische, existentiële en spirituele aspecten van deze thema’s voorop.<br>
+  Het Colloquium Levensfilosofie is tevens bedoeld als brug tussen de academische filosofie en de samenleving. Het is een laagdrempelig platform voor studenten, docenten en belangstellenden van buiten de universiteit.<br>
+  De bijeenkomsten zijn gratis toegankelijk en vinden op vrijdagmiddagen plaats in een van de zalen van de Universiteit Leiden. In de regel zijn er twee of drie sprekers en een dagvoorzitter.<br>
+  De aankondigingen van de mini-symposia worden vermeld op deze website. U kunt de aankondigingen ook per e-mail ontvangen; meld u aan voor de nieuwsbrief.
+</p>
+<p>
+  Het Colloquium Levensfilosofie is opgericht in 2002. Het is voortgekomen uit een initiatief van dr. Gerard Visser die van 1985 tot 2015 medewerker cultuurfilosofie was aan het Instituut voor Wijsbegeerte van Universiteit Leiden. Het Colloquium Levensfilosofie bestaat thans uit:
+</p>
+<p>
+  André van Delft MA, MSc (filosoof en natuurkundige)<br>
+  Prof. em. dr. Hans Gerding (UL - filosoof)<br>
+  Kirsten Kalkman MA (filosoof)<br>
+  Dr. Rozemund Uljée (UL - filosoof)<br>
+  Dr. Gerard Visser (UL - filosoof)<br>
+  Drs. Barbara Zwaan MA (geestelijk verzorger)<br>
+</p>
+{% endblock %}

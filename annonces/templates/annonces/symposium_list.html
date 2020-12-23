@@ -1,11 +1,17 @@
+{% extends "site_base.html" %}
 {% load markdown %}
+
+{% block title %}Annonces | Colloquium Levensfilosofie{% endblock %}
+
+{% block body %}
 {% for symposium in symposia %}
   <h1>{{ symposium.title }}</h1>
   {{ symposium.introduction | render_markdown | safe }}
   <p><i>Sprekers</i>:
     {% for speaker in symposium.speakers %}{% if forloop.last %} en {% elif not forloop.first %},{% endif %} {{ speaker }}{% endfor %}
   </p>
-  <p><a href="{% url 'announcement_detail' symposium.slug %}">Lees meer</a><p>
+  <p><a href="{% url 'annonce_detail' symposium.slug %}">Lees meer</a><p>
 {% empty %}
   <i>Geen symposia gevonden</i>
 {% endfor %}
+{% endblock %}

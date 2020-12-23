@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  {% load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}"/>
+    <title>{% block title %}Colloquium levensfilosofie{% endblock %}</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="header"><a href="{% url 'home' %}">Colloquium Levensfilosofie</a></h1>
+      <h2 class="header"><span class="orn leaf"></span></h2>
+
+      <div class="container links">
+        {% block links %}
+        <a href="{% url 'home' %}" class="menu-link">Intro</a>
+        <a href="{% url 'annonce_list' %}" class="menu-link">Archief</a>
+        {% endblock %}
+      </div>
+    </header>
+    <section class="container">
+      {% block body %}{% endblock %}
+    </section>
+    <footer>
+      <div class="container">
+        <a href="https://www.universiteitleiden.nl/geesteswetenschappen/instituut-voor-wijsbegeerte" class="UL-logo">
+          <img src="{% static 'images/UL.svg' %}"/>
+        </a>
+        <ul>
+          <li>Colloquium Levensfilosofie</li>
+          <li>Instituut voor Wijsbegeerte</li>
+          <li>Universiteit Leiden</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

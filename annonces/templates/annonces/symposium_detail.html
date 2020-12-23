@@ -1,6 +1,11 @@
+{% extends "site_base.html" %}
 {% load markdown %}
-<h1>{{ symposium.title }}</h1>
-<ul>
+
+{% block title %}{{ symposium.title }} | Colloquium Levensfilosofie{% endblock %}
+
+{% block body %}
+<h2>{{ symposium.title }}</h2>
+<ul class="list-unstyled">
   <li><i>Sprekers</i>:
     {% for speaker in symposium.speakers %}{% if forloop.last %} en {% elif not forloop.first %},{% endif %} {{ speaker }}{% endfor %}
   </li>
@@ -14,16 +19,17 @@
 </ul>
 {{ symposium.introduction | render_markdown | safe }}
 {% if program %}
-  <ul>
+  <ul class="list-unstyled">
     {% for program_item in program %}
     <li>{{ program_item.time }}: {{ program_item.name }}</li>
     {% endfor %}
   </ul>
 {% endif %}
 {% for talk in talks %}
-  <h2>{{ talk.title }}</h2>
+  <h3>{{ talk.title }}</h3>
   {{ talk.abstract | render_markdown | safe }}
-  <div style="font-style: italic;">
+  <div class="personalia">
     {{ talk.personalia | render_markdown | safe }}
   </div>
 {% endfor %}
+{% endblock %}
