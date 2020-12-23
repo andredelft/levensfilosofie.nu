@@ -5,5 +5,5 @@ from levensfilosofie import views
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('aankondigingen/', include('aankondigingen.urls'))
+    path('annonces/', include('annonces.urls'))
 ]

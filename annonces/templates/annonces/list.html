@@ -1,0 +1,8 @@
+{% load markdown %}
+{% for symposium in symposia %}
+  <h1>{{ symposium.title }}</h1>
+  {{ symposium.introduction | render_markdown | safe }}
+  <p><a href="#">Lees meer</a><p>
+{% empty %}
+  <i>Geen symposia gevonden</i>
+{% endfor %}
