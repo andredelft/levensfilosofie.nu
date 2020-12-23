@@ -103,6 +103,10 @@ h2.header {
   font-size: 50px;
 }
 
+.symposium-preview {
+  margin-bottom: 100px;
+}
+
 p.intro, .personalia {
   font-style: italic;
 }
