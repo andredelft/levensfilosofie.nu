@@ -1,5 +1,5 @@
 {% extends "site_base.html" %}
-{% load markdown %}
+{% load markdown summation %}
 
 {% block title %}{{ symposium.title }} | Colloquium Levensfilosofie{% endblock %}
 
@@ -7,7 +7,7 @@
 <h2>{{ symposium.title }}</h2>
 <ul class="list-unstyled">
   <li><i>Sprekers</i>:
-    {% for speaker in symposium.speakers %}{% if forloop.last %} en {% elif not forloop.first %},{% endif %} {{ speaker }}{% endfor %}
+    {{ symposium.speakers | dutch_summation }}
   </li>
   <li><i>Datum</i>: {{ symposium.date | date:"l j F Y" }}</li>
   {% if symposium.time %}

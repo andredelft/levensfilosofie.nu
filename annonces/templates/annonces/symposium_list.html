@@ -1,15 +1,24 @@
 {% extends "site_base.html" %}
-{% load markdown %}
+{% load markdown summation %}
 
 {% block title %}Annonces | Colloquium Levensfilosofie{% endblock %}
 
 {% block body %}
 {% for symposium in symposia %}
   <h1>{{ symposium.title }}</h1>
+  <ul class="list-unstyled">
+    <li><i>Sprekers</i>:
+      {{ symposium.speakers | dutch_summation }}
+    </li>
+    <li><i>Datum</i>: {{ symposium.date | date:"l j F Y" }}</li>
+    {% if symposium.time %}
+    <li><i>Tijd</i>: {{ symposium.time }}</li>
+    {% endif %}
+    {% if symposium.place %}
+    <li><i>Locatie</i>: {{ symposium.place }}</li>
+    {% endif %}
+  </ul>
   {{ symposium.introduction | render_markdown | safe }}
-  <p><i>Sprekers</i>:
-    {% for speaker in symposium.speakers %}{% if forloop.last %} en {% elif not forloop.first %},{% endif %} {{ speaker }}{% endfor %}
-  </p>
   <p><a href="{% url 'annonce_detail' symposium.slug %}">Lees meer</a><p>
 {% empty %}
   <i>Geen symposia gevonden</i>

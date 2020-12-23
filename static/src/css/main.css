@@ -66,6 +66,7 @@ h1.header {
 .links {
   display: flex;
   justify-content: center;
+  margin-bottom: 0.5rem;
 }
 
 a.menu-link {
@@ -73,10 +74,17 @@ a.menu-link {
   text-decoration: none;
   margin-right: 50px;
   font-size: 1.5rem;
+  padding: 5px 20px;
+  border-radius: 3px;
 }
 
 a.menu-link:last-of-type {
   margin-right: 0;
+}
+
+a.menu-link:hover {
+  background-color: rgba(33, 68, 120, 0.2);
+  text-decoration: none;
 }
 
 a {
