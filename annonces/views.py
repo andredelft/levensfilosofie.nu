@@ -7,7 +7,7 @@ from annonces.models import Symposium
 # Create your views here.
 
 class AnnonceList(ListView):
-    queryset = Symposium.objects.all().prefetch_related('talk_set', 'programitem_set').order_by('date')
+    queryset = Symposium.objects.all().prefetch_related('talk_set', 'programitem_set').order_by('-date')
     context_object_name = 'symposia'
 
 
