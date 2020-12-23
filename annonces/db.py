@@ -7,7 +7,7 @@ def post(data):
     talks = data.pop('talks')
     program = data.pop('program')
 
-    print(f'Posting symposium with {len(talks)} talks and {len(program)} program items')
+    print(f'Posting symposium "{data.get("title")}" with {len(talks)} talks and {len(program)} program items')
     symposium = Symposium(**data, date=sym_date)
     symposium.save()
     Talk.objects.bulk_create(

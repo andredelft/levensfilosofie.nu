@@ -1,15 +1,22 @@
 from django.db import models
+from django.template.defaultfilters import slugify
 
 
 class Symposium(models.Model):
-    title = models.CharField(max_length=300)
+    title = models.CharField(max_length=300, unique=True)
     introduction = models.TextField(null=True)
-    date = models.DateField()
+    date = models.DateField(unique=True)
     time = models.CharField(max_length=50, null=True)
     place = models.CharField(max_length=200, null=True)
+    slug = models.SlugField(null=False, unique=True)
 
     def speakers(self):
-        return Talk.objects.filter(symposium=self).values_list('speaker', flat=True)
+        return Talk.objects.filter(symposium=self).order_by('number').values_list('speaker', flat=True)
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.title)
+        return super().save(*args, **kwargs)
 
     def __str__(self):
         return self.title
@@ -30,6 +37,7 @@ class Talk(models.Model):
         constraints = [
             models.UniqueConstraint(fields=['number', 'symposium'], name='unique_talk_ordering')
         ]
+
 
 class ProgramItem(models.Model):
     number = models.IntegerField()

@@ -1,0 +1,29 @@
+{% load markdown %}
+<h1>{{ symposium.title }}</h1>
+<ul>
+  <li><i>Sprekers</i>:
+    {% for speaker in symposium.speakers %}{% if forloop.last %} en {% elif not forloop.first %},{% endif %} {{ speaker }}{% endfor %}
+  </li>
+  <li><i>Datum</i>: {{ symposium.date | date:"l j F Y" }}</li>
+  {% if symposium.time %}
+  <li><i>Tijd</i>: {{ symposium.time }}</li>
+  {% endif %}
+  {% if symposium.place %}
+  <li><i>Locatie</i>: {{ symposium.place }}</li>
+  {% endif %}
+</ul>
+{{ symposium.introduction | render_markdown | safe }}
+{% if program %}
+  <ul>
+    {% for program_item in program %}
+    <li>{{ program_item.time }}: {{ program_item.name }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}
+{% for talk in talks %}
+  <h2>{{ talk.title }}</h2>
+  {{ talk.abstract | render_markdown | safe }}
+  <div style="font-style: italic;">
+    {{ talk.personalia | render_markdown | safe }}
+  </div>
+{% endfor %}

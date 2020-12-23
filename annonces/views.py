@@ -9,7 +9,14 @@ from annonces.models import Symposium
 class AnnonceList(ListView):
     queryset = Symposium.objects.all().prefetch_related('talk_set', 'programitem_set').order_by('date')
     context_object_name = 'symposia'
-    template_name = 'annonces/list.html'
+
 
 class AnnonceDetail(DetailView):
-    pass
+    model = Symposium
+    context_object_name = 'symposium'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['program'] = self.object.programitem_set.filter(symposium=self.object).order_by('number')
+        context['talks'] = self.object.talk_set.filter(symposium=self.object).order_by('number')
+        return context
