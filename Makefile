@@ -9,3 +9,12 @@ build:
 run:
 	touch $(ENV_FILE)
 	docker run --name $(CONTAINER_NAME) --env DEBUG=0 --env-file $(ENV_FILE) -p $(HOST_PORT):8000 --detach $(IMAGE_TAG)
+
+update:
+	make build
+  docker stop $(CONTAINER_NAME)
+  docker rm $(CONTAINER_NAME)
+  make run
+
+css:
+	sass static/src/scss/index.scss static/dist/css/main.css

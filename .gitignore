@@ -1,5 +1,6 @@
 __pycache__/
 static/dist/
+static/build/css
 *.sqlite3
 venv/
 .env
