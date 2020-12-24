@@ -17,4 +17,4 @@ update:
 	make run
 
 css:
-	sass static/src/scss/index.scss static/dist/css/main.css
+	sass static/src/scss/index.scss static/build/css/main.css
