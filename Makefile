@@ -12,9 +12,9 @@ run:
 
 update:
 	make build
-  docker stop $(CONTAINER_NAME)
-  docker rm $(CONTAINER_NAME)
-  make run
+	docker stop $(CONTAINER_NAME)
+	docker rm $(CONTAINER_NAME)
+	make run
 
 css:
 	sass static/src/scss/index.scss static/dist/css/main.css
