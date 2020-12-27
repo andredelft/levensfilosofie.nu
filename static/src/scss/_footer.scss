@@ -1,0 +1,22 @@
+footer {
+  border-top: solid 2px #d3d3d3;
+  background-color: #f2f2f2ff;
+  padding-bottom: 20px;
+  .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    min-width: 200px;
+  }
+  .UL-logo {
+    display: block;
+    height: 150px;
+    img {
+      height: inherit;
+    }
+  }
+}

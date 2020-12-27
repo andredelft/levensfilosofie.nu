@@ -1,0 +1,26 @@
+body {
+  font-family: 'Alegreya', serif;
+  font-size: 19px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+a {
+  color: #535d6c;
+  text-decoration: none;
+  font-style: italic;
+  &:hover {
+    color: #214478;
+    text-decoration: underline;
+  }
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}

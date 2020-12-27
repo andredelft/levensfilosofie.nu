@@ -1,0 +1,22 @@
+/* http://arkandis.tuxfamily.org/docs/Ornements-Cat.pdf */
+
+@font-face {
+  font-family: 'Ornaments';
+  src: url('/static/fonts/OrnementsADF.ttf') format('truetype');
+}
+
+.orn {
+  font-family: 'Ornaments';
+  &.vert::before {
+    content: 'g';
+  }
+  &.vert-double::before {
+    content: 'f';
+  }
+  &.flower::before {
+    content: 'q';
+  }
+  &.leaf::before {
+    content: 's';
+  }
+}

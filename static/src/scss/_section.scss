@@ -1,0 +1,16 @@
+section {
+  padding: 80px 20px;
+  .symposium-preview {
+    margin-bottom: 70px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  p.intro, .personalia {
+    font-style: italic;
+    i, em {
+      font-style: normal;
+    }
+  }
+}
