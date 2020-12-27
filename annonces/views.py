@@ -13,7 +13,8 @@ class AnnonceList(ListView):
 
 
 class AnnonceDetail(DetailView):
-    queryset = Symposium.objects.prefetch_related('talk_set', 'programitem_set')
+    # queryset = Symposium.objects.prefetch_related('talk_set', 'programitem_set') # Does not result in less queries for some reason..
+    model = Symposium
     context_object_name = 'symposium'
 
     def get_context_data(self, **kwargs):

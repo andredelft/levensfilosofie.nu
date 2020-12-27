@@ -11,7 +11,7 @@ class Symposium(models.Model):
     slug = models.SlugField(null=False, unique=True)
 
     def speakers(self):
-        return Talk.objects.filter(symposium=self).order_by('number').values_list('speaker', flat=True)
+        return self.talk_set.order_by('number').values_list('speaker', flat=True)
 
     def save(self, *args, **kwargs):
         if not self.slug:
