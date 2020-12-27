@@ -20,7 +20,7 @@
       {% endif %}
     </ul>
     {{ symposium.introduction | render_markdown | safe }}
-    <p><a href="{% url 'annonce_detail' symposium.slug %}">Lees meer</a><p>
+    <p><a href="{% url 'annonce_detail' symposium.slug %}" class="button-link">Lees meer</a><p>
   </div>
 {% empty %}
   <i>Geen symposia gevonden</i>

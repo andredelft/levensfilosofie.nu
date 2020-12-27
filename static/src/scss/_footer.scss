@@ -1,6 +1,6 @@
 footer {
-  border-top: solid 2px #d3d3d3;
-  background-color: #f2f2f2ff;
+  border-top: solid 2px $border-color;
+  background-color: $header-color;
   padding-bottom: 20px;
   .container {
     display: flex;

@@ -13,4 +13,7 @@ section {
       font-style: normal;
     }
   }
+  .button-link {
+    background-color: transparentize($link-color, 0.9);
+  }
 }

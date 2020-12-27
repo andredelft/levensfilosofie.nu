@@ -1,6 +1,6 @@
 header {
-  background-color: #f2f2f2ff;
-  border-bottom: solid 2px #d3d3d3;
+  background-color: $header-color;
+  border-bottom: solid 2px $border-color;
 
   h1.header {
     font-family: 'Cormorant', serif;
@@ -38,17 +38,10 @@ header {
     margin-bottom: 0.5rem;
     a.menu-link {
       display: block;
-      text-decoration: none;
       font-size: 1.5rem;
-      padding: 5px 20px;
-      border-radius: 3px;
       margin-right: 50px;
       &:last-of-type {
         margin-right: 0;
-      }
-      &:hover {
-        background-color: rgba(33, 68, 120, 0.2);
-        text-decoration: none;
       }
     }
   }
