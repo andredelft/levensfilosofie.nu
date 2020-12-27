@@ -3,7 +3,7 @@ from django.template.defaultfilters import slugify
 
 
 class Symposium(models.Model):
-    title = models.CharField(max_length=300, unique=True)
+    title = models.CharField(max_length=300)
     introduction = models.TextField(null=True)
     date = models.DateField(unique=True)
     time = models.CharField(max_length=50, null=True)
@@ -21,6 +21,12 @@ class Symposium(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta:
+        indexes = [
+            models.Index(fields=['slug']),
+            models.Index(fields=['-date']),
+        ]
+
 
 class Talk(models.Model):
     number = models.IntegerField()
@@ -37,6 +43,9 @@ class Talk(models.Model):
         constraints = [
             models.UniqueConstraint(fields=['number', 'symposium'], name='unique_talk_ordering')
         ]
+        indexes = [
+            models.Index(fields=['number', 'symposium'])
+        ]
 
 
 class ProgramItem(models.Model):
@@ -51,4 +60,7 @@ class ProgramItem(models.Model):
     class Meta:
         constraints = [
             models.UniqueConstraint(fields=['number', 'symposium'], name='unique_program_ordering')
+        ]
+        indexes = [
+            models.Index(fields=['number', 'symposium'])
         ]
