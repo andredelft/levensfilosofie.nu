@@ -1,7 +1,8 @@
 {
   "title": "Indachtig de leegte",
   "date": [2016, 1, 29],
-  "time": "13.30 - 16.30 uur",
+  "time_from": "13:30",
+  "time_to": "16:30",
   "place": "Universiteit Leiden, Lipsiusgebouw, Cleveringaplaats 1, zaal 003",
   "introduction": "In dit minisymposium zal in de vorm van twee lezingen aandacht worden besteed aan de ervaring en het grondmotief van de leegte binnen het veld van de spiritualiteit zoals dit zich vanaf eind negentiende eeuw manifesteert in filosofie en kunst. Annewieke Vroom zal daarbij spreken over de moderne Japanse cultuur, Gerard Visser over de Europese.",
   "talks": [
@@ -20,19 +21,23 @@
   ],
   "program": [
     {
-      "time": "13.30 – 14.30",
+      "time_from": "13:30",
+      "time_to": "14:30",
       "name": "Annewieke Vroom – De zendenkers van de Kyoto School"
     },
     {
-      "time": "14.30 – 15.00",
+      "time_from": "14:30",
+      "time_to": "15:00",
       "name": "Pauze"
     },
     {
-      "time": "15.00 – 16.00",
+      "time_from": "15:00",
+      "time_to": "16:00",
       "name": "Gerard Visser – Leegte en vorm"
     },
     {
-      "time": "16.00 – 16.30",
+      "time_from": "16:00",
+      "time_to": "16:30",
       "name": "Discussie"
     }
   ]

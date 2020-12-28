@@ -1,7 +1,8 @@
 {
   "title": "Boeddhisme en dao\u00efsme",
   "date": [2016, 10, 7],
-  "time": "13.30 – 16.30",
+  "time_from": "13:30",
+  "time_to": "16:30",
   "place": "",
   "introduction": "Recent verschenen er twee boeken over twee grote stromingen uit de Oost-Aziatische spiritualiteit, van de hand van twee Nederlandse filosofen en kenners: _Het Boeddhafenomeen. Naar een westers boeddhisme_ (Leusden, ISVW Uitgevers, 2016) van Erik Hoogcarspel, en _Filosofie met de vlinderslag. De daoïstische levenskunst van Zhuangzi_  (Budel, Damon, 2016) van Woei-Lien Chong. Beide auteurs presenteren op originele wijze een spiritueel gedachtegoed en een leerweg, die ook ons westerlingen oriëntatie in het leven zouden kunnen bieden.  ",
   "talks": [
@@ -20,19 +21,23 @@
   ],
   "program": [
     {
-      "time": "13.30 – 14.30",
+      "time_from": "13:30",
+      "time_to": "14:30",
       "name": "Erik Hoogcarspel: Met boeddha naar de fenomenen"
     },
     {
-      "time": "14.30 – 15:00",
+      "time_from": "14:30",
+      "time_to": "15:00",
       "name": "Pauze"
     },
     {
-      "time": "15.00 – 16.00",
-      "name": "Woei-Lien Chong: Filosofie met de vlinderslag. Daoïstische levenskuns"
+      "time_from": "15:00",
+      "time_to": "16:00",
+      "name": "Woei-Lien Chong: Filosofie met de vlinderslag. Daoïstische levenskunst"
     },
     {
-      "time": "16.00 – 16.30",
+      "time_from": "16:00",
+      "time_to": "16:30",
       "name": "Discussie"
     }
   ]

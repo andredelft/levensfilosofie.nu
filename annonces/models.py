@@ -6,9 +6,16 @@ class Symposium(models.Model):
     title = models.CharField(max_length=300)
     introduction = models.TextField(null=True)
     date = models.DateField(unique=True)
-    time = models.CharField(max_length=50, null=True)
+    time_from = models.TimeField(null=True)
+    time_to = models.TimeField(null=True)
     place = models.CharField(max_length=200, null=True)
     slug = models.SlugField(null=False, unique=True)
+
+    def time(self):
+        if self.time_from and self.time_to:
+            return f"{self.time_from.strftime('%-H:%M')}–{self.time_to.strftime('%-H:%M')} uur"
+        else:
+            return ''
 
     def speakers(self):
         return self.talk_set.order_by('number').values_list('speaker', flat=True)
@@ -51,8 +58,12 @@ class Talk(models.Model):
 class ProgramItem(models.Model):
     number = models.IntegerField()
     symposium = models.ForeignKey(Symposium, on_delete=models.CASCADE)
-    time = models.CharField(max_length=50)
+    time_from = models.TimeField()
+    time_to = models.TimeField()
     name = models.CharField(max_length=200)
+
+    def time(self):
+        return f"{self.time_from.strftime('%-H:%M')}–{self.time_to.strftime('%-H:%M')}"
 
     def __str__(self):
         return f"{self.time}: {self.name}"
