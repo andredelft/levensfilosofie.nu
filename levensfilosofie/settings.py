@@ -25,7 +25,7 @@ except KeyError:
     else:
         raise RuntimeError("Missing SECRET_KEY environment variable")
 
-ALLOWED_HOSTS = ['levensfilosofie.nu', 'www.levensfilosofie.nu' 'localhost']
+ALLOWED_HOSTS = ['levensfilosofie.nu', 'www.levensfilosofie.nu', 'localhost']
 if os.environ.get('ALLOWED_HOSTS'):
     ALLOWED_HOSTS += os.environ.get('ALLOWED_HOSTS').split(';')
 
