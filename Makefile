@@ -15,6 +15,3 @@ update:
 	docker stop $(CONTAINER_NAME)
 	docker rm $(CONTAINER_NAME)
 	make run
-
-css:
-	sass static/src/scss/index.scss static/build/css/main.css

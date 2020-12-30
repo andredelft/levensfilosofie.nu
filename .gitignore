@@ -1,6 +1,8 @@
 __pycache__/
 static/dist/
 static/build/css
+static/build/favicon
 *.sqlite3
 venv/
 .env
+node_modules/
