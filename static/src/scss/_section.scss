@@ -20,4 +20,16 @@ section {
       border-color: transparentize($link-color, 0.4);
     }
   }
+  .member {
+    margin-bottom: 100px;
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+    img {
+      float: left;
+      border-radius: 80px;
+      width: 160px;
+      margin-right: 20px;
+    }
+  }
 }

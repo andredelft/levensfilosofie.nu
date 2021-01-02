@@ -5,7 +5,7 @@ from django.core.management.base import BaseCommand
 
 from annonces import db
 
-DATA_DIR = 'data'
+DATA_DIR = os.path.join('annonces', 'data')
 
 class Command(BaseCommand):
 

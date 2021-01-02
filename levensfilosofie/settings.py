@@ -38,6 +38,7 @@ CSRF_COOKIE_SECURE = True
 
 INSTALLED_APPS = [
     'annonces.apps.AnnoncesConfig',
+    'personalia.apps.PersonaliaConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

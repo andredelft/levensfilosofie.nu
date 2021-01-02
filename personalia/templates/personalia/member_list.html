@@ -1,0 +1,18 @@
+{% extends "site_base.html" %}
+{% load markdown static %}
+
+{% block title %}Leden | Colloquium Levensfilosofie{% endblock %}
+
+{% block body %}
+{% for member in members %}
+  <div class="member">
+    {% with 'personalia/'|add:member.key|add:'.jpg' as image_path %}
+    <img src="{% static image_path %}">
+    {% endwith %}
+    <h3>{{ member.name }}</h3>
+    {{ member.personalia | render_markdown | safe }}
+  </div>
+{% empty %}
+  <i>Geen leden gevonden</i>
+{% endfor %}
+{% endblock %}
