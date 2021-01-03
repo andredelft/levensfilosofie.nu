@@ -20,19 +20,23 @@
   </head>
 
   <body>
-    <nav id="navbar" class="navbar {% if expand_header %}expand{% else %}sticky{% endif %}">
-      <div class="brand"><a href="{% url 'home' %}">Colloquium Levensfilosofie</a> <span class="orn leaf"></div>
+
+    <nav class="navbar {% if expand_header %}expand{% else %}sticky{% endif %}">
+      {% if expand_header %}
+        <h1 class="brand"><a href="{% url 'home' %}">Colloquium Levensfilosofie</a></h1>
+        <h2 class="brand"><span class="orn leaf"></span></h2>
+      {% else %}
+        <div class="brand"><a href="{% url 'home' %}">Colloquium Levensfilosofie</a> <span class="orn leaf"></div>
+      {% endif %}
       <div class="links">
         <a href="{% url 'home' %}" class="menu-link button-link">Intro</a>
         <a href="{% url 'annonce_list' %}" class="menu-link button-link">Archief</a>
         <a href="{% url 'member_list' %}" class="menu-link button-link">Leden</a>
       </div>
     </nav>
-
-    <section id="mainBody" class="container">
+    <section class="container">
       {% block body %}{% endblock %}
     </section>
-
     <footer>
       <div class="container">
         <a href="https://www.universiteitleiden.nl/geesteswetenschappen/instituut-voor-wijsbegeerte" class="UL-logo">
@@ -45,26 +49,5 @@
         </ul>
       </div>
     </footer>
-
-    <script>
-    var navbar = document.getElementById("navbar");
-    var mainBody = document.getElementById("mainBody");
-    mainBody.style.marginTop = `${navbar.offsetHeight}px`;
-
-    {% if expand_header %}
-    var sticky = navbar.offsetTop + navbar.offsetHeight - 75;
-    window.onscroll = function() {toggleSticky()};
-
-    function toggleSticky() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky");
-        navbar.classList.remove("expand");
-      } else if (window.pageYOffset > 0 ) {
-        navbar.classList.add("expand");
-        navbar.classList.remove("sticky");
-      }
-    }
-    {% endif %}
-    </script>
   </body>
 </html>

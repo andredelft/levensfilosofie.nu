@@ -1,5 +1,5 @@
 section {
-  padding: 50px 20px 80px 20px;
+  padding: 100px 20px 80px 20px;
   .symposium-preview {
     margin-bottom: 70px;
     &:last-of-type {
@@ -16,7 +16,7 @@ section {
   .button-link {
     background-color: transparentize($link-color, 0.9);
     border: solid 1.5px $border-color;
-    &:hover, &:focus {
+    &:hover {
       border-color: transparentize($link-color, 0.4);
     }
   }

@@ -35,27 +35,19 @@ nav.navbar {
   }
 
   &.expand {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    box-sizing: border-box;
-    .brand > a {
-      display: block;
+    h1.brand {
       text-align: center;
       font-weight: normal;
       font-style: italic;
       padding-top: 10vw;
       margin-top: 0px;
-      margin-bottom: 55px;
       font-size: 60px;
     }
 
-    .brand > .orn {
-      display: block;
+    h2.brand {
       text-align: center;
       font-weight: normal;
       font-size: 50px;
-      margin-bottom: 50px;
     }
 
     .links {
@@ -85,6 +77,9 @@ nav.navbar {
       }
       display: flex;
       align-items: center;
+      a {
+        white-space: nowrap;
+      }
       .orn {
         margin-left: 10px;
       }
