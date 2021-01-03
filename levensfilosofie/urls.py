@@ -7,7 +7,7 @@ from levensfilosofie import views
 urlpatterns = [
     path('', views.home, name='home'),
     path('annonces/', include('annonces.urls')),
-    path('personalia/', include('personalia.urls'))
+    path('leden/', include('leden.urls'))
 ]
 
 if settings.DEBUG_TOOLBAR:

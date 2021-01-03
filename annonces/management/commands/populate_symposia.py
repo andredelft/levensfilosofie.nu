@@ -6,7 +6,7 @@ from django.core.management.base import BaseCommand
 from annonces import db
 from annonces.models import Symposium
 
-DATA_DIR = os.path.join('annonces', 'data')
+DATA_DIR = os.path.join('data', 'annonces')
 
 class Command(BaseCommand):
 

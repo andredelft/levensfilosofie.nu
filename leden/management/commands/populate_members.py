@@ -3,9 +3,9 @@ import json
 
 from django.core.management.base import BaseCommand
 
-from personalia.models import Member
+from leden.models import Member
 
-SOURCE_FILENAME = os.path.join('personalia', 'data', 'personalia.json')
+SOURCE_FILENAME = os.path.join('data', 'leden', 'leden.json')
 
 class Command(BaseCommand):
 
