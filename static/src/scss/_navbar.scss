@@ -24,7 +24,6 @@ nav.navbar {
     display: flex;
     a.menu-link {
       display: block;
-      font-size: 1.5rem;
       margin-right: 50px;
       &:last-of-type {
         margin-right: 0;
@@ -51,6 +50,9 @@ nav.navbar {
     .links {
       justify-content: center;
       margin-bottom: 0.5rem;
+      a.menu-link {
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -73,6 +75,10 @@ nav.navbar {
       }
     }
 
-    .links {}
+    .links {
+      a.menu-link {
+        font-size: 1.1em;
+      }
+    }
   }
 }

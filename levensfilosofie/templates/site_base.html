@@ -20,26 +20,20 @@
   </head>
 
   <body>
-    {% if expand_header %}
-      <nav class="navbar {% if expand_header %}expand{% else %}sticky{% endif %}">
+
+    <nav class="navbar {% if expand_header %}expand{% else %}sticky{% endif %}">
+      {% if expand_header %}
         <h1 class="brand"><a href="{% url 'home' %}">Colloquium Levensfilosofie</a></h1>
         <h2 class="brand"><span class="orn leaf"></span></h2>
-
-        <div class="links">
-          <a href="{% url 'home' %}" class="menu-link button-link">Intro</a>
-          <a href="{% url 'annonce_list' %}" class="menu-link button-link">Archief</a>
-        </div>
-      </nav>
-    {% else %}
-      <nav class="navbar sticky">
+      {% else %}
         <div class="brand"><a href="{% url 'home' %}">Colloquium Levensfilosofie</a> <span class="orn leaf"></div>
-
-        <div class="links">
-          <a href="{% url 'home' %}" class="menu-link button-link">Intro</a>
-          <a href="{% url 'annonce_list' %}" class="menu-link button-link">Archief</a>
-        </div>
-      </nav>
-    {% endif %}
+      {% endif %}
+      <div class="links">
+        <a href="{% url 'home' %}" class="menu-link button-link">Intro</a>
+        <a href="{% url 'annonce_list' %}" class="menu-link button-link">Archief</a>
+        <a href="{% url 'personalia_list' %}" class="menu-link button-link">Leden</a>
+      </div>
+    </nav>
     <section class="container">
       {% block body %}{% endblock %}
     </section>
