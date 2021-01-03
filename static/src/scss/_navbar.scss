@@ -25,6 +25,9 @@ nav.navbar {
     a.menu-link {
       display: block;
       margin-right: 50px;
+      @include sm {
+        margin-right: 30px;
+      }
       &:last-of-type {
         margin-right: 0;
       }
@@ -59,8 +62,9 @@ nav.navbar {
   &.sticky {
     position: fixed;
     top: 0;
+    box-sizing: border-box;
     width: 100%;
-    min-height: 60px;
+    min-height: 75px;
     flex-wrap: wrap;
     display: flex;
     align-items: center;
@@ -68,8 +72,14 @@ nav.navbar {
 
     .brand {
       font-size: 35px;
+      @include sm {
+        font-size: 30px;
+      }
       display: flex;
       align-items: center;
+      a {
+        white-space: nowrap;
+      }
       .orn {
         margin-left: 10px;
       }

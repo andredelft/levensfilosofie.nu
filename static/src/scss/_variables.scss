@@ -7,3 +7,9 @@ $header-color: $light-grey;
 $border-color: $medium-grey;
 $link-color: $dark-grey;
 $link-color-hover: $blue;
+
+@mixin sm {
+   @media (max-width: 400px) {
+       @content;
+   }
+}
