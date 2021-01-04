@@ -22,7 +22,8 @@ class Symposium(models.Model):
 
     def save(self, *args, **kwargs):
         if not self.slug:
-            self.slug = f"{self.date.strftime('%Y-%m-%d')}-{slugify(self.title)}"
+            main_title = self.title.split(':')[0]
+            self.slug = f"{self.date.strftime('%Y-%m-%d')}-{slugify(main_title)}"
         return super().save(*args, **kwargs)
 
     def __str__(self):
