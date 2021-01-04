@@ -20,7 +20,6 @@
   </head>
 
   <body>
-
     <nav class="navbar {% if expand_header %}expand{% else %}sticky{% endif %}">
       {% if expand_header %}
         <h1 class="brand"><a href="{% url 'home' %}">Colloquium Levensfilosofie</a></h1>
@@ -39,14 +38,22 @@
     </section>
     <footer>
       <div class="container">
-        <a href="https://www.universiteitleiden.nl/geesteswetenschappen/instituut-voor-wijsbegeerte" class="UL-logo">
-          <img src="{% static 'images/UL.svg' %}"/>
-        </a>
-        <ul>
-          <li>Colloquium Levensfilosofie</li>
-          <li>Instituut voor Wijsbegeerte</li>
-          <li>Universiteit Leiden</li>
-        </ul>
+        <div>
+          <a href="https://www.universiteitleiden.nl/geesteswetenschappen/instituut-voor-wijsbegeerte" class="UL-logo">
+            <img src="{% static 'images/UL.svg' %}"/>
+          </a>
+        </div>
+        <div>
+          <ul>
+            <li>Colloquium Levensfilosofie</li>
+            <li>Instituut voor Wijsbegeerte</li>
+            <li>Universiteit Leiden</li>
+          </ul>
+        </div>
+        <div>
+          <b>Contact</b><br>
+          <a href="mailto:info@levensfilosofie.nu">info@levensfilosofie.nu</a>
+        </div>
       </div>
     </footer>
   </body>
