@@ -19,11 +19,13 @@
 </ul>
 {{ symposium.introduction | render_markdown | safe }}
 {% if program %}
-  <ul class="list-unstyled">
+  <table class="program">
     {% for program_item in program %}
-    <li>{{ program_item.time }}: {{ program_item.name }}</li>
+    <tr>
+      <td>{{ program_item.time }}</td><td>{{ program_item.name }}</td>
+    </tr>
     {% endfor %}
-  </ul>
+  </table>
 {% endif %}
 {% for talk in talks %}
   <h3>{{ talk.title }}</h3>

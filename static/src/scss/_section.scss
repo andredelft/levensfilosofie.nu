@@ -7,12 +7,22 @@ section {
     }
   }
 
-  p.intro, .personalia {
+  p.intro {
     font-style: italic;
     i, em {
       font-style: normal;
     }
   }
+  .personalia {
+    font-size: 0.9em;
+  }
+  table.program {
+    td {
+      vertical-align: top;
+    }
+    border-spacing: 20px 10px;
+  }
+
   .button-link {
     background-color: transparentize($link-color, 0.9);
     border: solid 1.5px $border-color;
