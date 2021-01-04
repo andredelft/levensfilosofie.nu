@@ -1,6 +1,10 @@
 {% extends "site_base.html" %}
 
 {% block body %}
+{% if upcoming_symposium %}
+  {% include 'annonces/_symposium_preview.html' with symposium=upcoming_symposium include_separators=True only %}
+{% endif %}
+
 <p class="intro">
   Wat leert de filosofie van Levinas ons over vriendschap? Hoe verbindt Kierkegaard de angstaanjagende ervaring van leegte met de mogelijkheid van ware vrijheid? …
 </p>

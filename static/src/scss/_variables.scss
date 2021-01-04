@@ -8,6 +8,8 @@ $border-color: $medium-grey;
 $link-color: $dark-grey;
 $link-color-hover: $blue;
 
+$border: solid 2px $border-color;
+
 @mixin sm {
    @media (max-width: 400px) {
        @content;

@@ -20,6 +20,36 @@ a {
   }
 }
 
+.separator {
+  font-size: 22px;
+  font-weight: normal;
+  font-style: italic;
+  color: $dark-grey;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  &::before, &::after {
+    content: '';
+    flex: 1;
+    border-bottom: $border;
+  }
+  &::before {
+    margin-right: .25em;
+  }
+  &::after {
+    margin-left: .25em;
+  }
+  &.bottom {
+    margin-top: 40px;
+    margin-bottom: 70px;
+  }
+}
+
+hr {
+  border-width: 1px;
+  border-color: $border-color;
+}
+
 .list-unstyled {
   padding-left: 0;
   list-style: none;

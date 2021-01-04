@@ -1,8 +1,6 @@
-// Soon: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
-
 nav.navbar {
   background-color: $header-color;
-  border-bottom: solid 2px $border-color;
+  border-bottom: $border;
   padding: 0.5rem;
 
   .brand {

@@ -7,6 +7,7 @@
 
 .orn {
   font-family: 'Ornaments';
+  font-style: normal;
   &.vert::before {
     content: 'g';
   }
@@ -18,5 +19,8 @@
   }
   &.leaf::before {
     content: 's';
+  }
+  &.star::before {
+    content: '3';
   }
 }
