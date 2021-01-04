@@ -22,7 +22,7 @@
   <table class="program">
     {% for program_item in program %}
     <tr>
-      <td>{{ program_item.time }}</td><td>{{ program_item.name }}</td>
+      <td>{{ program_item.time }}</td><td>{{ program_item.name | render_markdown_line | safe }}</td>
     </tr>
     {% endfor %}
   </table>

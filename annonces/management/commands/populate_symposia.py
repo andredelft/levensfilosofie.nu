@@ -15,7 +15,6 @@ class Command(BaseCommand):
         fnames.remove('template.json')
         Symposium.objects.all().delete()
         for fname in fnames:
-            self.stdout.write(fname)
             with open(os.path.join(DATA_DIR, fname)) as f:
                 data = json.load(f)
                 db.post(data)

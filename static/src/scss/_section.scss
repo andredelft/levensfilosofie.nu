@@ -19,8 +19,11 @@ section {
   table.program {
     td {
       vertical-align: top;
+      padding-left: 20px;
+      &:first-of-type {
+        padding-left: 0;
+      }
     }
-    border-spacing: 20px 10px;
   }
 
   .button-link {
