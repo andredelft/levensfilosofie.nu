@@ -25,6 +25,15 @@ section {
       }
     }
   }
+  .talk {
+    &__speaker {
+      margin-top: 40px;
+      font-style: italic;
+    }
+    &__title {
+      margin-top: 0px;
+    }
+  }
 
   .button-link {
     background-color: transparentize($link-color, 0.9);

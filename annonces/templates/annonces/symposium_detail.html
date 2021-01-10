@@ -28,7 +28,8 @@
   </table>
 {% endif %}
 {% for talk in talks %}
-  <h3>{{ talk.title }}</h3>
+  <div class="talk__speaker">{{ talk.speaker }}</div>
+  <h3 class="talk__title">{{ talk.title }}</h3>
   {{ talk.abstract | render_markdown | safe }}
   <div class="personalia">
     {{ talk.personalia | render_markdown | safe }}
