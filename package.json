@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "https://levensfilosofie.nu",
   "scripts": {
-    "favicon": "real-favicon generate static/src/favicon/description.json static/build/favicon/data.json static/build/favicon",
-    "postfavicon": "real-favicon inject static/build/favicon/data.json static/build/favicon levensfilosofie/templates/site_base.html",
+    "favicon": "real-favicon generate static/build/favicon/description.json static/build/favicon/data.json static/build/favicon",
     "sass": "sass static/src/scss/index.scss static/build/css/main.css",
-    "build": "npm run favicon && npm run sass"
+    "build": "npm run sass"
   },
   "repository": {
     "type": "git",
@@ -18,9 +17,7 @@
     "url": "https://github.com/andredelft/levensfilosofie.nu/issues"
   },
   "homepage": "https://github.com/andredelft/levensfilosofie.nu#readme",
-  "dependencies": {},
   "devDependencies": {
-    "cli-real-favicon": "0.0.8",
     "sass": "^1.32.0"
   }
 }
