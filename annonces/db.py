@@ -2,7 +2,7 @@ from datetime import date
 
 from .models import *
 
-def post(data):
+def post_symposium(data):
     sym_date = date(*data.pop('date'))
     talks = data.pop('talks')
     program = data.pop('program')

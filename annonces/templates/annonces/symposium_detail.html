@@ -1,5 +1,5 @@
 {% extends "site_base.html" %}
-{% load markdown summation %}
+{% load markdown summation additional_info %}
 
 {% block title %}{{ symposium.title }} | Colloquium Levensfilosofie{% endblock %}
 
@@ -14,15 +14,26 @@
     {{ symposium.speakers | dutch_summation }}
   </li>
   {% if symposium.place %}
-  <li><i>Locatie</i>: {{ symposium.place | render_markdown_line | safe }}</li>
+  <li><i>Locatie</i>: {{ symposium.place | render_markdown_line }}</li>
+  {% endif %}
+  {% if symposium.meeting_ID %}
+  <li><i>Meeting ID</i>: {{ symposium.meeting_ID }}</li>
+  {% endif %}
+  {% if symposium.password %}
+  <li><i>Wachtwoord</i>: {{ symposium.password }}</li>
   {% endif %}
 </ul>
-{{ symposium.introduction | render_markdown | safe }}
+{% if symposium.zoom_instructions %}
+  <div class="additional-info">
+    {% render_info 'zoom_instructions' %}
+  </div>
+{% endif %}
+{{ symposium.introduction | render_markdown }}
 {% if program %}
   <table class="program">
     {% for program_item in program %}
     <tr>
-      <td>{{ program_item.time }}</td><td>{{ program_item.name | render_markdown_line | safe }}</td>
+      <td>{{ program_item.time }}</td><td>{{ program_item.name | render_markdown_line }}</td>
     </tr>
     {% endfor %}
   </table>
@@ -30,9 +41,9 @@
 {% for talk in talks %}
   <div class="talk__speaker">{{ talk.speaker }}</div>
   <h3 class="talk__title">{{ talk.title }}</h3>
-  {{ talk.abstract | render_markdown | safe }}
+  {{ talk.abstract | render_markdown }}
   <div class="personalia">
-    {{ talk.personalia | render_markdown | safe }}
+    {{ talk.personalia | render_markdown }}
   </div>
 {% endfor %}
 {% endblock %}

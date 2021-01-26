@@ -1,9 +1,12 @@
 {
   "title": "Filosofie en ecologie: Nietzsche en Heidegger over onze omgang met de aarde",
   "date": [2021, 1, 29],
-  "place": "_In verband met de coronacrisis zal dit symposium digitaal gehouden worden. Een link naar het online platform zal hier binnenkort verschijnen_.",
+  "place": "Het colloquium zal op Zoom plaatsvinden. Via deze link kunt u vanaf 13:15 deelnemen: https://us02web.zoom.us/j/81083840786?pwd=UjlxMFZIZkl3Y0xWSTNuTElGbTRDQT09",
+  "zoom_instructions": true,
+  "meeting_ID": "810 8384 0786",
+  "password": "496641",
   "time_from": "13:30",
-  "time_to": "16:30",
+  "time_to": "16:45",
   "introduction": "Het thema van dit mini-symposium in het kader van het Colloquium Levensfilosofie stond al vast voordat de coronacrisis uitbrak. Maar dat heeft de aanleiding ervoor, de klimaatcrisis, alleen maar dringender gemaakt. Beide crises zijn uitingen van een op drift geraakte wereld. Nietzsche en Heidegger, die wij met betrekking tot het thema filosofie en ecologie hadden uitgekozen, zijn niet toevallig ook denkers die de aard van dit op drift geraakt zijn diepgaand hebben gepeild.  Al in een vroege aantekening merkt Nietzsche op: ‘Wij hebben er geen benul van, hoe hoog en diep de physis reikt.’ Krijgen wij niet inderdaad de rekening gepresenteerd voor deze onachtzaamheid jegens de natuur? In _Also sprach Zarathustra_ luidt naderhand zijn oproep: ‘Blijf de aarde trouw.’ Eind jaren veertig schrijft Heidegger: ‘De berk gaat dat wat voor hem mogelijk is nooit te buiten. Het bijenvolk woont binnen zijn mogelijkheden. Pas de wil, die zich mobiel inricht in de techniek, sleurt de aarde processen binnen van afpeigering en verbruik en verandering in kunstmatigheid. De techniek dwingt de aarde boven de gegroeide kring van het voor haar mogelijke uit in de richting van dat wat niet meer het mogelijke en dus het onmogelijke is.’ Heidegger peilt nog een andere veronachtzaming dan Nietzsche, niet alleen die van de natuur, maar die van überhaupt het raadsel van het zijn. In twee lezingen zal de actualiteit van hun beider bezinning worden belicht.",
   "talks": [
     {
@@ -21,23 +24,32 @@
   ],
   "program": [
     {
+      "time_from": "13:15",
+      "name": "Inloggen is mogelijk"
+    },
+    {
       "time_from": "13:30",
-      "time_to": "14:30",
+      "time_to": "13:45",
+      "name": "Opening door dagvoorzitter Gerard Visser en zoominstructies door Kirsten Kalkman"
+    },
+    {
+      "time_from": "13:45",
+      "time_to": "14:45",
       "name": "André van Delft – _‘Dichterlijk woont de mens op deze aarde’_"
     },
     {
-      "time_from": "14:30",
-      "time_to": "15:00",
+      "time_from": "14:45",
+      "time_to": "15:15",
       "name": "Pauze"
     },
     {
-      "time_from": "15:00",
-      "time_to": "16:00",
+      "time_from": "15:15",
+      "time_to": "16:15",
       "name": "Henk Manschot – _Nietzsche en de aarde_"
     },
     {
-      "time_from": "16:00",
-      "time_to": "16:30",
+      "time_from": "16:15",
+      "time_to": "16:45",
       "name": "Plenaire gedachtewisseling"
     }
   ]

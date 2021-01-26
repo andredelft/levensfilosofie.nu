@@ -9,6 +9,9 @@ class Symposium(models.Model):
     time_from = models.TimeField(null=True)
     time_to = models.TimeField(null=True)
     place = models.CharField(max_length=200, null=True)
+    zoom_instructions = models.BooleanField(default=False)
+    meeting_ID = models.CharField(max_length=15, null=True)
+    password = models.CharField(max_length=15, null=True)
     slug = models.SlugField(null=False, unique=True)
 
     def time(self):
@@ -60,11 +63,14 @@ class ProgramItem(models.Model):
     number = models.IntegerField()
     symposium = models.ForeignKey(Symposium, on_delete=models.CASCADE)
     time_from = models.TimeField()
-    time_to = models.TimeField()
+    time_to = models.TimeField(null=True)
     name = models.CharField(max_length=200)
 
     def time(self):
-        return f"{self.time_from.strftime('%-H:%M')}–{self.time_to.strftime('%-H:%M')}"
+        if self.time_to:
+            return f"{self.time_from.strftime('%-H:%M')}–{self.time_to.strftime('%-H:%M')}"
+        else:
+            return f"{self.time_from.strftime('%-H:%M')}"
 
     def __str__(self):
         return f"{self.time}: {self.name}"
@@ -76,3 +82,8 @@ class ProgramItem(models.Model):
         indexes = [
             models.Index(fields=['number', 'symposium'])
         ]
+
+
+class AdditionalInfo(models.Model):
+    name = models.CharField(max_length=200, unique=True)
+    content = models.TextField()
