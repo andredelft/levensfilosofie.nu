@@ -1,0 +1,20 @@
+{% load summation markdown %}
+
+<div class="list-unstyled">
+  <li><i>Datum</i>: {{ symposium.date | date:"l j F Y" }}</li>
+  {% if symposium.time %}
+  <li><i>Tijd</i>: {{ symposium.time }}</li>
+  {% endif %}
+  <li><i>Sprekers</i>:
+    {{ symposium.speakers | dutch_summation }}
+  </li>
+  {% if symposium.place %}
+  <li><i>Locatie</i>: {{ symposium.place | render_markdown_line }}</li>
+  {% endif %}
+  {% if symposium.meeting_ID %}
+  <li><i>Meeting ID</i>: {{ symposium.meeting_ID }}</li>
+  {% endif %}
+  {% if symposium.password %}
+  <li><i>Wachtwoord</i>: {{ symposium.password }}</li>
+  {% endif %}
+</div>

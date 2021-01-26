@@ -1,28 +1,11 @@
 {% extends "site_base.html" %}
-{% load markdown summation additional_info %}
+{% load markdown additional_info %}
 
 {% block title %}{{ symposium.title }} | Colloquium Levensfilosofie{% endblock %}
 
 {% block body %}
 <h2>{{ symposium.title }}</h2>
-<ul class="list-unstyled">
-  <li><i>Datum</i>: {{ symposium.date | date:"l j F Y" }}</li>
-  {% if symposium.time %}
-  <li><i>Tijd</i>: {{ symposium.time }}</li>
-  {% endif %}
-  <li><i>Sprekers</i>:
-    {{ symposium.speakers | dutch_summation }}
-  </li>
-  {% if symposium.place %}
-  <li><i>Locatie</i>: {{ symposium.place | render_markdown_line }}</li>
-  {% endif %}
-  {% if symposium.meeting_ID %}
-  <li><i>Meeting ID</i>: {{ symposium.meeting_ID }}</li>
-  {% endif %}
-  {% if symposium.password %}
-  <li><i>Wachtwoord</i>: {{ symposium.password }}</li>
-  {% endif %}
-</ul>
+{% include 'annonces/_practical_details.html' %}
 {% if symposium.zoom_instructions %}
   <div class="additional-info">
     {% render_info 'zoom_instructions' %}
