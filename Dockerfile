@@ -1,7 +1,7 @@
-FROM node:current-alpine3.10
+FROM node:current-alpine
 COPY package*.json *.config.js ./
 COPY static static/
-RUN npm install -g npm@latest && npm install && npm run build
+RUN npm install && npm run build
 
 FROM python:3.7.7-alpine3.11
 WORKDIR /levensfilosofie
