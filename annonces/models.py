@@ -46,6 +46,7 @@ class Talk(models.Model):
     speaker = models.CharField(max_length=200)
     abstract = models.TextField()
     personalia = models.TextField()
+    video_id = models.CharField(max_length=20, null=True)
 
     def __str__(self):
         return f"{self.speaker}: {self.title}"
