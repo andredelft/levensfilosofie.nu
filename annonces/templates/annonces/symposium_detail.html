@@ -23,7 +23,7 @@
 {% endif %}
 {% for talk in talks %}
   <div class="talk__speaker">{{ talk.speaker }}</div>
-  <h3 class="talk__title">{{ talk.title }}</h3>
+  <h3 class="talk__title">{{ talk.title | render_markdown_line }}</h3>
   {% if talk.video_id %}
     {% include 'annonces/_yt_embed.html' with video_id=talk.video_id only %}
   {% endif %}
