@@ -32,4 +32,8 @@
     {{ talk.personalia | render_markdown }}
   </div>
 {% endfor %}
+{% for vid in symposium.include_vids %}
+  <h3>{{ vid.title | render_markdown_line }}</h3>
+  {% include 'annonces/_yt_embed.html' with video_id=vid.id only %}
+{% endfor %}
 {% endblock %}

@@ -12,6 +12,7 @@ class Symposium(models.Model):
     zoom_instructions = models.BooleanField(default=False)
     meeting_ID = models.CharField(max_length=15, null=True)
     password = models.CharField(max_length=15, null=True)
+    include_vids = models.JSONField(default=list)
     slug = models.SlugField(null=False, unique=True)
 
     def time(self):
