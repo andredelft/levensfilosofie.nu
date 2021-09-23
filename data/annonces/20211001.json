@@ -1,0 +1,55 @@
+{
+  "title": "Politiek en innerlijkheid",
+  "date": [2021, 10, 1],
+  "time_from": "13:15",
+  "time_to": "16:30",
+  "place": " Universiteit Leiden, P.J.Vethgebouw, zaal 1.0.1, entree Hortuszijde",
+  "introduction": "In het twintigjarig bestaan van het colloquium kwam wonderlijk genoeg het thema politiek nog slechts zijdelings aan de orde, alsof de scheiding tussen kerk en staat ook de scheiding tussen politiek en innerlijkheid zou moeten betekenen. Politiek is een strijd van belangen. Maar dient zij niet ook en allereerst een gewetensvol afwegen van belangen te zijn? Voor deze middag hebben wij drie sprekers bereid gevonden dit thema van politiek en innerlijkheid voor ons te verkennen. Elk van hen zal dat vanuit een eigen invalshoek en deskundigheid doen.",
+  "talks": [
+    {
+      "speaker": "Welmoed Vlieger",
+      "title": "Innerlijkheid en de politiek-maatschappelijke implicaties",
+      "abstract": "De laatste decennia staan de liberale kernwaarden van de democratische rechtsstaat in toenemende mate onder druk. Deze ontwikkeling noopt tot reflectie op de functioneringsvoorwaarden van de moderne democratie. Actuele interpretaties leggen doorgaans vooral de nadruk op rechten en procedures, maar veronderstelt het functioneren van de democratische rechtsstaat niet ook een bepaalde notie van innerlijkheid? Aan de hand van een beknopte historisch-systematische analyse van de verhouding tussen innerlijkheid en politiek zal Welmoed Vlieger proberen aan te tonen dat dit inderdaad zo is en dat dit impliceert dat mensen toegang hebben tot niet-politieke bronnen van waarheid en moraliteit. Zij gaat daarnaast te rade bij een aantal denkers uit de westerse traditie – waaronder Meister Eckhart (ca. 1260 - 1328) en Søren Kierkegaard (1813 – 1855) - die de verhouding tussen innerlijkheid en de uitwendige wereld c.q. politieke orde grondig hebben doorleefd en doordacht.",
+      "personalia": "Welmoed Vlieger (1976) studeerde wetenschap van Godsdienst en Levensbeschouwing en vervolgens Wijsbegeerte aan de UvA. Zij is columnist bij dagblad Trouw en spreker/docent bij Comenius leergangen. Zij werkte mee aan het boek _Een nieuw sociaal contract_ (2021) van Tweede Kamerlid Pieter Omtzigt."
+    },
+    {
+      "speaker": "Robert van Putten",
+      "title": "De uiterlijkheid voorbij: van maakbaarheid naar reflexieve bestuurskunst",
+      "abstract": "Waarom lijkt innerlijkheid soms zo ver te zoeken in de politiek? Een belangrijke verklaring daarvoor ligt in het alom aanwezige maakbaarheidsdenken. Daarin is een sterke focus op uiterlijkheid aanwezig, op datgene wat zichtbaar, grijpbaar en onmiddellijk voorhanden is. Via een begripsanalyse van maakbaarheid zal Robert van Putten diverse elementen onderscheiden die uitholling van innerlijkheid bevorderen. Vervolgens zal hij nagaan hoe nieuwe ruimte voor innerlijkheid in het politieke handelen kan worden gecreëerd. Dat vergt dat we ons op andere wijze tot de maakbaarheid gaan verhouden. Drie bouwstenen zal hij aanreiken: een ethos van maathouden, een wereldbeeld dat de dynamiek van sociale praktijken respecteert en de ambachtsman als sjabloon voor beleidsinterventie.",
+      "personalia": "Robert van Putten (1987) studeerde filosofie en bestuurskunde en promoveerde in 2020 (_cum laude_) aan de Vrije Universiteit Amsterdam op het proefschrift _De ban van beheersing: naar een reflexieve bestuurskunst_ (verschenen bij uitgeverij Boom Den Haag). Hij is werkzaam aan het Wetenschappelijk Instituut van de Christen Unie en de Christelijke Hogeschool Ede."
+    },
+    {
+      "speaker": "Hans Schilderman",
+      "title": "Zelf, leefwereld en systeem",
+      "abstract": "Het lijkt wel of we twee haast onverenigbare taken hebben in ons postmoderne leven, namelijk ons eigen innerlijk te leren ontdekken en ons samenzijn in goed overleg en bestuur af te stemmen. Maar ook lijkt het wel of deze bestemmingen zich steeds meer tot problemen hebben ontwikkeld, met een incompatibiliteit van beide taken tot gevolg. Twee lijnen van denken die deze problemen verkennen zal Hans Schilderman toelichten: een communautaire lijn die zich rekenschap geeft van toenemende individualisering, en een kritische lijn waarin toenemende controle op onze leefwereld centraal staat. Hij zal dat toelichten aan de hand van twee denkers, namelijk respectievelijk Charles Taylor en Jürgen Habermas.",
+      "personalia": "Hans Schilderman is hoogleraar religie en zorg aan de Radboud Universiteit en aldaar hoofd van de afdeling empirische en praktische religiewetenschap aan de Faculteit der Filosofie, Theologie en Religiewetenschap. Zijn aandachtsvelden in onderwijs en onderzoek zijn geestelijke verzorging, ritualiteit, zingeving en normativiteit. (_Religion as a Profession_. Leiden/Brill 2005; _Discourse in Ritual Studies_. Leiden/Brill 2007)."
+    }
+  ],
+  "program": [
+    {
+      "time_from": "13:15",
+      "time_to": "14:00",
+      "name": "Welmoed Vlieger – _Innerlijkheid en de politiek-maatschappelijke complicaties_"
+    },
+    {
+      "time_from": "14:00",
+      "time_to": "14:45",
+      "name": "Robert van Putten – _De uiterlijkheid voorbij: van maakbaarheid naar reflexieve bestuurskunst_"
+    },
+    {
+      "time_from": "14:45",
+      "time_to": "15:15",
+      "name": "Pauze"
+    },
+    {
+      "time_from": "15:15",
+      "time_to": "16:00",
+      "name": "Hans Schilderman – _Zelf, leefwereld en systeem_"
+    },
+    {
+      "time_from": "16:00",
+      "time_to": "16:30",
+      "name": "Plenaire gedachtewisseling"
+    }
+  ]
+}
