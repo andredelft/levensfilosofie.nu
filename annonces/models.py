@@ -4,14 +4,14 @@ from django.template.defaultfilters import slugify
 
 class Symposium(models.Model):
     title = models.CharField(max_length=300)
-    introduction = models.TextField(null=True)
+    introduction = models.TextField(null=True, blank=True)
     date = models.DateField(unique=True)
-    time_from = models.TimeField(null=True)
-    time_to = models.TimeField(null=True)
-    place = models.CharField(max_length=200, null=True)
+    time_from = models.TimeField(null=True, blank=True)
+    time_to = models.TimeField(null=True, blank=True)
+    place = models.CharField(max_length=200, null=True, blank=True)
     zoom_instructions = models.BooleanField(default=False)
-    meeting_ID = models.CharField(max_length=15, null=True)
-    password = models.CharField(max_length=15, null=True)
+    meeting_ID = models.CharField(max_length=15, null=True, blank=True)
+    password = models.CharField(max_length=15, null=True, blank=True)
     include_vids = models.JSONField(default=list)
     slug = models.SlugField(null=False, unique=True)
 
@@ -22,7 +22,7 @@ class Symposium(models.Model):
             return ''
 
     def speakers(self):
-        return self.talk_set.order_by('number').values_list('speaker', flat=True)
+        return self.talk_set.order_by('pk').values_list('speaker', flat=True)
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -38,34 +38,25 @@ class Symposium(models.Model):
             models.Index(fields=['slug']),
             models.Index(fields=['-date']),
         ]
+        verbose_name_plural = 'Symposia'
 
 
 class Talk(models.Model):
-    number = models.IntegerField()
     title = models.CharField(max_length=300)
     symposium = models.ForeignKey(Symposium, on_delete=models.CASCADE)
     speaker = models.CharField(max_length=200)
     abstract = models.TextField()
     personalia = models.TextField()
-    video_id = models.CharField(max_length=20, null=True)
+    video_id = models.CharField(max_length=20, null=True, blank=True)
 
     def __str__(self):
         return f"{self.speaker}: {self.title}"
 
-    class Meta:
-        constraints = [
-            models.UniqueConstraint(fields=['number', 'symposium'], name='unique_talk_ordering')
-        ]
-        indexes = [
-            models.Index(fields=['number', 'symposium'])
-        ]
-
 
 class ProgramItem(models.Model):
-    number = models.IntegerField()
     symposium = models.ForeignKey(Symposium, on_delete=models.CASCADE)
     time_from = models.TimeField()
-    time_to = models.TimeField(null=True)
+    time_to = models.TimeField(null=True, blank=True)
     name = models.CharField(max_length=200)
 
     def time(self):
@@ -76,14 +67,6 @@ class ProgramItem(models.Model):
 
     def __str__(self):
         return f"{self.time}: {self.name}"
-
-    class Meta:
-        constraints = [
-            models.UniqueConstraint(fields=['number', 'symposium'], name='unique_program_ordering')
-        ]
-        indexes = [
-            models.Index(fields=['number', 'symposium'])
-        ]
 
 
 class AdditionalInfo(models.Model):

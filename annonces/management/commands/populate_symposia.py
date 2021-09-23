@@ -8,6 +8,7 @@ from annonces.models import Symposium, AdditionalInfo
 
 DATA_DIR = os.path.join('data', 'annonces')
 
+
 class Command(BaseCommand):
 
     def handle(self, *args, **options):

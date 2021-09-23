@@ -1,11 +1,12 @@
 from django.urls import include, path
-from django.views.generic import RedirectView
 from django.conf import settings
+from django.contrib import admin
 
 from levensfilosofie import views
 
 urlpatterns = [
     path('', views.home, name='home'),
+    path('admin/', admin.site.urls),
     path('annonces/', include('annonces.urls')),
     path('leden/', include('leden.urls'))
 ]
