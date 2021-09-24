@@ -10,25 +10,24 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
-import os
+from pathlib import Path
 import django_heroku
+from decouple import config, UndefinedValueError
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-DEBUG = int(os.environ.get('DEBUG', 1))
+DEBUG = config('DEBUG', default=True, cast=bool)
 
 try:
-    SECRET_KEY = os.environ['SECRET_KEY']
-except KeyError:
-    if DEBUG:
-        SECRET_KEY = '---some---lengthy---dev---key---'
-    else:
+    SECRET_KEY = config('SECRET_KEY')
+except UndefinedValueError:
+    if not DEBUG:
         raise RuntimeError("Missing SECRET_KEY environment variable")
+    else:
+        SECRET_KEY = "----secret-dev-key----"
 
 ALLOWED_HOSTS = ['levensfilosofie.nu', 'www.levensfilosofie.nu', 'localhost']
-if os.environ.get('ALLOWED_HOSTS'):
-    ALLOWED_HOSTS += os.environ.get('ALLOWED_HOSTS').split(';')
 
 SESSION_COOKIE_SECURE = True
 
@@ -46,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'compressor'
 ]
 
 MIDDLEWARE = [
@@ -59,7 +59,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-DEBUG_TOOLBAR = DEBUG and os.environ.get('DEBUG_TOOLBAR', 0)
+DEBUG_TOOLBAR = DEBUG and config('DEBUG_TOOLBAR', default=False, cast=bool)
 
 if DEBUG_TOOLBAR:
     INSTALLED_APPS.append('debug_toolbar')
@@ -74,7 +74,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'levensfilosofie', 'templates'),
+            BASE_DIR / 'levensfilosofie' / 'templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -97,7 +97,7 @@ WSGI_APPLICATION = 'levensfilosofie.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -141,7 +141,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    BASE_DIR / 'static',
 )
 
 # List of finder classes that know how to find static files in
