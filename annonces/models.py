@@ -3,6 +3,9 @@ from django.template.defaultfilters import slugify
 
 
 class Symposium(models.Model):
+
+    SLUG_LENGTH = 200
+
     title = models.CharField(max_length=300)
     introduction = models.TextField(null=True, blank=True)
     date = models.DateField(unique=True)
@@ -13,14 +16,16 @@ class Symposium(models.Model):
     meeting_ID = models.CharField(max_length=15, null=True, blank=True)
     password = models.CharField(max_length=15, null=True, blank=True)
     include_vids = models.JSONField(default=list)
-    slug = models.SlugField(null=False, unique=True)
+    slug = models.SlugField(max_length=SLUG_LENGTH, null=False, unique=True)
 
+    @property
     def time(self):
         if self.time_from and self.time_to:
             return f"{self.time_from.strftime('%-H:%M')}–{self.time_to.strftime('%-H:%M')} uur"
         else:
             return ''
 
+    @property
     def speakers(self):
         return self.talk_set.order_by('pk').values_list('speaker', flat=True)
 
@@ -28,16 +33,18 @@ class Symposium(models.Model):
         if not self.slug:
             main_title = self.title.split(':')[0]
             self.slug = f"{self.date.strftime('%Y-%m-%d')}-{slugify(main_title)}"
+            self.slug = self.slug[:self.SLUG_LENGTH]
         return super().save(*args, **kwargs)
 
     def __str__(self):
-        return self.title
+        return f"{self.date.strftime('%d-%m-%Y')}: {self.title}"
 
     class Meta:
         indexes = [
             models.Index(fields=['slug']),
             models.Index(fields=['-date']),
         ]
+        ordering = ['-date']
         verbose_name_plural = 'Symposia'
 
 
@@ -59,6 +66,7 @@ class ProgramItem(models.Model):
     time_to = models.TimeField(null=True, blank=True)
     name = models.CharField(max_length=200)
 
+    @property
     def time(self):
         if self.time_to:
             return f"{self.time_from.strftime('%-H:%M')}–{self.time_to.strftime('%-H:%M')}"

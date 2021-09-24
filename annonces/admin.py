@@ -32,4 +32,4 @@ class SymposiumAdmin(admin.ModelAdmin):
         ('time_from', 'time_to'),
         'place'
     )
-    inlines = [TalkAdmin, ProgramItemAdmin]
+    inlines = [ProgramItemAdmin, TalkAdmin]
