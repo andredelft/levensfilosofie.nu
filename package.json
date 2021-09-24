@@ -4,7 +4,7 @@
   "description": "https://levensfilosofie.nu",
   "scripts": {
     "favicon": "real-favicon generate static/build/favicon/description.json static/build/favicon/data.json static/build/favicon",
-    "sass": "sass static/src/scss/index.scss static/build/css/main.css",
+    "sass": "sass static/scss/index.scss static/css/main.css",
     "build": "npm run sass"
   },
   "repository": {
