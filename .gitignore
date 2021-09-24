@@ -1,7 +1,3 @@
-__pycache__/
-static/dist/
-static/build/css
+static/css
+staticfiles
 *.sqlite3
-venv/
-.env
-node_modules/

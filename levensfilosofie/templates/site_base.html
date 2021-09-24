@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  {% load static %}
+  {% load static compress %}
   <head>
     <meta charset="utf-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-    
+
     <title>{% block title %}Colloquium Levensfilosofie{% endblock %}</title>
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ request.scheme }}://{{ request.get_host }}{{ request.path }}">
     <meta property="og:title" content="{% block og_title %}Colloquium Levensfilosofie{% endblock og_title %}">
     <meta name="description" property="og:description" content="{% block og_description %}Het Colloquium Levensfilosofie organiseert extra-curriculaire minisymposia over verschillende filosofisch en maatschappelijk relevante thema’s.{% endblock %}">
-    
+
     {% with 'favicon/og_image.png' as image_name %}
     <meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}{% static image_name %}">
     <meta property="og:image:url"  content="{{ request.scheme }}://{{ request.get_host }}{% static image_name %}">
     <meta property="twitter:image" content="{{ request.scheme }}://{{ request.get_host }}{% static image_name %}">
     {% endwith %}
 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    {% compress css %}
+    <link rel="stylesheet" type="text/x-scss" href="{% static 'scss/index.scss' %}">
+    {% endcompress %}
+
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
