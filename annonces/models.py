@@ -1,14 +1,14 @@
 from django.db import models
 from django.template.defaultfilters import slugify
 
-from .fields import CleanHTMLField
+from .fields import CleanHTMLField, CleanHTMLLineField
 
 
 class Symposium(models.Model):
 
     SLUG_LENGTH = 200
 
-    title = models.CharField('Titel', max_length=300)
+    title = CleanHTMLLineField('Titel')
     introduction = CleanHTMLField('Introductie', null=True, blank=True)
     date = models.DateField('Datum', unique=True)
     time_from = models.TimeField('Begintijd', null=True, blank=True)
@@ -52,7 +52,7 @@ class Symposium(models.Model):
 
 
 class Talk(models.Model):
-    title = models.CharField('Titel', max_length=300)
+    title = CleanHTMLLineField('Titel')
     symposium = models.ForeignKey(Symposium, on_delete=models.CASCADE)
     speaker = models.CharField('Spreker', max_length=200)
     abstract = CleanHTMLField('Abstract')
@@ -71,7 +71,7 @@ class ProgramItem(models.Model):
     symposium = models.ForeignKey(Symposium, on_delete=models.CASCADE)
     time_from = models.TimeField('Begintijd')
     time_to = models.TimeField('Eindtijd', null=True, blank=True)
-    name = models.CharField('Naam', max_length=200)
+    name = CleanHTMLLineField('Naam')
 
     @property
     def time(self):
@@ -84,8 +84,8 @@ class ProgramItem(models.Model):
         return f"{self.time}: {self.name}"
 
     class Meta:
-        verbose_name = 'Programma item'
-        verbose_name_plural = 'Programma items'
+        verbose_name = 'Programma-item'
+        verbose_name_plural = 'Programma-items'
 
 
 class AdditionalInfo(models.Model):

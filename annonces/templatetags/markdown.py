@@ -24,5 +24,5 @@ def render_markdown_line(content):
         else:
             content = content.split('\n\n')[0]
     md = render_markdown(content)
-    md = re.sub('^\s*<p>\s*|\s*</p>\s*$', '', md)
+    md = re.sub(r'^\s*<p>\s*|\s*</p>\s*$', '', md)
     return SafeString(md)
