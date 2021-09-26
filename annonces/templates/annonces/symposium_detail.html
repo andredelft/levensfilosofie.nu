@@ -1,5 +1,5 @@
 {% extends 'site_base.html' %}
-{% load markdown additional_info %}
+{% load additional_info %}
 
 {% block title %}{{ symposium.title }} | Colloquium Levensfilosofie{% endblock %}
 
@@ -14,29 +14,29 @@
     {% render_info 'zoom_instructions' %}
   </div>
 {% endif %}
-{{ symposium.introduction | render_markdown }}
+{{ symposium.introduction }}
 {% if program %}
   <table class="program">
     {% for program_item in program %}
     <tr>
-      <td>{{ program_item.time }}</td><td>{{ program_item.name | render_markdown_line }}</td>
+      <td>{{ program_item.time }}</td><td>{{ program_item.name }}</td>
     </tr>
     {% endfor %}
   </table>
 {% endif %}
 {% for talk in talks %}
   <div class="talk__speaker">{{ talk.speaker }}</div>
-  <h3 class="talk__title">{{ talk.title | render_markdown_line }}</h3>
+  <h3 class="talk__title">{{ talk.title }}</h3>
   {% if talk.video_id %}
     {% include 'annonces/_yt_embed.html' with video_id=talk.video_id only %}
   {% endif %}
-  {{ talk.abstract | render_markdown }}
+  {{ talk.abstract }}
   <div class="personalia">
-    {{ talk.personalia | render_markdown }}
+    {{ talk.personalia }}
   </div>
 {% endfor %}
 {% for vid in symposium.include_vids %}
-  <h3>{{ vid.title | render_markdown_line }}</h3>
+  <h3>{{ vid.title }}</h3>
   {% include 'annonces/_yt_embed.html' with video_id=vid.id only %}
 {% endfor %}
 {% endblock %}

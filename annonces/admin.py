@@ -1,9 +1,11 @@
 from django.contrib import admin
 
+from django_summernote.admin import SummernoteModelAdmin, SummernoteInlineModelAdmin
+
 from .models import Symposium, Talk, ProgramItem
 
 
-class TalkAdmin(admin.StackedInline):
+class TalkAdmin(SummernoteInlineModelAdmin, admin.StackedInline):
     model = Talk
     fields = (
         'speaker',
@@ -24,7 +26,8 @@ class ProgramItemAdmin(admin.TabularInline):
 
 
 @admin.register(Symposium)
-class SymposiumAdmin(admin.ModelAdmin):
+class SymposiumAdmin(SummernoteModelAdmin):
+    summernote_fields = '__all__'
     fields = (
         'title',
         'introduction',

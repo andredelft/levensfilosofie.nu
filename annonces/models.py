@@ -1,20 +1,22 @@
 from django.db import models
 from django.template.defaultfilters import slugify
 
+from .fields import CleanHTMLField
+
 
 class Symposium(models.Model):
 
     SLUG_LENGTH = 200
 
-    title = models.CharField(max_length=300)
-    introduction = models.TextField(null=True, blank=True)
-    date = models.DateField(unique=True)
-    time_from = models.TimeField(null=True, blank=True)
-    time_to = models.TimeField(null=True, blank=True)
-    place = models.CharField(max_length=200, null=True, blank=True)
-    zoom_instructions = models.BooleanField(default=False)
-    meeting_ID = models.CharField(max_length=15, null=True, blank=True)
-    password = models.CharField(max_length=15, null=True, blank=True)
+    title = models.CharField('Titel', max_length=300)
+    introduction = CleanHTMLField('Introductie', null=True, blank=True)
+    date = models.DateField('Datum', unique=True)
+    time_from = models.TimeField('Begintijd', null=True, blank=True)
+    time_to = models.TimeField('Eindtijd', null=True, blank=True)
+    place = models.CharField('Locatie', max_length=200, null=True, blank=True)
+    zoom_instructions = models.BooleanField('Zoom instructies', default=False)
+    meeting_ID = models.CharField('Meeting ID', max_length=15, null=True, blank=True)
+    password = models.CharField('Wachtwoord', max_length=15, null=True, blank=True)
     include_vids = models.JSONField(default=list)
     slug = models.SlugField(max_length=SLUG_LENGTH, null=False, unique=True)
 
@@ -45,26 +47,31 @@ class Symposium(models.Model):
             models.Index(fields=['-date']),
         ]
         ordering = ['-date']
+        verbose_name = 'Symposium'
         verbose_name_plural = 'Symposia'
 
 
 class Talk(models.Model):
-    title = models.CharField(max_length=300)
+    title = models.CharField('Titel', max_length=300)
     symposium = models.ForeignKey(Symposium, on_delete=models.CASCADE)
-    speaker = models.CharField(max_length=200)
-    abstract = models.TextField()
-    personalia = models.TextField()
-    video_id = models.CharField(max_length=20, null=True, blank=True)
+    speaker = models.CharField('Spreker', max_length=200)
+    abstract = CleanHTMLField('Abstract')
+    personalia = CleanHTMLField('Personalia')
+    video_id = models.CharField('Video ID', max_length=20, null=True, blank=True)
 
     def __str__(self):
         return f"{self.speaker}: {self.title}"
 
+    class Meta:
+        verbose_name = 'Lezing'
+        verbose_name_plural = 'Lezingen'
+
 
 class ProgramItem(models.Model):
     symposium = models.ForeignKey(Symposium, on_delete=models.CASCADE)
-    time_from = models.TimeField()
-    time_to = models.TimeField(null=True, blank=True)
-    name = models.CharField(max_length=200)
+    time_from = models.TimeField('Begintijd')
+    time_to = models.TimeField('Eindtijd', null=True, blank=True)
+    name = models.CharField('Naam', max_length=200)
 
     @property
     def time(self):
@@ -76,7 +83,11 @@ class ProgramItem(models.Model):
     def __str__(self):
         return f"{self.time}: {self.name}"
 
+    class Meta:
+        verbose_name = 'Programma item'
+        verbose_name_plural = 'Programma items'
+
 
 class AdditionalInfo(models.Model):
     name = models.CharField(max_length=200, unique=True)
-    content = models.TextField()
+    content = CleanHTMLField()

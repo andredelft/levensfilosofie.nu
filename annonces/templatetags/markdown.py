@@ -5,14 +5,15 @@ from django.conf import settings
 
 import re
 from markdown import markdown
-from mdx_urlize import UrlizeExtension
 
 register = template.Library()
+
 
 @register.filter(is_safe=True)
 @stringfilter
 def render_markdown(content):
-    return SafeString(markdown(content, extensions=[UrlizeExtension(), 'smarty']))
+    return SafeString(markdown(content, extensions=['mdx_linkify', 'smarty']))
+
 
 @register.filter(is_safe=True)
 @stringfilter
