@@ -1,0 +1,835 @@
+[
+{
+  "model": "leden.member",
+  "pk": 8,
+  "fields": {
+    "prefix": "Prof. em. dr.",
+    "first_name": "Hans",
+    "preposition": null,
+    "last_name": "Gerding",
+    "suffix": null,
+    "personalia": "<p>Prof. em. dr. Hans Gerding was hoogleraar ‘Metafysica in de geest van de theosofie’ aan het Instituut voor Wijsbegeerte van de Universiteit Leiden, en directeur van het Parapsychologisch Instituut te Utrecht, waar hij thans nog aan verbonden is. In zijn werkveld staan buitengewone ervaringen centraal. Die ervaringen kunnen gezien worden als het overschrijden van grenzen: ruimte en tijd, leven en dood, lichaam en ego. Die grenservaringen zijn niet alleen verbonden met zingeving en creatieve processen, maar spelen ook een rol in de psychopathologie. Hij bestudeert grenservaringen vanuit de filosofie en doet er wetenschappelijk onderzoek naar.</p>",
+    "picture": "image/upload/v1632747044/zkt3t5ncwbutpoqhv4e6.jpg"
+  }
+},
+{
+  "model": "leden.member",
+  "pk": 9,
+  "fields": {
+    "prefix": null,
+    "first_name": "André",
+    "preposition": "van",
+    "last_name": "Delft",
+    "suffix": "MA, MSc",
+    "personalia": "<p>André van Delft is in 2019 afgestudeerd in de filosofie bij prof. dr. Renée van Riessen aan de Universiteit Leiden, met een scriptie getiteld <a href=\"https://hdl.handle.net/1887/74907\" rel=\"nofollow\"><em>Stellen, schikken, meten en dichten: een studie over maat en techniek aan de hand van Heidegger</em></a>. Tevens heeft hij aan de Universiteit Leiden in 2020 zijn studie theoretische natuurkunde afgerond met een afstudeerproject over <em>multi-agent reinforcement learning</em>. Tegenwoordig is André deeltijds werkzaam als freelance web &amp; Python developer en verder schrijft hij en houdt hij zich bezig met de losse eindjes die zijn filosofiescriptie achter heeft gelaten.</p>",
+    "picture": "image/upload/v1632739326/x4kod6aomxvr2oe4kduj.jpg"
+  }
+},
+{
+  "model": "leden.member",
+  "pk": 10,
+  "fields": {
+    "prefix": "Dr.",
+    "first_name": "Gerard",
+    "preposition": null,
+    "last_name": "Visser",
+    "suffix": null,
+    "personalia": "<p>Dr. Gerard Visser was tot 2015 hoofddocent cultuurfilosofie aan het Instituut voor Wijsbegeerte van de Universiteit Leiden. In zijn wijsgerig werk onderzoekt hij geschiedfilosofisch en fenomenologisch de radicale herbezinning die zich vanaf het eind van de 19e eeuw voltrekt in filosofie, kunst en religie, in het bijzonder de vraag naar de voorwaarden van een toekomstige spiritualiteit. Zijn belangrijkste project is een trilogie over de grondhouding van gelatenheid, waarvan twee delen zijn verschenen: <em>Gelatenheid. Gemoed en hart bij Meister Eckhart</em> (2008; 2e oplage 2018) en <em>Gelatenheid in de kunst. Nijhoff, Braque, Kawabata. Van gesloten naar open vormen</em> (2018). Zie voor overige publicaties zijn website: <a href=\"http://www.gtmvisser.nl\" rel=\"nofollow\">www.gtmvisser.nl</a>.</p>",
+    "picture": "image/upload/v1632744355/wiy9skkf2s2k3v90gqfz.jpg"
+  }
+},
+{
+  "model": "leden.member",
+  "pk": 11,
+  "fields": {
+    "prefix": "Drs.",
+    "first_name": "Barbara",
+    "preposition": null,
+    "last_name": "Zwaan",
+    "suffix": "MA",
+    "personalia": "<p>Barbara Zwaan studeerde Frans en theologie aan de Universiteit Leiden. Ze is werkzaam als geestelijk verzorger en geeft les aan de Utrechtse Academie voor Geesteswetenschappen. Ze is redacteur van <em>Herademing. Tijdschrift voor spiritualiteit en mystiek</em> en columnist bij het <em>Tijdschrift voor Geestelijk Leven</em>. In 2017 publiceerde ze <em>Een prachtige dans. De therapeutische afstemming van afstand en nabijheid in het werk van Carl Rogers, Martin Buber en Henri Nouwen</em> (KSGV, Tilburg). Thema’s waarover ze schrijft zijn o.a.: het goede leven en het lijden, kracht en kwetsbaarheid, afstand en nabijheid en aandachtig leven. Dat laatste m.n. in het kader van het werk van filosofe en mystica Simone Weil.</p>",
+    "picture": "image/upload/v1632744446/iiuejrg4nvlzwocrnrvb.png"
+  }
+},
+{
+  "model": "leden.member",
+  "pk": 12,
+  "fields": {
+    "prefix": null,
+    "first_name": "Kirsten",
+    "preposition": null,
+    "last_name": "Kalkman",
+    "suffix": "MA",
+    "personalia": "<p>Kirsten Kalkman is ondernemer op het gebied van zingeving. In 2015 studeerde ze aan de Universiteit van Amsterdam af in de Wijsbegeerte met een <a href=\"https://scripties.uba.uva.nl/scriptie/575820\" rel=\"nofollow\">scriptie over de verhouding tussen filosofie en esoterie</a> bij dr. Victor Kal. Momenteel coacht ze mensen met levens- en loopbaanvragen en is ze pionier bij <a href=\"https://gist.amsterdam\" rel=\"nofollow\">Gist</a>, een kersverse plek voor bier, brood en christelijke spiritualiteit. In haar werk laat ze zich inspireren door Plato, Søren Kierkegaard en Ignatius van Loyola en oefent ze zich in dwaasbegeerte: lijf zijn, luisteren en leven vanuit overgave.</p>",
+    "picture": "image/upload/v1632744601/z95co05e6dawesaukmbz.jpg"
+  }
+},
+{
+  "model": "leden.member",
+  "pk": 13,
+  "fields": {
+    "prefix": "Prof. em. dr.",
+    "first_name": "Renée",
+    "preposition": "van",
+    "last_name": "Riessen",
+    "suffix": null,
+    "personalia": "<p>Prof. em. dr. Renée van Riessen was tot 2020 bijzonder hoogleraar Christelijke filosofie aan het Instituut Wijsbegeerte van de Universiteit Leiden; en eerder was zij (tot 2019) verbonden aan de Protestantse Theologische Universiteit (PThU) als hoofddocent godsdienstfilosofie. In haar wijsgerig onderzoek houdt ze zich bezig met het denken over transcendentie en met de problematiek van ziel en innerlijkheid – in gesprek met auteurs als Augustinus, Kierkegaard en Levinas. Van haar hand verschenen onder andere: <em>De ziel opnieuw, Over innerlijkheid, inspiratie en onderwijs</em> (2013, 4e oplage 2015 ) en <em>Van zichzelf bevrijd. Levinas over transcendentie &amp; nabijheid</em> (2019). Naast haar filosofisch werk schrijft Van Riessen poëzie; de meest recente bundeling verscheen in 2008 bij Prometheus: <em>Krekels in de keuken</em> (2008).</p>",
+    "picture": "image/upload/v1632747030/mpbqqgf2ozuj8oct89ug.jpg"
+  }
+},
+{
+  "model": "leden.member",
+  "pk": 14,
+  "fields": {
+    "prefix": null,
+    "first_name": "Ivo",
+    "preposition": null,
+    "last_name": "Bles",
+    "suffix": "MA",
+    "personalia": "<p>Ivo Bles studeerde Wijsbegeerte en Pedagogische Wetenschappen aan de universiteit van Leiden, en hoofdvak cello aan het conservatorium van Den Haag. In 2017 verhuisde hij naar de Duitse stad Tübingen, waar hij drie jaar later zijn master <em>Philosophie</em> afrondde. Daarbij concentreerde hij zich op de twintigste-eeuwse Duitse fenomenologie, met name op het werk van Martin Heidegger. In zijn masterscriptie (getiteld <em>Der Zeitbegriff Martin Heideggers im Umfeld von »Sein und Zeit«</em>) onderzocht hij het tijdsfenomeen aan de hand van Heideggers vroege Aristoteles-interpretatie en de daaruit ontwikkelde ‘fenomenologie van de kloktijd’.</p>",
+    "picture": "image/upload/v1632747056/zvrpd0ghbty2gsq16nbo.jpg"
+  }
+},
+{
+  "model": "annonces.symposium",
+  "pk": 43,
+  "fields": {
+    "title": "Aandacht en onthechting als bronnen van het goede",
+    "introduction": "<p>In dit minisymposium zullen we stilstaan bij het belang van sensitiviteit en aandacht als tegenwicht tegen een onttoverde cultuur, waarin de werkelijkheid vooral gezien wordt als  beheersbaar met behulp van rekenkundige modellen en technische middelen. In de twee lezingen van deze middag worden de houdingen van sensitiviteit en aandacht onderzocht als mogelijkheden om tot een andere ervaring van de werkelijkheid te komen, waarin meer ruimte is voor waarden en voor het geestelijke aspect. Rob Compaijen onderzoekt hoe aandacht, als onthechte betrokkenheid, ons ontvankelijk kan maken voor de werkelijkheid van waarden. Barbara Zwaan gaat na wat Simone Weil verstaat onder echte aandacht en laat zien hoe deze houding in verband staat met het goede en het geestelijke leven.</p>",
+    "date": "2021-04-30",
+    "time_from": "13:30:00",
+    "time_to": "17:00:00",
+    "place": "Zoom",
+    "zoom_instructions": false,
+    "meeting_ID": null,
+    "password": null,
+    "include_vids": [],
+    "slug": "2021-04-30-aandacht-en-onthechting-als-bronnen-van-het-goede"
+  }
+},
+{
+  "model": "annonces.symposium",
+  "pk": 44,
+  "fields": {
+    "title": "Filosofie en ecologie: Nietzsche en Heidegger over onze omgang met de aarde",
+    "introduction": "<p>Het thema van dit mini-symposium in het kader van het Colloquium Levensfilosofie stond al vast voordat de coronacrisis uitbrak. Maar dat heeft de aanleiding ervoor, de klimaatcrisis, alleen maar dringender gemaakt. Beide crises zijn uitingen van een op drift geraakte wereld. Nietzsche en Heidegger, die wij met betrekking tot het thema filosofie en ecologie hadden uitgekozen, zijn niet toevallig ook denkers die de aard van dit op drift geraakt zijn diepgaand hebben gepeild.  Al in een vroege aantekening merkt Nietzsche op: &lsquo;Wij hebben er geen benul van, hoe hoog en diep de physis reikt.&rsquo; Krijgen wij niet inderdaad de rekening gepresenteerd voor deze onachtzaamheid jegens de natuur? In <em>Also sprach Zarathustra</em> luidt naderhand zijn oproep: &lsquo;Blijf de aarde trouw.&rsquo; Eind jaren veertig schrijft Heidegger: &lsquo;De berk gaat dat wat voor hem mogelijk is nooit te buiten. Het bijenvolk woont binnen zijn mogelijkheden. Pas de wil, die zich mobiel inricht in de techniek, sleurt de aarde processen binnen van afpeigering en verbruik en verandering in kunstmatigheid. De techniek dwingt de aarde boven de gegroeide kring van het voor haar mogelijke uit in de richting van dat wat niet meer het mogelijke en dus het onmogelijke is.&rsquo; Heidegger peilt nog een andere veronachtzaming dan Nietzsche, niet alleen die van de natuur, maar die van überhaupt het raadsel van het zijn. In twee lezingen zal de actualiteit van hun beider bezinning worden belicht.</p>",
+    "date": "2021-01-29",
+    "time_from": "13:30:00",
+    "time_to": "16:45:00",
+    "place": "Zoom",
+    "zoom_instructions": false,
+    "meeting_ID": null,
+    "password": null,
+    "include_vids": [],
+    "slug": "2021-01-29-filosofie-en-ecologie"
+  }
+},
+{
+  "model": "annonces.symposium",
+  "pk": 45,
+  "fields": {
+    "title": "Politiek en innerlijkheid",
+    "introduction": "<p>In het twintigjarig bestaan van het colloquium kwam wonderlijk genoeg het thema politiek nog slechts zijdelings aan de orde, alsof de scheiding tussen kerk en staat ook de scheiding tussen politiek en innerlijkheid zou moeten betekenen. Politiek is een strijd van belangen. Maar dient zij niet ook en allereerst een gewetensvol afwegen van belangen te zijn? Voor deze middag hebben wij drie sprekers bereid gevonden dit thema van politiek en innerlijkheid voor ons te verkennen. Elk van hen zal dat vanuit een eigen invalshoek en deskundigheid doen.</p>",
+    "date": "2021-10-01",
+    "time_from": "13:15:00",
+    "time_to": "16:30:00",
+    "place": "Universiteit Leiden, P.J.Vethgebouw, zaal 1.0.1, entree Hortuszijde",
+    "zoom_instructions": false,
+    "meeting_ID": null,
+    "password": null,
+    "include_vids": [],
+    "slug": "2021-10-01-politiek-en-innerlijkheid"
+  }
+},
+{
+  "model": "annonces.symposium",
+  "pk": 46,
+  "fields": {
+    "title": "Onderwijs en spirituele vorming",
+    "introduction": "<p>We leven in een tijd van toenemende versnelling en economisering. Komt hierdoor in het onderwijs niet de taak van vorming in het gedrang? Vragen genoemde tendensen niet om tegenwicht in de vorm van een verdiepte geestelijke of spirituele vorming? Met een viertal lezingen wijdt het colloquium Levensfilosofie aandacht aan deze vragen.</p>",
+    "date": "2019-02-01",
+    "time_from": "11:00:00",
+    "time_to": "17:00:00",
+    "place": "Universiteit Leiden, Lipsiusgebouw, Cleveringaplaats 1, zaal 0.19",
+    "zoom_instructions": false,
+    "meeting_ID": null,
+    "password": null,
+    "include_vids": [],
+    "slug": "2019-02-01-onderwijs-en-spirituele-vorming"
+  }
+},
+{
+  "model": "annonces.symposium",
+  "pk": 47,
+  "fields": {
+    "title": "Filosofie, Erotiek, Spiritualiteit",
+    "introduction": "<p>Thomas van Aquino ging er met Aristoteles van uit dat elk zijnde er naar streeft zich te verenigen met zijn goed. Bron van alle affecten zou daarmee de liefde zijn. De liefde die in de christelijke mystiek centraal staat wordt van oudsher begrepen als een transformatie van eros in agapè, van amor in caritas, van seksuele liefde in naastenliefde. Maar hoe staat het met de spiritualiteit van het erotische? Nog niet eerder kwam dit belangrijke thema in het colloquium Filosofie en spiritualiteit ter sprake. Ad Verbrugge en Ann van Sevenant hebben daar elk op eigen wijze grondig over nagedacht. We zijn verheugd hen bereid te hebben gevonden bij ons te komen spreken.</p>",
+    "date": "2016-04-08",
+    "time_from": "13:30:00",
+    "time_to": "16:30:00",
+    "place": "Lipsiusgebouw, Cleveringaplaats 1, Leiden",
+    "zoom_instructions": false,
+    "meeting_ID": null,
+    "password": null,
+    "include_vids": [],
+    "slug": "2016-04-08-filosofie-erotiek-spiritualiteit"
+  }
+},
+{
+  "model": "annonces.symposium",
+  "pk": 48,
+  "fields": {
+    "title": "Het mysterie van de taal: Walter Benjamin en Eugen Rosenstock-Huessy",
+    "introduction": "<p>De wijze waarop wij wat dan ook <em>ter sprake brengen</em> is zo wezenlijk, dat onze verhouding ertoe daarmee staat of valt. De zorg van de filosoof geldt echter niet alleen de verwoording, maar gaat ook uit naar het wezen van taal zelf. Of zou daar naar moeten uitgaan. Als een Nederlandse universiteit, zij het een technische, besluit de moedertaal prijs te geven, wijst dat op een uiterst beperkt instrumenteel begrip van taal. In dit mini-symposium wordt aandacht besteed aan twee denkers die zich vanuit de Joodse traditie tegen deze opvatting hebben verzet en zich op een nieuwe en oorspronkelijke wijze op het mysterie van de taal hebben bezonnen.   </p>",
+    "date": "2020-02-28",
+    "time_from": "13:30:00",
+    "time_to": "16:30:00",
+    "place": "Universiteit Leiden, P.J. Vethgebouw, zaal 1.0.1, entree Hortuszijde",
+    "zoom_instructions": false,
+    "meeting_ID": null,
+    "password": null,
+    "include_vids": [],
+    "slug": "2020-02-28-het-mysterie-van-de-taal"
+  }
+},
+{
+  "model": "annonces.symposium",
+  "pk": 49,
+  "fields": {
+    "title": "Indachtig de leegte",
+    "introduction": "<p>In dit minisymposium zal in de vorm van twee lezingen aandacht worden besteed aan de ervaring en het grondmotief van de leegte binnen het veld van de spiritualiteit zoals dit zich vanaf eind negentiende eeuw manifesteert in filosofie en kunst. Annewieke Vroom zal daarbij spreken over de moderne Japanse cultuur, Gerard Visser over de Europese.</p>",
+    "date": "2016-01-29",
+    "time_from": "13:30:00",
+    "time_to": "16:30:00",
+    "place": "Universiteit Leiden, Lipsiusgebouw, Cleveringaplaats 1, zaal 003",
+    "zoom_instructions": false,
+    "meeting_ID": null,
+    "password": null,
+    "include_vids": [],
+    "slug": "2016-01-29-indachtig-de-leegte"
+  }
+},
+{
+  "model": "annonces.symposium",
+  "pk": 50,
+  "fields": {
+    "title": "Boeddhisme en daoïsme",
+    "introduction": "<p>Recent verschenen er twee boeken over twee grote stromingen uit de Oost-Aziatische spiritualiteit, van de hand van twee Nederlandse filosofen en kenners: <em>Het Boeddhafenomeen. Naar een westers boeddhisme</em> (Leusden, ISVW Uitgevers, 2016) van Erik Hoogcarspel, en <em>Filosofie met de vlinderslag. De daoïstische levenskunst van Zhuangzi</em>  (Budel, Damon, 2016) van Woei-Lien Chong. Beide auteurs presenteren op originele wijze een spiritueel gedachtegoed en een leerweg, die ook ons westerlingen oriëntatie in het leven zouden kunnen bieden.  </p>",
+    "date": "2016-10-07",
+    "time_from": "13:30:00",
+    "time_to": "16:30:00",
+    "place": "",
+    "zoom_instructions": false,
+    "meeting_ID": null,
+    "password": null,
+    "include_vids": [],
+    "slug": "2016-10-07-boeddhisme-en-daoisme"
+  }
+},
+{
+  "model": "annonces.talk",
+  "pk": 97,
+  "fields": {
+    "title": "Aandacht als afstemming op waarden",
+    "symposium": 43,
+    "speaker": "Rob Compaijen",
+    "abstract": "<p>Mensen hebben het eigenaardige vermogen om de wereld vanuit verschillende soorten standpunten te benaderen. Doorgaans benaderen zij de wereld vanuit een heel betrokken standpunt. We zijn echter ook in staat om onszelf (tot op zekere hoogte) los te maken van onze betrokkenheid en de wereld vanuit een meer of minder onthecht standpunt te beschouwen.</p>\n<p>In het eerste deel van deze lezing ontwikkel ik de gedachte dat er een standpunt bestaat dat ik ‘onthechte betrokkenheid’ noem. Onthechte betrokkenheid is, zo zal ik betogen, een heel belangrijk standpunt voor de moraalfilosofie omdat het ons afstemt op waarden. Wanneer onze blik op de wereld in sterke mate onthecht is (zoals in, bijvoorbeeld, de natuurwetenschappen of in bepaalde gestalten van het existentialisme), verliezen we het zicht op waarden. Wanneer onze blik op de wereld echter heel betrokken is, dreigen waarden eveneens onzichtbaar te worden.</p>\n<p>In het tweede deel van de lezing betoog ik dat Iris Murdochs belangrijke en fascinerende notie ‘aandacht’ begrepen kan worden als een voorbeeld van een onthecht-betrokken standpunt. We zullen zien hoe Murdoch aandacht begrijpt, hoe belangrijk aandacht is in onze concrete levens en hoe we volgens haar aandacht kunnen cultiveren.</p>",
+    "personalia": "<p>Rob Compaijen is als postdoctoraal onderzoeker verbonden aan de Protestantse Theologische Universiteit. Voor zijn huidige onderzoek naar (de verhouding tussen) morele waarneming en morele reflectie ontving hij van NWO een Veni-beurs. In 2016 promoveerde hij aan de Universiteit Antwerpen op een proefschrift over Kierkegaard en de vraag naar de redelijkheid van levensveranderende keuzes. Hij publiceerde artikelen over onder andere Kierkegaard, deugdethiek, Murdoch, voorbeeldigheid en vertrouwen. Van zijn hand verscheen in 2018, bij Palgrave MacMillan, <em>Kierkegaard, MacIntyre, Williams, and the Internal Point of View</em>. Momenteel werkt hij aan een boek over afgunst.</p>",
+    "video_id": null
+  }
+},
+{
+  "model": "annonces.talk",
+  "pk": 98,
+  "fields": {
+    "title": "Simone Weil en de omvormende kracht van aandacht",
+    "symposium": 43,
+    "speaker": "Barbara Zwaan",
+    "abstract": "<p>Alles wat met echte aandacht gedaan wordt brengt het goede voort, aldus de Franse filosofe en mystica Simone Weil (1909-1943): ‘Iedere poging voegt een beetje goud toe aan een schat die niemand ter wereld u kan ontroven’. Voor wie soms gefrustreerd of ontmoedigd kan raken over ogenschijnlijk vruchteloze inspanningen om mens en ding met meer <em>‘attention’</em> tegemoet te treden, is dat hoopvol nieuws.</p>\n<p>Aan de hand van een in <em>Attente de Dieu (Wachten op God)</em> opgenomen beschouwing over goed onderwijs zullen we nagaan wat Simone Weil verstaat onder echte aandacht en hoe zij die in verband brengt met geestelijk leven. Geplaatst in het bredere kader van ook ander werk van Weil komen we zo tot een viertal bewegingen in het spirituele omvormingsproces dat door de ‘negatieve inspanning’ van de aandacht als grondhouding in gang gezet wordt.</p>",
+    "personalia": "<p>Barbara Zwaan studeerde Frans en theologie aan de Universiteit Leiden. Ze is werkzaam als geestelijk verzorger en geeft les aan de Utrechtse Academie voor Geesteswetenschappen. Ze is redacteur van <em>Herademing. Tijdschrift voor spiritualiteit en mystiek</em> en columnist bij het <em>Tijdschrift voor Geestelijk Leven</em>. In 2017 publiceerde ze <em>Een prachtige dans. De therapeutische afstemming van afstand en nabijheid in het werk van Carl Rogers, Martin Buber en Henri Nouwen</em> (KSGV, Tilburg). Thema’s waarover ze schrijft zijn o.a.: het goede leven en het lijden, kracht en kwetsbaarheid, afstand en nabijheid en aandachtig leven. Ze is lid van het Colloquium Levensfilosofie.</p>",
+    "video_id": null
+  }
+},
+{
+  "model": "annonces.talk",
+  "pk": 99,
+  "fields": {
+    "title": "&lsquo;Dichterlijk woont de mens op deze aarde&rsquo;",
+    "symposium": 44,
+    "speaker": "André van Delft",
+    "abstract": "<p>In zijn lezingreeks <em>Einblick in das was ist</em> uit 1949 brengt Heidegger de moderne techniek in verband met &lsquo;het haastige opheffen van alle afstanden&rsquo;. Wat voorheen tot een ver oord of ver verleden behoorde, wordt door de TV en de radio in de huiskamer opgevorderd om &lsquo;terstond ter plekke ter beschikking te staan&rsquo;. Dit opvorderen (<em>Herausfordern</em>) is volgens Heidegger de grondtrek van het modern technisch tijdperk waarin wij ons bevinden. Het is zo allesomvattend, dat het ook onze verhouding tot de <em>natuur</em> beïnvloedt door haar te verschrompelen tot <em>grondstof</em> en <em>energie</em> die we naar onze hand kunnen zetten. Tegen deze overheersing van maat- en afstandsloosheid brengt Heidegger, met een woord van Hölderlin, een &lsquo;dichterlijk wonen&rsquo; in, dat hij ook wel uitlegt als het &lsquo;opnieuw opmeten van de ruimte tussen hemel en aarde&rsquo;. In deze lezing zal André van Delft ons laten luisteren naar dit opmerkelijke verband tussen techniek en ruimte dat Heidegger meer dan zeventig jaar geleden legde, dat niet alleen actueler is geworden door de voortdurende technische ontwikkelingen sindsdien, maar waar we ook in deze tijd van videobellen en werken op afstand misschien wel de juiste oren voor hebben gekregen.</p>",
+    "personalia": "<p>André van Delft is in 2019 afgestudeerd in de filosofie aan de Universiteit Leiden, met een scriptie getiteld <a href=\"https://hdl.handle.net/1887/74907\" rel=\"nofollow\"><em>Stellen, schikken, meten en dichten: een studie over maat en techniek in de moderne tijd aan de hand van Heidegger</em></a>. Tevens heeft hij aan de Universiteit Leiden in 2020 zijn studie theoretische natuurkunde afgerond. Tegenwoordig is André deeltijds werkzaam als freelance web &amp; Python developer en verder schrijft hij en houdt hij zich bezig met de losse eindjes die zijn filosofiescriptie achter heeft gelaten. André is mede-organisator van het <em>Colloquium Levensfilosofie</em>.</p>",
+    "video_id": "3GBrDxUVBGQ"
+  }
+},
+{
+  "model": "annonces.talk",
+  "pk": 100,
+  "fields": {
+    "title": "Nietszche en de aarde",
+    "symposium": 44,
+    "speaker": "Henk Manschot",
+    "abstract": "<p style=\"text-align: right\"><em>Vivo ergo cogito</em> (Nietzsche)</p>\n\n<p>&lsquo;De aarde heeft een huid, die huid heeft ziekten. Een van die ziekten is bijvoorbeeld de mens.&rsquo; Deze diagnose van de moderne tijd gaf Nietzsche al in 1882. Het bracht hem ertoe om op zoek te gaan naar de zin en betekenis van de aarde, en van een &lsquo;ge-aarde&rsquo; levensstijl. In mijn presentatie wil ik laten zien hoe Nietzsche in zijn dagelijks leven en in zijn denken werkt aan een filosofie die &lsquo;de aarde haar zin en de mensen hun hoop teruggeeft&rsquo;. In het voetspoor van Nietzsches persoonlijke zoektocht en filosofische ambities probeer ik zijn nieuwe &lsquo;wijsheid van de aarde&rsquo; aan het licht te brengen, een &lsquo;terra-sofie&rsquo;, die het motto &lsquo;Blijf de aarde trouw&rsquo; tot leidraad neemt. Kan Nietzsches aanpak ons inspireren om het hemd van culturele gewoonten en politieke illusies waarin wij zijn ingesnoerd draad voor draad los te halen en op weg te gaan naar nieuwe waarden en andere manieren van leven?</p>",
+    "personalia": "<p>Henk Manschot is emeritus-hoogleraar ethiek en voormalig rector van de Universiteit voor Humanistiek in Utrecht. Hij studeerde theologie in Nederland en filosofie en politieke wetenschappen in Parijs. Zijn huidige onderzoek richt zich op filosofische ecologie, terrasofie en kosmopolitieke vorming. Recente publicaties: (2016) <em>Blijf de aarde trouw. Pleidooi voor een Nietzscheaanse terrasofie.</em> (Van Tilt/Boom).  Engelse editie (2020) <em>Nietzsche and the Earth. Biography, Ecology, Politics.</em> (Bloomsbury). Twee artikelen: &lsquo;Re-imagining the human. Over Mens worden in het Antropoceen. Een humanistische visie&rsquo;. Verschenen in: <em>Zorg voor de Aarde, herstel van de wereld. Levensbeschouwelijke responsies op de ecologische crisis.</em> Uitgave van Stichting Pardes (p. 67-109). &lsquo;Duurzaamheid en draagvlak. Een politiek-filosofische beschouwing over deliberatieve democratie en &ldquo;glokalisering&rdquo;&rsquo;. (Geschreven in samenwerking met Caroline Suransky en Fernando Suarez Muller). Verschenen in <em>Mens en Maatschappij. Tijdschrift voor Sociale Wetenschappen.</em> (2020) Volume 9, No. 3, p. 241&ndash;273. Amsterdam University Press.</p>",
+    "video_id": "ThFAtQtdGeE"
+  }
+},
+{
+  "model": "annonces.talk",
+  "pk": 101,
+  "fields": {
+    "title": "Innerlijkheid en de politiek-maatschappelijke implicaties",
+    "symposium": 45,
+    "speaker": "Welmoed Vlieger",
+    "abstract": "<p>De laatste decennia staan de liberale kernwaarden van de democratische rechtsstaat in toenemende mate onder druk. Deze ontwikkeling noopt tot reflectie op de functioneringsvoorwaarden van de moderne democratie. Actuele interpretaties leggen doorgaans vooral de nadruk op rechten en procedures, maar veronderstelt het functioneren van de democratische rechtsstaat niet ook een bepaalde notie van innerlijkheid? Aan de hand van een beknopte historisch-systematische analyse van de verhouding tussen innerlijkheid en politiek zal Welmoed Vlieger proberen aan te tonen dat dit inderdaad zo is en dat dit impliceert dat mensen toegang hebben tot niet-politieke bronnen van waarheid en moraliteit. Zij gaat daarnaast te rade bij een aantal denkers uit de westerse traditie – waaronder Meister Eckhart (ca. 1260 - 1328) en Søren Kierkegaard (1813 – 1855) - die de verhouding tussen innerlijkheid en de uitwendige wereld c.q. politieke orde grondig hebben doorleefd en doordacht.</p>",
+    "personalia": "<p>Welmoed Vlieger (1976) studeerde wetenschap van Godsdienst en Levensbeschouwing en vervolgens Wijsbegeerte aan de UvA. Zij is columnist bij dagblad Trouw en spreker/docent bij Comenius leergangen. Zij werkte mee aan het boek <em>Een nieuw sociaal contract</em> (2021) van Tweede Kamerlid Pieter Omtzigt.</p>",
+    "video_id": null
+  }
+},
+{
+  "model": "annonces.talk",
+  "pk": 102,
+  "fields": {
+    "title": "De uiterlijkheid voorbij: van maakbaarheid naar reflexieve bestuurskunst",
+    "symposium": 45,
+    "speaker": "Robert van Putten",
+    "abstract": "<p>Waarom lijkt innerlijkheid soms zo ver te zoeken in de politiek? Een belangrijke verklaring daarvoor ligt in het alom aanwezige maakbaarheidsdenken. Daarin is een sterke focus op uiterlijkheid aanwezig, op datgene wat zichtbaar, grijpbaar en onmiddellijk voorhanden is. Via een begripsanalyse van maakbaarheid zal Robert van Putten diverse elementen onderscheiden die uitholling van innerlijkheid bevorderen. Vervolgens zal hij nagaan hoe nieuwe ruimte voor innerlijkheid in het politieke handelen kan worden gecreëerd. Dat vergt dat we ons op andere wijze tot de maakbaarheid gaan verhouden. Drie bouwstenen zal hij aanreiken: een ethos van maathouden, een wereldbeeld dat de dynamiek van sociale praktijken respecteert en de ambachtsman als sjabloon voor beleidsinterventie.</p>",
+    "personalia": "<p>Robert van Putten (1987) studeerde filosofie en bestuurskunde en promoveerde in 2020 (<em>cum laude</em>) aan de Vrije Universiteit Amsterdam op het proefschrift <em>De ban van beheersing: naar een reflexieve bestuurskunst</em> (verschenen bij uitgeverij Boom Den Haag). Hij is werkzaam aan het Wetenschappelijk Instituut van de Christen Unie en de Christelijke Hogeschool Ede.</p>",
+    "video_id": null
+  }
+},
+{
+  "model": "annonces.talk",
+  "pk": 103,
+  "fields": {
+    "title": "Zelf, leefwereld en systeem",
+    "symposium": 45,
+    "speaker": "Hans Schilderman",
+    "abstract": "<p>Het lijkt wel of we twee haast onverenigbare taken hebben in ons postmoderne leven, namelijk ons eigen innerlijk te leren ontdekken en ons samenzijn in goed overleg en bestuur af te stemmen. Maar ook lijkt het wel of deze bestemmingen zich steeds meer tot problemen hebben ontwikkeld, met een incompatibiliteit van beide taken tot gevolg. Twee lijnen van denken die deze problemen verkennen zal Hans Schilderman toelichten: een communautaire lijn die zich rekenschap geeft van toenemende individualisering, en een kritische lijn waarin toenemende controle op onze leefwereld centraal staat. Hij zal dat toelichten aan de hand van twee denkers, namelijk respectievelijk Charles Taylor en Jürgen Habermas.</p>",
+    "personalia": "<p>Hans Schilderman is hoogleraar religie en zorg aan de Radboud Universiteit en aldaar hoofd van de afdeling empirische en praktische religiewetenschap aan de Faculteit der Filosofie, Theologie en Religiewetenschap. Zijn aandachtsvelden in onderwijs en onderzoek zijn geestelijke verzorging, ritualiteit, zingeving en normativiteit. (<em>Religion as a Profession</em>. Leiden/Brill 2005; <em>Discourse in Ritual Studies</em>. Leiden/Brill 2007).</p>",
+    "video_id": null
+  }
+},
+{
+  "model": "annonces.talk",
+  "pk": 104,
+  "fields": {
+    "title": "Spirituele vorming: de kunst van het laten. Overdacht vanuit de levensfilosofie van Nietzsche",
+    "symposium": 46,
+    "speaker": "Gerard Visser",
+    "abstract": "<p>In 1872 hield Friedrich Nietzsche aan de universiteit Basel een reeks lezingen onder de titel <em>Über die Zukunft unserer Bildungsanstalten</em>. Hij bezint zich hier op zowel de ontaarding van de <em>Bildung</em> die hij vaststelt in zijn tijd als op de voorwaarden voor ware <em>Bildung</em>. Hoewel zijn aandacht elitair van aard is, gericht op een hogere cultuur, reikt de belangrijkste voorwaarde die hij formuleert een principe aan dat ook voor ons onverminderd van belang blijft: &lsquo;precies hier echter begint alle vorming mee, dat men in staat is het levende als levend te behandelen&rsquo;. In zijn lezing zal Gerard Visser dit principe overdenken als een oproep tot aandacht voor het onuitputtelijk gegevene van het leven en dit toelichten aan de hand van concrete ook aan Nietzsche ontleende voorbeelden. Bovendien zal hij uitleg geven van de herkomst van het woord &lsquo;Bildung&rsquo; en de betekenis en zin ervan.</p>",
+    "personalia": "<p>Gerard Visser was tot 2015 hoofddocent cultuurfilosofie aan de Universiteit Leiden. Recente boekpublicaties: <em>Oorsprong &amp; vrijheid. En ik werd die ik was gebleven</em> (Sjibbolet 2015), <em>Gelatenheid in de kunst. Nijhoff, Braque, Kawabata</em> (Boom 2018). Hij is mede-organisator van het <em>Colloquium Levensfilosofie</em>.</p>",
+    "video_id": null
+  }
+},
+{
+  "model": "annonces.talk",
+  "pk": 105,
+  "fields": {
+    "title": "De Bildung Academie: vorming tot vrijheid",
+    "symposium": 46,
+    "speaker": "Kirsten Kalkman",
+    "abstract": "<p>Volgens socioloog Zygmunt Bauman (1925 – 2017) leven wij in &lsquo;vloeibare tijden&rsquo;. Er is geen overheid, kerk of schoolmeester meer die de richting van onze oordelen en handelingen bepaalt. Door het wegvallen van de traditionele referentiekaders treedt de belofte van een nieuwe vrijheid naar voren. Maar wat vraagt het om die belofte waar te maken? Welke vorming hebben we nodig om persoonlijke vrijheid en maatschappelijke verantwoordelijkheid te cultiveren? In 2015 richtte een groep studenten De Bildung Academie op, om te onderzoeken om welk onderwijs de mens van nu vraagt. De bevindingen uit de <em>Bildung</em>-onderwijspraktijk worden in deze lezing gedeeld en geduid.</p>",
+    "personalia": "<p>Kirsten Kalkman is één van de initiatiefnemers van De Bildung Academie, waarvoor zij onder meer een module over religie en spiritualiteit ontwikkelde. Zij studeerde Wijsbegeerte aan de Universiteit van Amsterdam.</p>",
+    "video_id": null
+  }
+},
+{
+  "model": "annonces.talk",
+  "pk": 106,
+  "fields": {
+    "title": "Hoger onderwijs en spirituele vorming. Is de hedendaagse student de &lsquo;mentale crisis&rsquo; nabij?",
+    "symposium": 46,
+    "speaker": "Bert van den Bergh",
+    "abstract": "<p>Wat heeft het hoger onderwijs de binnenkomende student te bieden en waarnaar is deze op zoek? Momenteel lijken &lsquo;vraag en aanbod&rsquo; wat dit aangaat slecht op elkaar aan te sluiten. De startende student, die op de grens van volwassenheid verkeert en binnen de context van het hoger onderwijs de stap naar een zelfstandig leven zet, richt zich weliswaar op een (mogelijke) loopbaan, maar zoekt tevens een spirituele basis voor de verdere (inter)persoonlijke ontwikkeling. Het huidige hoger onderwijs echter, &lsquo;ultraliberaal&rsquo; geïnspireerd als het is, staat zozeer in het teken van carrièrematige <em>empowerment</em>, dat de zorg voor zo&rsquo;n spirituele basis buiten de orde valt. Van den Bergh zal in zijn lezing ingaan op de vraag hoe deze verwaarlozing samenhangt met de psychische klachten die de laatste tijd steeds nadrukkelijker door studenten worden geuit. Hij problematiseert de in dit licht vaak gebezigde metaforiek van &lsquo;mentale druk&rsquo; en &lsquo;veerkracht&rsquo;, omdat deze de onderhavige problematiek geen recht doet. Met behulp van het begrip &lsquo;onderwijsresonantie&rsquo; tracht hij tot een nieuwe benadering van &lsquo;studentenwelzijn&rsquo; te komen en zodoende het huidige debat erover een nieuwe wending te geven.</p>",
+    "personalia": "<p>Bert van den Bergh is docent/onderzoeker aan De Haagse Hogeschool en promoveerde in april 2018 aan de Erasmus Universiteit op het proefschrift <em>De gestolen stoornis - Een cultuurfilosofische duiding van de &lsquo;depressie-epidemie&rsquo;</em>. In januari verschijnt bij Boom Uitgevers een publieksversie ervan, getiteld: <em>De schaduw van de zwarte hond - Depressie als symptoom van onze tijd</em>. Aan De Haagse Hogeschool start Van den Bergh diezelfde maand met een onderzoek naar &lsquo;onderwijsresonantie&rsquo;.</p>",
+    "video_id": null
+  }
+},
+{
+  "model": "annonces.talk",
+  "pk": 107,
+  "fields": {
+    "title": "Spirituelle Bildung nach dem Konzept der „Körperorientierten Entspannungs-und Konzentrations-Schulung“ (K.E.K.S)",
+    "symposium": 46,
+    "speaker": "Johannes Soth",
+    "abstract": "<p>Bildung braucht ein Menschenbild, auf dessen Grundlage Bildungsziele entwickelt werden können. Dazu ist der Personbegriff  hilfreich, weil er die Ganzheit des Menschen mit den Ebenen <em>Substanz</em>, <em>Existenz</em> und <em>Transzendenz</em> umfasst. Zur personalen Ganzwerdung sollen in K.E.K.S besonders die spirituellen Potentiale der Kinder und Jugendlichen aufgeschlossen werden. Eine wichtige Rolle spielen hierbei die Wahrnehmungsschulung, die „Arbeit“ an Haltungen (im körperlichen, habituellen und ethischen Sinn) und die Entwicklung eines Leib-bewusstseins. Der Leib wird auf einem Weg der Achtsamkeit und Meditation mehr und mehr zu einem „Ort“ der Integration körperlicher, seelischer und spiritueller Erfahrungen sowie zwischenmenschlicher Begegnungen und Beziehungen.</p>",
+    "personalia": "<p>Johannes Soth studeerde aan de kunstacademie van Düsseldorf en theologie in Keulen en Bonn. Hij was van 1981 tot 2016 leraar aan een gymnasium en is grondlegger van het schoolvak K.E.K.S. Hij is yoga-leraar en ontving een leeropdracht voor zen van Prof. Michael von Brück. Van zijn hand verscheen: <em>Lernfeld: Persönlichkeit. Körperorientierte Entspannungs- und Konzentrations-Schulung (K.E.K.S.).</em> Göttingen 2014.</p>",
+    "video_id": null
+  }
+},
+{
+  "model": "annonces.talk",
+  "pk": 108,
+  "fields": {
+    "title": "Intimiteit en innigheid",
+    "symposium": 47,
+    "speaker": "dr. Ann van Sevenant",
+    "abstract": "<p>Intimiteit verwijst naar een ruimtelijke ervaring en innigheid naar een temporele ervaring. Dit verschil vormt het aanknopingspunt tot verdere uitdieping. Intimiteit houdt met andere woorden verband met uitwendigheid en innigheid met inwendigheid. We maken een onderscheid tussen de erotische vervoering en de innige liefkozing. Zijn beide ervaringen bevrijdend? Dragen ze bij tot zelfontwikkeling? Bestaat er zoiets als een erotisering die niet onderwerpend en instrumenteel van aard is? En klopt het dat de wijze waarop we met onszelf omgaan tegelijk bepaalt hoe we met elkaar omgaan?</p>",
+    "personalia": "<p>Dr. Ann Van Sevenant is voormalig docent wijsbegeerte aan de Hogeschool Antwerpen en auteur van een vijftiental boeken over hedendaagse filosofie, waaronder <em>Kleine filosofie van het vrijen</em></p>",
+    "video_id": null
+  }
+},
+{
+  "model": "annonces.talk",
+  "pk": 109,
+  "fields": {
+    "title": "De helende dimensie van erotiek",
+    "symposium": 47,
+    "speaker": "dr. Ad Verbrugge",
+    "abstract": "<p>In de huidige virtualisering van ons leven verwerkelijkt zich een vorm van subjectiviteit waarin de lijfelijke verhouding tot onszelf en de ander in toenemende mate afgeschermd raakt en veruiterlijkt. De vraag is wat deze ontwikkeling betekent voor onze ervaring van seksualiteit en de vorm die de lichamelijke liefde daarbinnen aanneemt. Nadat eerst verschillende vormen van liefde worden onderscheiden zal worden betoogd dat in de erotische ervaring een verlangen naar heling schuilgaat die wezenlijk een &lsquo;geestelijke&rsquo; dimensie heeft en waarin nu juist de menselijke subjectiviteit wordt opengebroken. Teruggrijpend op Plato&rsquo;s duiding van de eros zal worden betoogd dat de erotische ervaring een meer omvattend werkingsdomein heeft dan het lichaam alleen en dat zij wijst op een ontologische dimensie van het menselijk leven die (in de filosofie van) de moderne tijd uit het oog is verloren. Begrippen als overgave, toewijding, innigheid, spel, vorm, gemeenschap, ritme en tact worden gebruikt om het &lsquo;transformatieve karakter&rsquo; van de eros zichtbaar te maken.</p>",
+    "personalia": "<p>Dr. Ad Verbrugge is hoofddocent aan de V.U., waar hij sociale en culturele filosofie en economische filosofie doceert. In 2013 verscheen zijn boek <em>Staat van verwarring: het offer van liefde.</em></p>",
+    "video_id": null
+  }
+},
+{
+  "model": "annonces.talk",
+  "pk": 110,
+  "fields": {
+    "title": "God riep de dingen bij hun eigennaam te voorschijn. Over de taaltheologie van Walter Benjamin",
+    "symposium": 48,
+    "speaker": "Gerard Visser",
+    "abstract": "<p>De filosoof en literatuurtheoreticus Walter Benjamin (1892-1940) trachtte een historisch materialistische benadering te verenigen met een joods mystieke. Het hart van zijn denken wordt gevormd door een taaltheologie, die hij ontwierp in een opstel uit 1916, <em>Über Sprache überhaupt und über die Sprache des Menschen</em>. Gerard Visser zal uitleggen waarom hij deze tekst als een van de belangrijkste uit de 20e eeuw beschouwt. Benjamins bezinning op het mysterie van taal is uniek vanwege twee opvattingen. In de eerste plaats gaat hij ervan uit dat niet alleen wij mensen over taal beschikken, maar dat alles, zelfs een steen langs de weg, ook al is dat zwijgend, zichzelf meedeelt. In de tweede plaats begrijpt Benjamin de taal – namentaal – van de mens niet vanuit het begrip, zoals wij dit vanaf Plato tot op heden gewend zijn, maar vanuit de eigennaam.</p>",
+    "personalia": "<p>Gerard Visser (1950) was tot 2015 hoofddocent cultuurfilosofie aan de Universiteit Leiden. Recente boekpublicaties: <em>Oorsprong &amp; vrijheid. En ik werd die ik was gebleven</em> (2015), <em>Gelatenheid in de kunst. Nijhoff, Braque, Kawabata</em> (2018). Momenteel werkt hij aan een commentaar op Benjamins taaltheologie.</p>",
+    "video_id": null
+  }
+},
+{
+  "model": "annonces.talk",
+  "pk": 111,
+  "fields": {
+    "title": "Taal als gesprek. Het taaldenken van Rosenstock-Huessy",
+    "symposium": 48,
+    "speaker": "Bart Voorsluis",
+    "abstract": "<p>Geïnspireerd door de joods-christelijke traditie wil de filosoof en socioloog Eugen Rosenstock-Huessy (1888-1973) ons nieuwe inzichten over taal aanreiken, en daarmee over onszelf. Hebben we ooit onderscheid gemaakt tussen moeten spreken en kunnen spreken? Is voor ons de relatie tussen spreken en horen van wezenlijk belang? We hebben daarvan weinig begrip en daarom ontbreekt ons inzicht in de macht van de taal. Dat wordt slechts door weinige taalgebruikers gedeeld, evenals het cruciale onderscheid tussen het doen van mededelingen en het zweren van een belofte of een eed. Dit soort differentiaties in communicatie echter zijn onmiskenbare aanwijzingen om te begrijpen wat taal vermag. Pas als we ze erkennen, kunnen we ons verantwoordelijk weten voor ons spreken.</p>",
+    "personalia": "<p>Bart Voorsluis (1946). Studie wijsbegeerte (VU) en theologie (UvA). Promotie (1988) op <em>Taal en relationaliteit. Over de scheppende en verbindende macht van taal volgens Eugen Rosenstock-Huessy</em>. Voormalig stafmedewerker, verbonden aan de VU Vereniging, voor de dialoog tussen wetenschap en samenleving over vragen van levensbeschouwelijke aard. Publicaties o.a. over dialogisch denken, het moderne subject (Charles Taylor) en de relatie tussen filosofie en literatuur.</p>",
+    "video_id": null
+  }
+},
+{
+  "model": "annonces.talk",
+  "pk": 112,
+  "fields": {
+    "title": "De zendenkers van de Kyoto School",
+    "symposium": 49,
+    "speaker": "dr. Annewieke Vroom",
+    "abstract": "<p>In de late negentiende eeuw maakte Japan een grote culturele verschuiving door. Na twee eeuwen van afgeslotenheid opende de eilandengroep, onder druk van onder andere de Verenigde Staten, de grenzen. Er kwam een stormachtige wisselwerking tussen Europa, de Verenigde Staten en Japan op gang, waarbij het land in enkele decennia moderniseerde, een ontwikkeling waar Europa eeuwen over gedaan had. Als antwoord op de culturele crisis die hierdoor ontstond, probeerden denkers verbonden aan de (Keizerlijke) Universiteit van Kyoto om een vorm van denken te vinden die de kloof tussen wat verstaan werd als &lsquo;oost&rsquo; en &lsquo;west&rsquo; zou overbruggen. Hierin speelde de ervaring van de leegte, in de zin van betekenisverlies, een zeer belangrijke rol. De stroming werd vanuit marxistische kritiek spottend de &lsquo;Kyoto School&rsquo; genoemd, omdat de diepe religiositeit van de school wat elitair zou zijn in de context van crisis en verval.</p>\n<p>Annewieke Vroom gaat in deze lezing in op deze historische achtergrond van de Kyotoschool en op de rol die het oost-west onderscheid in die denktraditie speelt. De focus ligt voorts op de ontwikkeling van het leegte-begrip in gesprek met boeddhistische, Amerikaanse en Europese denktradities. De lezing besluit kort met een weergave van Amerikaanse kritiek die in de dialoog met de Kyotoschool verwoord is.</p>",
+    "personalia": "<p>Dr. Annewieke Vroom is comparatief godsdienstfilosoof aan de Vrije Universiteit te Amsterdam. Haar centrale focus is de dialoog tussen (sub)culturen over existentiële thema&rsquo;s. Ze is gepromoveerd op de twintigste-eeuwse dialoog tussen de Japanse Kyotoschool en westerse (christelijke) denkers over de bestaansgrond, verstaan als God en/of Leegte. Ze doceert o.a. vergelijkende godsdienstfilosofie, niet-westerse filosofie, en dialoog en conflict(beheersing). Voor haar werk ontving ze diverse onderwijsprijzen en een Fulbright Scholarship (2010).</p>",
+    "video_id": null
+  }
+},
+{
+  "model": "annonces.talk",
+  "pk": 113,
+  "fields": {
+    "title": "Leegte en vorm",
+    "symposium": 49,
+    "speaker": "dr. Gerard Visser",
+    "abstract": "<p>Voor de Japanse dichtermonnik Saigyo uit de dertiende eeuw was het poëtische ingebed in leegte. Woorden waarin Saigyo dit beschreef worden door Yasunari Kawabata aangehaald in zijn Nobelprijsrede uit 1968, waarna hij opmerkt: &lsquo;Hier hebben we de leegte, het niets, van het Oosten. Mijn eigen werken zijn wel aangeduid als werken van de leegte, maar men mag dit niet verwarren met het nihilisme van het Westen.&rsquo; Heeft men behoefte aan een scherp onderscheid, dan zou dit aldus kunnen luiden: in het Westen is het niets met de leegte, in het Oosten wordt het niets ervaren als een bevrijdende leegte. Maar niet alleen vertoont de spiritualiteit in het Oosten geen eenduidig beeld, dat geldt ook voor die van het Westen, zeker als we kijken naar de moderne tijd. In de filosofie ervaren Schopenhauer en Nietzsche als eersten affiniteit met het boeddhisme, Heidegger naderhand met het taoïsme. Maar een ervaring van de leegte die verwant is aan de Aziatische manifesteert zich onmiskenbaar ook in moderne kunst en poëzie. Het gaat dan echter niet om louter imitatie. Wat zich aandient, is een vruchtbare kruisbestuiving.</p>\n<p>Gerard Visser geeft in zijn lezing voorbeelden van de heel nieuwe ervaring van de leegte in de moderne Europese kunst en poëzie. Hij bezint zich daarbij tevens op de aard van deze ervaring, die niet alleen verwant blijkt met die in het Oosten, maar ook een eigen karakter laat vermoeden. Daartoe concentreert hij zich op twee teksten in het bijzonder, een klein gedicht van Chr. J. van Geel en de stelling uit het Prajnaparamita hartsoetra: vorm is leegte, leegte is vorm. Wat betekent het voor de vorm, voor de leegte, als de kunst zichzelf leert verstaan als vormgegeven leegte?</p>",
+    "personalia": "<p>Dr. Gerard Visser was tot mei 2015 hoofddocent cultuurfilosofie aan de Universiteit Leiden. Hij is medeorganisator van de bijeenkomsten van Filosofie en spiritualiteit. Recente boekpublicaties: <em>Heideggers vraag naar de techniek. Een commentaar</em> (Vantilt 2014), <em>Oorsprong en vrijheid. En ik werd die ik was gebleven</em> (Sjibbolet 2015).</p>",
+    "video_id": null
+  }
+},
+{
+  "model": "annonces.talk",
+  "pk": 114,
+  "fields": {
+    "title": "Met boeddha naar de fenomenen",
+    "symposium": 50,
+    "speaker": "Erik Hoogcarspel",
+    "abstract": "<p>Na de eerste dagen van euforie begint er in boeddhistische traditie iets te knagen: onlangs deed de eerste erkende gereïncarneerde lama openlijk afstand van zijn status en kondigde aan een medische studie te beginnen. Het boeddhisme dreigt ten onder te gaan aan marktwerking en het populairste product ervan, de mindfulness, is nu al een middel geworden om het beste uit jezelf te halen. Wat moeten we met het boeddhisme, wat kunnen we ermee? Als we terug gaan naar de wortels, naar de kern, blijkt dat het niet iets oosters is maar een mogelijkheid die elk mens kan aangrijpen om zijn bestaan te transformeren.</p>",
+    "personalia": "<p>Erik Hoogcarspel (1946) is docent Oosterse en Westerse filosofie aan de Internationale School Voor Wijsbegeerte te Leusden. Hij vertaalde <em>Grondregels voor de Filosofie van het Midden</em> van de boeddhistische Indiase filosoof Nagarjuna uit het Sanskriet en redigeerde de boeddhistische bloemlezing <em>De grote weg naar het Licht</em>. In zijn nieuwste boek <em>Het boeddhafenomeen. Naar een westers boeddhisme</em> legt hij de verwantschap bloot van de kern van de boeddhistische verlossingsweg en de fenomenologie.</p>",
+    "video_id": null
+  }
+},
+{
+  "model": "annonces.talk",
+  "pk": 115,
+  "fields": {
+    "title": "Filosofie met de vlinderslag. Daoïstische levenskunst",
+    "symposium": 50,
+    "speaker": "Woei-Lien Chong",
+    "abstract": "<p>Het boek <em>Zhuangzi</em> (vierde-derde eeuw v. Chr.) geldt als de tweede grondtekst van het vroege daoïsme, na de <em>Daodejing</em> van Laozi. <em>Zhuangzi</em> kegelt met zichtbaar genoegen het ene heilige huisje na het andere omver, en neemt vooroordelen, onverdraagzaamheid en hypocrisie met een flinke dosis humor op de hak. Hoewel <em>Zhuangzi</em> ook in het Nederlandstalige gebied steeds bekender wordt, is er nog niet veel aandacht besteed aan zijn spirituele oefenweg. De spreekster zal dit, tot nu toe sterk onderbelichte, aspect in haar lezing bespreken, in de filosofische context van Daodejing en <em>Zhuangzi</em>. </p>",
+    "personalia": "<p>Dr. Woei-Lien Chong studeerde af in de sinologie en filosofie aan de Universiteit Leiden. Zij was daar werkzaam als universitair docent Chinese filosofie (1985-2010), en thans is ze als docent verbonden aan de Internationale School voor Wijsbegeerte in Leusden.</p>\n<p>Deze lezing is gebaseerd op het nieuwe boek van de spreekster: Filosofie met de vlinderslag: de daoïstische levenskunst van Zhuangzi (Damon, 2016), waarvan inmiddels de tweede druk is verschenen. Zie voor meer informatie: <a href=\"http://damon.nl/book/filosofie-met-de-vlinderslag\" rel=\"nofollow\">http://damon.nl/book/filosofie-met-de-vlinderslag</a>.</p>\n<p>Dr. Woei-Lien Chong geeft in het najaar van 2016 op basis van haar nieuwe boek cursussen in Amsterdam en Leiden, georganiseerd door de Internationale School voor Wijsbegeerte (ISVW). Zie <a href=\"http://www.isvw.nl\" rel=\"nofollow\">www.isvw.nl</a>, rubriek “In &lsquo;t land”.</p>",
+    "video_id": null
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 186,
+  "fields": {
+    "symposium": 43,
+    "time_from": "13:15:00",
+    "time_to": null,
+    "name": "Inloggen is mogelijk"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 187,
+  "fields": {
+    "symposium": 43,
+    "time_from": "13:30:00",
+    "time_to": null,
+    "name": "Opening door dagvoorzitter André van Delft en zoominstructies door Kirsten Kalkman"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 188,
+  "fields": {
+    "symposium": 43,
+    "time_from": "13:45:00",
+    "time_to": null,
+    "name": "Rob Compaijen – <em>Aandacht als afstemming op waarden</em>"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 189,
+  "fields": {
+    "symposium": 43,
+    "time_from": "14:45:00",
+    "time_to": null,
+    "name": "Pauze"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 190,
+  "fields": {
+    "symposium": 43,
+    "time_from": "15:15:00",
+    "time_to": null,
+    "name": "Barbara Zwaan – <em>Simone Weil en de omvormende kracht van aandacht</em>"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 191,
+  "fields": {
+    "symposium": 43,
+    "time_from": "16:15:00",
+    "time_to": null,
+    "name": "Plenaire gedachtewisseling"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 192,
+  "fields": {
+    "symposium": 43,
+    "time_from": "16:45:00",
+    "time_to": null,
+    "name": "Afsluiting door de dagvoorzitter"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 193,
+  "fields": {
+    "symposium": 44,
+    "time_from": "13:15:00",
+    "time_to": null,
+    "name": "Inloggen is mogelijk"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 194,
+  "fields": {
+    "symposium": 44,
+    "time_from": "13:30:00",
+    "time_to": "13:45:00",
+    "name": "Opening door dagvoorzitter Gerard Visser en zoominstructies door Kirsten Kalkman"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 195,
+  "fields": {
+    "symposium": 44,
+    "time_from": "13:45:00",
+    "time_to": "14:45:00",
+    "name": "André van Delft – <em>&lsquo;Dichterlijk woont de mens op deze aarde&rsquo;</em>"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 196,
+  "fields": {
+    "symposium": 44,
+    "time_from": "14:45:00",
+    "time_to": "15:15:00",
+    "name": "Pauze"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 197,
+  "fields": {
+    "symposium": 44,
+    "time_from": "15:15:00",
+    "time_to": "16:15:00",
+    "name": "Henk Manschot – <em>Nietzsche en de aarde</em>"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 198,
+  "fields": {
+    "symposium": 44,
+    "time_from": "16:15:00",
+    "time_to": "16:45:00",
+    "name": "Plenaire gedachtewisseling"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 199,
+  "fields": {
+    "symposium": 45,
+    "time_from": "13:15:00",
+    "time_to": "14:00:00",
+    "name": "Welmoed Vlieger – <em>Innerlijkheid en de politiek-maatschappelijke complicaties</em>"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 200,
+  "fields": {
+    "symposium": 45,
+    "time_from": "14:00:00",
+    "time_to": "14:45:00",
+    "name": "Robert van Putten – <em>De uiterlijkheid voorbij: van maakbaarheid naar reflexieve bestuurskunst</em>"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 201,
+  "fields": {
+    "symposium": 45,
+    "time_from": "14:45:00",
+    "time_to": "15:15:00",
+    "name": "Pauze"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 202,
+  "fields": {
+    "symposium": 45,
+    "time_from": "15:15:00",
+    "time_to": "16:00:00",
+    "name": "Hans Schilderman – <em>Zelf, leefwereld en systeem</em>"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 203,
+  "fields": {
+    "symposium": 45,
+    "time_from": "16:00:00",
+    "time_to": "16:30:00",
+    "name": "Plenaire gedachtewisseling"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 204,
+  "fields": {
+    "symposium": 46,
+    "time_from": "11:00:00",
+    "time_to": "12:00:00",
+    "name": "Gerard Visser – <em>Spirituele vorming: de kunst van het laten. Overdacht vanuit de levensfilosofie van Nietzsche</em>"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 205,
+  "fields": {
+    "symposium": 46,
+    "time_from": "12:00:00",
+    "time_to": "13:00:00",
+    "name": "Kirsten Kalkman – <em>De Bildung Academie. Vorming tot vrijheid</em>"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 206,
+  "fields": {
+    "symposium": 46,
+    "time_from": "13:00:00",
+    "time_to": "14:00:00",
+    "name": "Lunchtijd"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 207,
+  "fields": {
+    "symposium": 46,
+    "time_from": "14:00:00",
+    "time_to": "15:00:00",
+    "name": "Bert van den Bergh - <em>Hoger onderwijs en spirituele vorming. Is de hedendaagse student de &lsquo;mentale crisis&rsquo; nabij</em>?"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 208,
+  "fields": {
+    "symposium": 46,
+    "time_from": "15:00:00",
+    "time_to": "16:00:00",
+    "name": "Johannes Soth – <em>Spirituelle Bildung nach dem Konzept der &lsquo;Körperorientierten Entspannungs- und Konzentrations-Schulung&rsquo;</em>"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 209,
+  "fields": {
+    "symposium": 46,
+    "time_from": "16:00:00",
+    "time_to": "16:20:00",
+    "name": "Pauze"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 210,
+  "fields": {
+    "symposium": 46,
+    "time_from": "16:20:00",
+    "time_to": "17:00:00",
+    "name": "Plenaire discussie"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 211,
+  "fields": {
+    "symposium": 48,
+    "time_from": "13:30:00",
+    "time_to": "14:30:00",
+    "name": "Gerard Visser – <em>God riep de dingen bij hun eigennaam te voorschijn. De taaltheologie van Walter Benjamin</em>"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 212,
+  "fields": {
+    "symposium": 48,
+    "time_from": "14:30:00",
+    "time_to": "15:00:00",
+    "name": "Pauze"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 213,
+  "fields": {
+    "symposium": 48,
+    "time_from": "15:00:00",
+    "time_to": "16:00:00",
+    "name": "Bart Voorsluis – <em>Taal als gesprek. Het taal denken van Rosenstock-Huessy</em>"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 214,
+  "fields": {
+    "symposium": 48,
+    "time_from": "16:00:00",
+    "time_to": "16:30:00",
+    "name": "Plenaire gedachtewisseling"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 215,
+  "fields": {
+    "symposium": 49,
+    "time_from": "13:30:00",
+    "time_to": "14:30:00",
+    "name": "Annewieke Vroom – De zendenkers van de Kyoto School"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 216,
+  "fields": {
+    "symposium": 49,
+    "time_from": "14:30:00",
+    "time_to": "15:00:00",
+    "name": "Pauze"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 217,
+  "fields": {
+    "symposium": 49,
+    "time_from": "15:00:00",
+    "time_to": "16:00:00",
+    "name": "Gerard Visser – Leegte en vorm"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 218,
+  "fields": {
+    "symposium": 49,
+    "time_from": "16:00:00",
+    "time_to": "16:30:00",
+    "name": "Discussie"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 219,
+  "fields": {
+    "symposium": 50,
+    "time_from": "13:30:00",
+    "time_to": "14:30:00",
+    "name": "Erik Hoogcarspel: Met boeddha naar de fenomenen"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 220,
+  "fields": {
+    "symposium": 50,
+    "time_from": "14:30:00",
+    "time_to": "15:00:00",
+    "name": "Pauze"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 221,
+  "fields": {
+    "symposium": 50,
+    "time_from": "15:00:00",
+    "time_to": "16:00:00",
+    "name": "Woei-Lien Chong: Filosofie met de vlinderslag. Daoïstische levenskunst"
+  }
+},
+{
+  "model": "annonces.programitem",
+  "pk": 222,
+  "fields": {
+    "symposium": 50,
+    "time_from": "16:00:00",
+    "time_to": "16:30:00",
+    "name": "Discussie"
+  }
+},
+{
+  "model": "annonces.additionalinfo",
+  "pk": 6,
+  "fields": {
+    "name": "zoom_instructions",
+    "content": "<h3>Tips over het gebruik van Zoom</h3>\n<ul>\n<li>Er is in deze online bijeenkomst plaats voor maximaal honderd deelnemers. We raden u aan om op tijd in te loggen, zodat u zeker bent van een plaatsje.</li>\n<li>We raden u aan om in te loggen via een computer of laptop, niet via een iPad of telefoon. U kunt vragen stellen door te chatten en dat gaat het makkelijkste met een toetsenbord.</li>\n<li>Je concentreren op een online evenement is soms een uitdaging. Het kan prettig zijn om tijdens het luisteren aantekeningen te maken of associaties op te schrijven. Natuurlijk zorgen we ook voor regelmatige pauzes om de energie er goed in te houden.</li>\n</ul>\n<p>U kunt de vergadering als volgt binnenkomen:</p>\n<ol>\n<li>Klik op de link naar de vergadering of kopieer deze in uw webbrowser. Zoom werkt het beste met Chrome of Firefox.</li>\n<li>Er verschijnt een schermpje met daarop de vraag: &lsquo;Zoom meetings openen?&rsquo;. Klik hier op de linker knop: &lsquo;zoom meetings openen&rsquo;.</li>\n<li>Er verschijnt een schermpje waarin je jezelf al in beeld ziet. Daarnaast zie je een vraag: &lsquo;Join with computer audio&rsquo;. Klik op het linkerknopje om hiermee akkoord te gaan. Let erop dat het geluid van uw computer aan staat.</li>\n</ol>"
+  }
+}
+]
