@@ -177,6 +177,8 @@ CLOUDINARY_STORAGE = {
 }
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 cloudinary.config(**{k.lower(): v for k, v in CLOUDINARY_STORAGE.items()})
 
 django_heroku.settings(locals())
