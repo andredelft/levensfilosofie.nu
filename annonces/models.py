@@ -1,5 +1,6 @@
 from django.db import models
 from django.template.defaultfilters import slugify
+from django.utils.html import mark_safe
 
 from .fields import CleanHTMLField, CleanHTMLLineField
 
@@ -57,7 +58,14 @@ class Talk(models.Model):
     speaker = models.CharField('Spreker', max_length=200)
     abstract = CleanHTMLField('Abstract')
     personalia = CleanHTMLField('Personalia')
-    video_id = models.CharField('Video ID', max_length=20, null=True, blank=True)
+    video_id = models.CharField(
+        'YouTube video ID', max_length=20, null=True, blank=True,
+        help_text=mark_safe(
+            'De ID is het deel van de YouTube URL direct na "v=", altijd 11 '
+            'karakters lang. Bijvoorbeeld: '
+            'https://www.youtube.com/watch?v=<b>dQw4w9WgXcQ</b>'
+        )
+    )
 
     def __str__(self):
         return f"{self.speaker}: {self.title}"

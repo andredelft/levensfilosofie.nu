@@ -27,7 +27,6 @@ CLEAN_HTML_LINE_OVERRIDE = {
     CleanHTMLLineField: {'widget': SummernoteWidget(
         attrs={
             'summernote': {
-                'width': '718px',
                 'height': '100px',
                 'toolbar': TOOLBAR_CONFIG
             }
@@ -45,26 +44,32 @@ class TalkAdmin(SummernoteInlineModelAdmin, admin.StackedInline):
         'personalia',
         'video_id'
     )
+
     summernote_fields = [
         'abstract', 'personalia'
     ]
     formfield_overrides = CLEAN_HTML_LINE_OVERRIDE
 
+    # class Meta:
+    #     help_texts = {
+    #         'video_id':
+    #     }
+
 
 class ProgramItemAdmin(SummernoteInlineModelAdmin, admin.TabularInline):
-    summernote_fields = []
     model = ProgramItem
     fields = (
         'time_from',
         'time_to',
         'name'
     )
+
+    summernote_fields = []
     formfield_overrides = CLEAN_HTML_LINE_TABULAR_OVERRIDE
 
 
 @admin.register(Symposium)
 class SymposiumAdmin(SummernoteModelAdmin):
-    summernote_fields = ['introduction']
     fields = (
         'title',
         'introduction',
@@ -73,4 +78,6 @@ class SymposiumAdmin(SummernoteModelAdmin):
         'place'
     )
     inlines = [ProgramItemAdmin, TalkAdmin]
+
+    summernote_fields = ['introduction']
     formfield_overrides = CLEAN_HTML_LINE_OVERRIDE
