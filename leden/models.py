@@ -49,11 +49,6 @@ class Member(models.Model):
         else:
             return ''
 
-    def delete(self):
-        if self.picture:
-            cloudinary.uploader.destroy(self.picture.public_id)
-        super().delete()
-
     def __str__(self):
         return self.name
 
