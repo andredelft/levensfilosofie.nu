@@ -1,6 +1,7 @@
 from pathlib import Path
-import django_heroku
 from decouple import config, UndefinedValueError
+import dj_database_url
+import django_heroku
 import cloudinary
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -84,14 +85,18 @@ TEMPLATES = [
 WSGI_APPLICATION = 'levensfilosofie.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
-DATABASES = {
-    'default': {
+try:
+    config('DATABASE_URL')
+except UndefinedValueError:
+    DATABASE_DEFAULT_CONFIG = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+else:
+    DATABASE_DEFAULT_CONFIG = dj_database_url.config(conn_max_age=600, ssl_require=True)
+
+DATABASES = {
+    'default': DATABASE_DEFAULT_CONFIG
 }
 
 
