@@ -2,7 +2,7 @@ from django.db import models
 from django.template.defaultfilters import slugify
 from django.utils.html import mark_safe
 
-from .fields import CleanHTMLField, CleanHTMLLineField
+from levensfilosofie.fields import CleanHTMLField, CleanHTMLLineField
 
 
 class Symposium(models.Model):

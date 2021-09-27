@@ -4,7 +4,7 @@ from django_summernote.admin import SummernoteModelAdmin, SummernoteInlineModelA
 from django_summernote.widgets import SummernoteWidget
 
 from .models import Symposium, Talk, ProgramItem
-from .fields import CleanHTMLLineField
+from levensfilosofie.fields import CleanHTMLLineField
 
 TOOLBAR_CONFIG = [
     ['style', ['bold', 'italic', 'clear']],
