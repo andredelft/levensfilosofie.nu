@@ -3,6 +3,9 @@
 
 {% block title %}{{ symposium.title }} | Colloquium Levensfilosofie{% endblock %}
 
+{% block og_title %}{{ symposium.title }}{% endblock %}
+{% block og_description %}{{ symposium.introduction|render_markdown|striptags|truncatechars:200 }}{% endblock %}
+
 {% block body %}
 <h2>{{ symposium.title }}</h2>
 {% include 'annonces/_practical_details.html' %}
