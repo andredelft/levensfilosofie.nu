@@ -50,11 +50,6 @@ class TalkAdmin(SummernoteInlineModelAdmin, admin.StackedInline):
     ]
     formfield_overrides = CLEAN_HTML_LINE_OVERRIDE
 
-    # class Meta:
-    #     help_texts = {
-    #         'video_id':
-    #     }
-
 
 class ProgramItemAdmin(SummernoteInlineModelAdmin, admin.TabularInline):
     model = ProgramItem
