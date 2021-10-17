@@ -37,7 +37,7 @@ section {
   }
   .talk {
     &__speaker {
-      margin-top: 40px;
+      margin-top: 130px;
       font-style: italic;
     }
     &__title {
@@ -57,11 +57,21 @@ section {
     &:last-of-type {
       margin-bottom: 0px;
     }
-    img {
-      float: left;
-      border-radius: 80px;
-      width: 158px;
-      margin-right: 13px;
+    .member-heading {
+      display: flex;
+      align-items: center;
+      .member-name {
+        margin-top: 20px;
+      }
+      img {
+        display: block;
+        border-radius: 80px;
+        width: 158px;
+        margin-right: 30px;
+        @include md {
+          float: left;
+        }
+      }
     }
   }
 }

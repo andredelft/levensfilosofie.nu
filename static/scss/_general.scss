@@ -1,17 +1,36 @@
-@font-face {
-  font-family: "Soria";
-  src: url("/static/fonts/Soria.ttf") format("truetype");
-}
-
 html.sr .load-hidden {
   visibility: hidden;
 }
 
 body {
-  font-family: "Alegreya", serif;
-  font-size: 19px;
+  font-family: $font-family-primary;
+  font-size: 18px;
   min-height: 100vh;
   margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-secondary;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 2em;
 }
 
 .container {

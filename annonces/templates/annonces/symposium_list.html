@@ -4,8 +4,23 @@
 
 {% block body %}
 {% for symposium in symposia %}
-  {% include 'annonces/_symposium_preview.html' %}
+  {% include 'annonces/_symposium_preview.html' with enable_sr=True %}
+  {% if not forloop.last %}
+  <div class="separator bottom symposium-sr load-hidden"><i class="orn star"></i></div>
+  {% endif %}
 {% empty %}
   <i>Geen symposia gevonden</i>
 {% endfor %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+  ScrollReveal().reveal('.symposium-sr', {
+    distance: '20px',
+    origin: 'bottom',
+    delay: 200,
+    opacity: 0,
+    interval: 200,
+  });
+</script>
 {% endblock %}

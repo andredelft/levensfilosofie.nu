@@ -1,4 +1,4 @@
-<div class="symposium-preview">
+<div class="symposium-preview{% if enable_sr %} symposium-sr load-hidden{% endif %}">
   {% if include_separators %}<div class="separator">Annonce</div>{% endif %}
   <h1>{{ symposium.title }}</h1>
   {% include 'annonces/_practical_details.html' %}

@@ -5,14 +5,28 @@
 
 {% block body %}
 {% for member in members %}
-  <div class="member">
-    {% if member.picture %}
-      {{ member.picture|thumbnail }}
-    {% endif %}
-    <h3>{{ member.name }}</h3>
+  <div class="member load-hidden">
+    <div class="member-heading">
+      {% if member.picture %}
+        {{ member.picture|thumbnail }}
+      {% endif %}
+      <h2 class="member-name">{{ member.name }}</h2>
+    </div>
     {{ member.personalia }}
   </div>
 {% empty %}
   <i>Geen leden gevonden</i>
 {% endfor %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+  ScrollReveal().reveal('.member', {
+    distance: '20px',
+    origin: 'bottom',
+    delay: 200,
+    opacity: 0,
+    interval: 200,
+  });
+</script>
 {% endblock %}

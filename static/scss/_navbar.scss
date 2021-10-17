@@ -17,7 +17,8 @@ nav.navbar {
   justify-content: space-around;
 
   .brand {
-    // transition: 0.5s;
+    font-family: "Raleway";
+    font-weight: 200;
     & > a {
       text-decoration: none;
       color: inherit;
@@ -37,8 +38,11 @@ nav.navbar {
     }
 
     font-size: 40px;
+    @include md {
+      font-size: 28px;
+    }
     @include sm {
-      font-size: 30px;
+      font-size: 25px;
     }
     display: flex;
     align-items: center;

@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Soria";
+  src: url("/static/fonts/Soria.ttf") format("truetype");
+}
+
+$font-family-secondary: "Soria";
+$font-family-primary: "Raleway";
+
 $theme-astral: #398b98;
 $theme-sundance: #d0b95a;
 $theme-camouflage: #414013;

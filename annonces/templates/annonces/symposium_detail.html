@@ -7,7 +7,7 @@
 {% block og_description %}{{ symposium.introduction|render_markdown|striptags|truncatechars:200 }}{% endblock %}
 
 {% block body %}
-<h2>{{ symposium.title }}</h2>
+<h1>{{ symposium.title }}</h1>
 {% include 'annonces/_practical_details.html' %}
 {% if symposium.zoom_instructions %}
   <div class="additional-info">
@@ -26,7 +26,7 @@
 {% endif %}
 {% for talk in talks %}
   <div class="talk__speaker">{{ talk.speaker }}</div>
-  <h3 class="talk__title">{{ talk.title }}</h3>
+  <h2 class="talk__title">{{ talk.title }}</h2>
   {% if talk.video_id %}
     {% include 'annonces/_yt_embed.html' with video_id=talk.video_id only %}
   {% endif %}
