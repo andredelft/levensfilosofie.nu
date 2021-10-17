@@ -15,7 +15,7 @@
   background-size: cover;
 
   background-attachment: fixed;
-  @media (hover: none) {
+  @media (hover: none), (pointer: coarse) {
     background-attachment: scroll;
   }
   background-position: top;
