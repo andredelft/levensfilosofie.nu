@@ -1,6 +1,13 @@
 section {
+  position: relative;
+  z-index: 2;
+  background: white;
   word-wrap: break-word;
-  padding: 45px 20px 80px 20px;
+
+  .container {
+    padding: 45px 20px 80px 20px;
+  }
+
   .symposium-preview {
     margin-bottom: 70px;
     &:last-of-type {
@@ -10,11 +17,13 @@ section {
 
   p.intro {
     font-style: italic;
-    i, em {
+    i,
+    em {
       font-style: normal;
     }
   }
-  .personalia, .additional-info {
+  .personalia,
+  .additional-info {
     font-size: 0.9em;
   }
   table.program {

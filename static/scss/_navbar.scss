@@ -1,10 +1,23 @@
 nav.navbar {
+  z-index: 3;
   background-color: $header-color;
   border-bottom: $border;
   padding: 0.5rem;
 
+  @include md-height {
+    position: sticky;
+    top: 0;
+  }
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 75px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
   .brand {
-    font-family: 'Cormorant', serif;
+    transition: 0.5s;
     & > a {
       text-decoration: none;
       color: inherit;
@@ -16,6 +29,26 @@ nav.navbar {
         text-decoration: none;
       }
     }
+    &.hide {
+      opacity: 0;
+    }
+
+    font-size: 40px;
+    @include sm {
+      font-size: 30px;
+    }
+    display: flex;
+    align-items: center;
+    a {
+      white-space: nowrap;
+    }
+    .orn {
+      margin-left: 10px;
+    }
+
+    .header-orn {
+      color: $theme-shadow-green;
+    }
   }
 
   .links {
@@ -23,72 +56,12 @@ nav.navbar {
     a.menu-link {
       display: block;
       margin-right: 50px;
+      font-size: 1.1em;
       @include sm {
         margin-right: 30px;
       }
       &:last-of-type {
         margin-right: 0;
-      }
-    }
-  }
-
-  &.expand {
-    margin-bottom: 75px;
-    h1.brand {
-      text-align: center;
-      font-weight: normal;
-      font-style: italic;
-      padding-top: 10vw;
-      margin-top: 0px;
-      font-size: 60px;
-    }
-
-    h2.brand {
-      text-align: center;
-      font-weight: normal;
-      font-size: 50px;
-    }
-
-    .links {
-      justify-content: center;
-      margin-bottom: 0.5rem;
-      a.menu-link {
-        font-size: 1.5rem;
-      }
-    }
-  }
-
-  &.sticky {
-    @include md-height {
-      position: sticky;
-      top: 0;
-    }
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 75px;
-    flex-wrap: wrap;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    .brand {
-      font-size: 35px;
-      @include sm {
-        font-size: 30px;
-      }
-      display: flex;
-      align-items: center;
-      a {
-        white-space: nowrap;
-      }
-      .orn {
-        margin-left: 10px;
-      }
-    }
-
-    .links {
-      a.menu-link {
-        font-size: 1.1em;
       }
     }
   }

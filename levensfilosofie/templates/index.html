@@ -1,5 +1,17 @@
 {% extends "site_base.html" %}
 
+{% block pre_body %}
+<div class="landing" id="landing">
+  <div class="container">
+    <div class="landing-header">
+      <div class="landing-header-1 load-hidden">Colloquium</div>
+      <div class="landing-header-2 load-hidden">Levensfilosofie</div>
+    </div>
+    <div class="landing-orn load-hidden"><span class="orn leaf"></span></div>
+  </div>
+</div>
+{% endblock %}
+
 {% block body %}
 {% if upcoming_symposium %}
   {% include 'annonces/_symposium_preview.html' with symposium=upcoming_symposium include_separators=True only %}
@@ -27,4 +39,44 @@
   Dr. Gerard Visser (UL – filosoof)<br>
   Drs. Barbara Zwaan MA (geestelijk verzorger)<br>
 </p>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  ScrollReveal().reveal('.landing-header-1', {
+    distance: '150%',
+    origin: 'left',
+    opacity: 0,
+    duration: 2000
+  });
+  ScrollReveal().reveal('.landing-header-2', {
+    delay: 200,
+    distance: '200%',
+    origin: 'right',
+    opacity: 0,
+    duration: 2000
+  });
+  ScrollReveal().reveal('.landing-orn', {
+    delay: 1200,
+    rotate: {
+      x: -280,
+      y: 180
+    },
+    scale: 0.2
+  });
+
+  window.onscroll = function() {myFunction()};
+
+  var logo = document.getElementById("logo");
+
+  var treshold = 550;
+
+  function myFunction() {
+    if (window.pageYOffset >= treshold) {
+      logo.classList.remove("hide")
+    } else {
+      logo.classList.add("hide");
+    }
+  }
+</script>
 {% endblock %}

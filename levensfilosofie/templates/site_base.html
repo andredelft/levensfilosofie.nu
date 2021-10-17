@@ -18,9 +18,13 @@
     <meta property="twitter:image" content="{{ request.scheme }}://{{ request.get_host }}{% static image_name %}">
     {% endwith %}
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&family=Alex+Brush&display=swap" rel="stylesheet">
     {% compress css %}
     <link rel="stylesheet" type="text/x-scss" href="{% static 'scss/index.scss' %}">
     {% endcompress %}
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
@@ -36,21 +40,25 @@
   </head>
 
   <body>
-    <nav class="navbar {% if expand_header %}expand{% else %}sticky{% endif %}">
-      {% if expand_header %}
-      <h1 class="brand"><a href="{% url 'home' %}">Colloquium Levensfilosofie</a></h1>
-      <h2 class="brand"><span class="orn leaf"></span></h2>
-      {% else %}
-      <div class="brand"><a href="{% url 'home' %}">Colloquium Levensfilosofie</a> <span class="orn leaf"></div>
-      {% endif %}
+    <nav class="navbar sticky">
+      <div class="brand{% if hide_logo %} hide{% endif %}" id="logo">
+        <a href="{% url 'home' %}">
+          <span class="header-1">Colloquium</span>
+          <span class="header-2">Levensfilosofie</span>
+        </a>
+        <span class="header-orn orn leaf">
+      </div>
       <div class="links">
         <a href="{% url 'home' %}" class="menu-link button-link">Intro</a>
         <a href="{% url 'annonce_list' %}" class="menu-link button-link">Archief</a>
         <a href="{% url 'member_list' %}" class="menu-link button-link">Leden</a>
       </div>
     </nav>
-    <section class="container">
-      {% block body %}{% endblock %}
+    {% block pre_body %}{% endblock %}
+    <section id="section">
+      <div class="container">
+        {% block body %}{% endblock %}
+      </div>
     </section>
     <footer>
       <div class="container">
@@ -72,5 +80,7 @@
         </div>
       </div>
     </footer>
+
+    {% block scripts %}{% endblock %}
   </body>
 </html>

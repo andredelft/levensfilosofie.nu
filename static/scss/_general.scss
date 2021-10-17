@@ -1,5 +1,14 @@
+@font-face {
+  font-family: "Soria";
+  src: url("/static/fonts/Soria.ttf") format("truetype");
+}
+
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 body {
-  font-family: 'Alegreya', serif;
+  font-family: "Alegreya", serif;
   font-size: 19px;
   min-height: 100vh;
   margin: 0;
@@ -12,11 +21,8 @@ body {
 
 a {
   color: $link-color;
-  text-decoration: none;
-  font-style: italic;
   &:hover {
     color: $link-color-hover;
-    text-decoration: underline;
   }
 }
 
@@ -28,16 +34,17 @@ a {
   display: flex;
   align-items: center;
   text-align: center;
-  &::before, &::after {
-    content: '';
+  &::before,
+  &::after {
+    content: "";
     flex: 1;
     border-bottom: $border;
   }
   &::before {
-    margin-right: .25em;
+    margin-right: 0.25em;
   }
   &::after {
-    margin-left: .25em;
+    margin-left: 0.25em;
   }
   &.bottom {
     margin-top: 20px;
