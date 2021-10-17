@@ -15,6 +15,9 @@
   background-size: cover;
 
   background-attachment: fixed;
+  @media (hover: none) {
+    background-attachment: scroll;
+  }
   background-position: top;
   background-image: url("../images/tim-mossholder-orig.jpg");
   @include lg {
