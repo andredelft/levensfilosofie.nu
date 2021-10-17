@@ -17,7 +17,7 @@ nav.navbar {
   justify-content: space-around;
 
   .brand {
-    transition: 0.5s;
+    // transition: 0.5s;
     & > a {
       text-decoration: none;
       color: inherit;
@@ -29,8 +29,11 @@ nav.navbar {
         text-decoration: none;
       }
     }
+    height: 50px;
+    transition: 0.5s;
     &.hide {
       opacity: 0;
+      height: 0;
     }
 
     font-size: 40px;

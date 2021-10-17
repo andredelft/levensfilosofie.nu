@@ -7,18 +7,21 @@
   @include sm {
     font-size: 50px;
   }
-  min-height: 700px;
-  height: 80vh;
+  min-height: 600px;
+  height: 70vh;
+  @include lg {
+    height: calc(100vh - 50px);
+  }
   background-size: cover;
 
   background-attachment: fixed;
-  // background-position: center;
   background-position: top;
   background-image: url("../images/tim-mossholder-orig.jpg");
   @include lg {
     background-image: url("../images/tim-mossholder.jpg");
   }
 
+  position: relative;
   display: flex;
   justify-content: center;
   z-index: 1;
@@ -45,5 +48,29 @@
       padding-left: 40px;
       color: $theme-shadow-green;
     }
+  }
+  .chevron-down {
+    position: fixed;
+    bottom: 10px;
+    opacity: 0.8;
+    width: 60px;
+    color: white;
+    animation: pulse 2s 3s ease-out infinite;
+    display: none;
+    @include lg {
+      display: block;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: none;
   }
 }
