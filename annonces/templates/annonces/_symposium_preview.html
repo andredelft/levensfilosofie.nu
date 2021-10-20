@@ -3,6 +3,6 @@
   <h1>{{ symposium.title }}</h1>
   {% include 'annonces/_practical_details.html' %}
   {{ symposium.introduction }}
-  <p><a href="{% url 'annonce_detail' symposium.slug %}" class="button-link">Lees meer</a><p>
+  <div class="button-wrapper"><a href="{% url 'annonce_detail' symposium.slug %}" class="button-link">Lees meer</a></div>
   {% if include_separators %}<div class="separator bottom"><i class="orn star"></i></div>{% endif %}
 </div>

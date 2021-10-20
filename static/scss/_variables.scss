@@ -12,15 +12,28 @@ $theme-camouflage: #414013;
 $theme-shadow-green: #96c5b9;
 $theme-copper: #c26d3e;
 
+$yellow: $theme-sundance;
+$yellow-900: #d5c06b;
+$yellow-800: #d9c77b;
+$yellow-700: #dece8c;
+$yellow-600: #e3d59c;
+$yellow-500: #e8dcad;
+$yellow-400: #ece3bd;
+$yellow-300: #f1eace;
+$yellow-200: #f6f1de;
+$yellow-150: #f8f5e6;
+$yellow-100: #faf8ef;
+$yellow-50: #fdfcf7;
+
 $light-grey: #f2f2f2;
 $medium-grey: #d3d3d3;
 $dark-grey: #535d6c;
-$blue: #214478;
 
-$header-color: $light-grey;
+$header-color: $yellow-100;
 $border-color: $medium-grey;
+$background-color: $yellow-50;
 $link-color: $dark-grey;
-$link-color-hover: $theme-sundance;
+$link-color-hover: $theme-astral;
 
 $border: solid 2px $border-color;
 

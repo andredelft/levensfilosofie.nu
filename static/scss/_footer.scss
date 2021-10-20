@@ -1,7 +1,7 @@
 footer {
   z-index: 3;
   position: relative;
-  border-top: $border;
+  box-shadow: 0 12px 20px grey;
   background-color: $header-color;
 
   .container {

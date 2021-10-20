@@ -1,8 +1,8 @@
 nav.navbar {
   z-index: 3;
   background-color: $header-color;
-  border-bottom: $border;
   padding: 0.5rem;
+  box-shadow: 0 -7px 15px grey;
 
   @include md-height {
     position: sticky;
@@ -37,7 +37,7 @@ nav.navbar {
       height: 0;
     }
 
-    font-size: 40px;
+    font-size: 32px;
     @include md {
       font-size: 28px;
     }
@@ -54,7 +54,7 @@ nav.navbar {
     }
 
     .header-orn {
-      color: $theme-shadow-green;
+      color: transparentize($theme-astral, 0.25);
     }
   }
 

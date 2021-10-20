@@ -13,11 +13,7 @@
     height: calc(100vh - 50px);
   }
   background-size: cover;
-
-  background-attachment: fixed;
-  @media (hover: none), (pointer: coarse) {
-    background-attachment: scroll;
-  }
+  background-attachment: scroll;
   background-position: top;
   background-image: url("../images/tim-mossholder-orig.jpg");
   @include lg {
