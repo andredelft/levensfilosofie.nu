@@ -29,7 +29,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   margin-bottom: 0;
   @include sm {
     font-size: 2em;
@@ -37,7 +37,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   @include sm {
     font-size: 1.5em;
   }
