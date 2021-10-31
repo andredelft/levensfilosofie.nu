@@ -12,7 +12,7 @@
     <meta property="og:title" content="{% block og_title %}Colloquium Levensfilosofie{% endblock og_title %}">
     <meta name="description" property="og:description" content="{% block og_description %}Het Colloquium Levensfilosofie organiseert extra-curriculaire minisymposia over verschillende filosofisch en maatschappelijk relevante thema’s.{% endblock %}">
 
-    {% with 'favicon/og_image.png' as image_name %}
+    {% with 'favicon/og_image.jpg' as image_name %}
     <meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}{% static image_name %}">
     <meta property="og:image:url"  content="{{ request.scheme }}://{{ request.get_host }}{% static image_name %}">
     <meta property="twitter:image" content="{{ request.scheme }}://{{ request.get_host }}{% static image_name %}">
@@ -20,7 +20,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     {% compress css %}
     <link rel="stylesheet" type="text/x-scss" href="{% static 'scss/index.scss' %}">
     {% endcompress %}
