@@ -4,7 +4,7 @@
 {% block title %}{{ symposium.title }} | Colloquium Levensfilosofie{% endblock %}
 
 {% block og_title %}{{ symposium.title }}{% endblock %}
-{% block og_description %}{{ symposium.introduction|render_markdown|striptags|truncatechars:200 }}{% endblock %}
+{% block og_description %}{{ symposium.introduction|striptags|truncatechars:200 }}{% endblock %}
 
 {% block body %}
 <h1>{{ symposium.title }}</h1>
