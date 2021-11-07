@@ -64,6 +64,7 @@ class SymposiumAdmin(SummernoteModelAdmin):
         ("time_from", "time_to"),
         "place",
         "zoom_link",
+        "to_be_announced",
     )
     inlines = [ProgramItemAdmin, TalkAdmin]
 

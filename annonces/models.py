@@ -26,6 +26,15 @@ class Symposium(models.Model):
             "ook weer automatisch."
         ),
     )
+    to_be_announced = models.BooleanField(
+        "Nog aan te kondigen",
+        default=False,
+        help_text=(
+            "Vink aan als de informatie nog niet volledig is. Het symposium "
+            "zal in de agenda verschijnen op de homepage, maar krijgt nog "
+            "niet een aparte pagina."
+        ),
+    )
     include_vids = models.JSONField(default=list)
     slug = models.SlugField(max_length=SLUG_LENGTH, null=False, unique=True)
 
