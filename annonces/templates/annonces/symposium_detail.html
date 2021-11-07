@@ -1,5 +1,4 @@
 {% extends 'site_base.html' %}
-{% load additional_info %}
 
 {% block title %}{{ symposium.title }} | Colloquium Levensfilosofie{% endblock %}
 
@@ -9,11 +8,6 @@
 {% block body %}
 <h1>{{ symposium.title }}</h1>
 {% include 'annonces/_practical_details.html' %}
-{% if symposium.zoom_instructions %}
-  <div class="additional-info">
-    {% render_info 'zoom_instructions' %}
-  </div>
-{% endif %}
 {{ symposium.introduction }}
 {% if program %}
   <table class="program">

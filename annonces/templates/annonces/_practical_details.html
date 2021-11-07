@@ -1,20 +1,19 @@
-{% load summation markdown %}
+{% load summation datetime_tags %}
 
 <div class="list-unstyled">
   <li><i>Datum</i>: {{ symposium.date | date:"l j F Y" }}</li>
   {% if symposium.time %}
   <li><i>Tijd</i>: {{ symposium.time }}</li>
   {% endif %}
+  {% if symposium.speakers %}
   <li><i>Sprekers</i>:
     {{ symposium.speakers | dutch_summation }}
   </li>
+  {% endif %}
   {% if symposium.place %}
-  <li><i>Locatie</i>: {{ symposium.place | render_markdown_line }}</li>
+  <li><i>Locatie</i>: {{ symposium.place }}</li>
   {% endif %}
-  {% if symposium.meeting_ID %}
-  <li><i>Meeting ID</i>: {{ symposium.meeting_ID }}</li>
-  {% endif %}
-  {% if symposium.password %}
-  <li><i>Wachtwoord</i>: {{ symposium.password }}</li>
+  {% if symposium.zoom_link and symposium|is_soon %}
+  <li><i>Zoom-link</i>: <a href="{{ symposium.zoom_link }}" target="_blank" rel="noopener noreferrer">{{ symposium.zoom_link }}</a></li>
   {% endif %}
 </div>

@@ -1,2 +1,2 @@
 staticfiles
-*.sqlite3
+db.*
