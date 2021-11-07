@@ -77,7 +77,7 @@ class Symposium(models.Model):
 
 
 class Talk(models.Model):
-    title = models.CharField("Titel", max_length=300)
+    title = models.CharField("Titel", max_length=300, null=True, blank=True)
     symposium = models.ForeignKey(Symposium, on_delete=models.CASCADE)
     speaker = models.CharField("Spreker", max_length=200)
     abstract = CleanHTMLField("Abstract", null=True, blank=True)
