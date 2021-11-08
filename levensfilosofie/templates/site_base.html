@@ -53,12 +53,14 @@
         <a href="{% url 'member_list' %}" class="menu-link button-link">Wie zijn wij?</a>
       </div>
     </nav>
+    {% block container %}
     {% block pre_body %}{% endblock %}
-    <section id="section">
+    <section class="content-wrapper" id="section">
       <div class="container">
         {% block body %}{% endblock %}
       </div>
     </section>
+    {% endblock %}
     <footer>
       <div class="container">
         <div>

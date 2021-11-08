@@ -1,11 +1,13 @@
-section {
+.content-wrapper {
   position: relative;
   z-index: 2;
   background: $background-color;
   word-wrap: break-word;
+  padding-top: 45px;
+  padding-bottom: 80px;
 
   .container {
-    padding: 45px 20px 80px 20px;
+    padding: 0 20px;
   }
 
   .symposium-preview {
