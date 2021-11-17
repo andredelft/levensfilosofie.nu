@@ -1,7 +1,10 @@
 <div class="symposium-preview{% if enable_sr %} symposium-sr load-hidden{% endif %}">
   {% if include_separators %}<div class="separator">Annonce</div>{% endif %}
+  {% if symposium.canceled and not hide_notice %}{% include 'annonces/_canceled.html' %}{% endif %}
   <h1>{{ symposium.title }}</h1>
-  {% include 'annonces/_practical_details.html' %}
+  {% if not symposium.canceled %}
+    {% include 'annonces/_practical_details.html' %}
+  {% endif %}
   {{ symposium.introduction }}
   <div class="button-wrapper"><a href="{% url 'annonce_detail' symposium.slug %}" class="button-link">Lees meer</a></div>
   {% if include_separators %}<div class="separator bottom"><i class="orn star"></i></div>{% endif %}

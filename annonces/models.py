@@ -37,6 +37,16 @@ class Symposium(models.Model):
     )
     include_vids = models.JSONField(default=list)
     slug = models.SlugField(max_length=SLUG_LENGTH, null=False, unique=True)
+    canceled = models.BooleanField("Afgelast", default=False)
+    canceled_message = CleanHTMLField(
+        "Bericht bij het aflassen",
+        blank=True,
+        help_text=(
+            "Zal verschijnen op de pagina van de annonce en op de "
+            "startpagina, wanneer daar normaliter ook een aankondiging zou "
+            "verschijnen."
+        ),
+    )
 
     @property
     def time(self):

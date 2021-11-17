@@ -53,6 +53,7 @@ h3 {
 }
 
 a {
+  transition: 0.25s;
   color: $link-color;
   &:hover {
     color: $link-color-hover;
@@ -104,5 +105,19 @@ hr {
     background-color: transparentize($link-color-hover, 0.8);
     border-color: $link-color-hover;
     text-decoration: none;
+  }
+}
+
+.canceled-notice {
+  margin-top: 44.82px;
+  background-color: $theme-danger-light;
+  border: 1.5px solid $theme-danger;
+  color: $theme-danger;
+  border-radius: 10px;
+  padding: 10px 20px;
+  h2 {
+    font-family: $font-family-primary;
+    font-weight: 500;
+    font-size: 1.5em;
   }
 }

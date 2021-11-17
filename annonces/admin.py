@@ -65,8 +65,9 @@ class SymposiumAdmin(SummernoteModelAdmin):
         "place",
         "zoom_link",
         "to_be_announced",
+        ("canceled", "canceled_message"),
     )
     inlines = [ProgramItemAdmin, TalkAdmin]
 
-    summernote_fields = ["introduction"]
+    summernote_fields = ["introduction", "canceled_message"]
     formfield_overrides = CLEAN_HTML_LINE_OVERRIDE

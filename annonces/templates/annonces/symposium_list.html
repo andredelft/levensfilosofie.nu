@@ -4,7 +4,7 @@
 
 {% block body %}
 {% for symposium in symposia %}
-  {% include 'annonces/_symposium_preview.html' with enable_sr=True %}
+  {% include 'annonces/_symposium_preview.html' with enable_sr=True hide_notice=True %}
   {% if not forloop.last %}
   <div class="separator bottom symposium-sr load-hidden"><i class="orn star"></i></div>
   {% endif %}

@@ -30,7 +30,7 @@
       <h2 class="header">Agenda</h2>
       <div class="agenda-list">
         {% for symposium in upcoming_symposia %}
-        <div class="agenda-item">
+        <div class="agenda-item {% if symposium.canceled %}canceled{% endif %}">
           <h3 class="agenda-item-header">
             {% if symposium.to_be_announced %}
               {{ symposium.title }}
@@ -39,12 +39,12 @@
             {% endif %}
           </h3>
           <div>{{ symposium.date }}</div>
-          <div><i>Sprekers</i>: {{ symposium.speakers|dutch_summation }}<div>
+          <div><i>Sprekers</i>: {{ symposium.speakers|dutch_summation }}</div>
         </div>
         {% empty %}
         <div>Geen items in de agenda</div>
-        {% endfor %}
       </div>
+      {% endfor %}
     </aside>
     <section>
       <p class="intro">

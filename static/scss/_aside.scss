@@ -18,11 +18,22 @@ aside {
     padding: 0;
   }
 
+  .agenda-item.canceled {
+    color: transparentize(black, 0.5);
+    text-decoration: line-through;
+    .agenda-item-header a {
+      color: transparentize(black, 0.6);
+    }
+  }
+
   .agenda-item-header {
     margin-bottom: 0;
     a {
-      color: black;
       text-decoration: none;
+      color: black;
+      &:hover {
+        color: $link-color-hover;
+      }
     }
   }
 }

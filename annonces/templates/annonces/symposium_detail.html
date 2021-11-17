@@ -6,10 +6,15 @@
 {% block og_description %}{{ symposium.introduction|striptags|truncatechars:200 }}{% endblock %}
 
 {% block body %}
+{% if symposium.canceled %}
+  {% include 'annonces/_canceled.html' %}
+{% endif %}
 <h1>{{ symposium.title }}</h1>
-{% include 'annonces/_practical_details.html' %}
+{% if not symposium.canceled %}
+  {% include 'annonces/_practical_details.html' %}
+{% endif %}
 {{ symposium.introduction }}
-{% if program %}
+{% if program and not symposium.canceled %}
   <table class="program">
     {% for program_item in program %}
     <tr>
