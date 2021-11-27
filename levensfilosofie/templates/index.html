@@ -17,13 +17,11 @@
 </div>
 
 <div class="content-wrapper">
-  {% with upcoming_symposia.first as upcoming_symposium %}
-  {% if upcoming_symposium %}
+  {% if annonce %}
   <div class="container">
-    {% include 'annonces/_symposium_preview.html' with symposium=upcoming_symposium include_separators=True only %}
+    {% include 'annonces/_symposium_preview.html' with symposium=annonce include_separators=True only %}
   </div>
   {% endif %}
-  {% endwith %}
 
   <div class="container large">
     <aside>
