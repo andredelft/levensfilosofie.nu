@@ -1,7 +1,7 @@
 .content-wrapper {
   position: relative;
   z-index: 2;
-  background: $background-color;
+  background: fixed center / cover no-repeat url("../images/liquid-cheese.svg");
   word-wrap: break-word;
   padding-top: 45px;
   padding-bottom: 80px;
