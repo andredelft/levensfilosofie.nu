@@ -6,6 +6,6 @@
     {% include 'annonces/_practical_details.html' %}
   {% endif %}
   {{ symposium.introduction }}
-  <div class="button-wrapper"><button href="{% url 'annonce_detail' symposium.slug %}" class="button-link">Lees meer</button></div>
+  <div class="button-wrapper"><button onclick="location.href='{% url 'annonce_detail' symposium.slug %}';" class="button-link">Lees meer</button></div>
   {% if include_separators %}<div class="separator bottom"><i class="orn star"></i></div>{% endif %}
 </div>
