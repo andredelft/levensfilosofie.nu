@@ -3,7 +3,7 @@ import datetime
 
 register = template.Library()
 
-SOON_DAY_RANGE = 3
+SOON_DAY_RANGE = 14
 NOW = datetime.date.today()
 
 
