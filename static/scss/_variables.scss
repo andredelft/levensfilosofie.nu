@@ -12,6 +12,12 @@ $theme-camouflage: #414013;
 $theme-shadow-green: #96c5b9;
 $theme-copper: #c26d3e;
 
+$theme-limed-spruce: #3d5155;
+$theme-bison-hide: #c2c1a9;
+$theme-pewter: #92af9e;
+$theme-gumbo: #759fa7;
+$theme-gumbo-dark: #588791;
+
 $theme-danger: rgb(143, 27, 21);
 $theme-danger-light: rgb(246, 201, 206);
 
@@ -35,8 +41,9 @@ $dark-grey: #535d6c;
 $header-color: $yellow-100;
 $border-color: $medium-grey;
 $background-color: $yellow-50;
-$link-color: $dark-grey;
-$link-color-hover: $theme-astral;
+$default-text-color: $theme-limed-spruce;
+$link-color: $theme-gumbo-dark;
+$link-color-hover: $theme-gumbo;
 
 $border: solid 2px $border-color;
 
