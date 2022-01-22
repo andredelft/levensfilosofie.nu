@@ -5,7 +5,7 @@ nav.navbar {
   box-shadow: 0 -7px 15px grey;
 
   @include md-height {
-    position: sticky;
+    position: fixed;
     top: 0;
   }
   box-sizing: border-box;

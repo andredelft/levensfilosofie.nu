@@ -3,14 +3,17 @@
 
 {% block container %}
 <div class="landing" id="landing">
-  <div class="container">
+  <div class="heading-wrapper">
     <div class="landing-header">
       <div class="landing-header-1 load-hidden">Colloquium</div>
       <div class="landing-header-2 load-hidden">Levensfilosofie</div>
+      <div class="landing-buttons-wrapper load-hidden">
+        <button onclick="location.href='{% url 'annonce_list' %}';" class="landing-button button-link">Bekijk onze symposia</button>
+        <button onclick="let sectionHeight = document.getElementById('wie-zijn-wij').getBoundingClientRect().top; console.log(sectionHeight); window.scrollTo({top: sectionHeight - 150, behavior: 'smooth'});" class="landing-button button-link">Wie zijn wij?</button>
+      </div>
     </div>
-    <div class="landing-orn load-hidden"><span class="orn leaf"></span></div>
   </div>
-  <svg aria-hidden="true" focusable="false" class="chevron-down" data-prefix="fas"
+  <svg aria-hidden="true" focusable="false" class="chevron-down" data-prefix="fas" onclick="let pageHeight = window.innerHeight; window.scrollBy({top: pageHeight, behavior: 'smooth'});"
     data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
     <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
   </svg>
@@ -44,7 +47,7 @@
       </div>
       {% endfor %}
     </aside>
-    <section>
+    <section id="wie-zijn-wij">
       <p class="intro">
         Wat leert de filosofie van Levinas ons over vriendschap? Hoe verbindt Kierkegaard de angstaanjagende ervaring van leegte met de mogelijkheid van ware vrijheid? …
       </p>
@@ -81,25 +84,22 @@
 {% block scripts %}
 <script>
   ScrollReveal().reveal('.landing-header-1', {
-    distance: '150%',
+    distance: '50%',
     origin: 'left',
     opacity: 0,
     duration: 2000
   });
   ScrollReveal().reveal('.landing-header-2', {
     delay: 200,
-    distance: '200%',
+    distance: '50%',
     origin: 'right',
     opacity: 0,
     duration: 2000
   });
-  ScrollReveal().reveal('.landing-orn', {
-    delay: 1200,
-    rotate: {
-      x: -280,
-      y: 180
-    },
-    scale: 0.2
+  ScrollReveal().reveal('.landing-buttons-wrapper', {
+    delay: 1500,
+    opacity: 0,
+    duration: 1000,
   });
 
 

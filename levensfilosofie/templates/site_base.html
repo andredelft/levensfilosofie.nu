@@ -40,7 +40,7 @@
   </head>
 
   <body>
-    <nav class="navbar sticky">
+    <nav class="navbar" id="navbar">
       <div class="brand{% if hide_logo %} hide{% endif %}" id="logo">
         <a href="{% url 'home' %}">
           <span class="header-1">Colloquium</span>
@@ -50,7 +50,7 @@
       </div>
       <div class="links">
         <button onclick="location.href='{% url 'annonce_list' %}';" class="menu-link button-link">Symposia</button>
-        <button onclick="location.href='{% url 'member_list' %}';" class="menu-link button-link">Wie zijn wij?</button>
+        <button onclick="location.href='{% url 'member_list' %}';" class="menu-link button-link">Leden</button>
       </div>
     </nav>
     {% block container %}
