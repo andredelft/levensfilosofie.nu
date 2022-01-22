@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render, reverse
 
 from annonces.models import Symposium
 from datetime import date
@@ -17,5 +17,6 @@ def home(request):
             "hide_logo": True,
             "upcoming_symposia": upcoming_symposia,
             "annonce": annonce,
+            "no_animation": "no_animation" in request.GET.keys(),
         },
     )

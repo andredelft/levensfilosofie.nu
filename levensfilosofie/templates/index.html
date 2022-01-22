@@ -2,12 +2,13 @@
 {% load summation %}
 
 {% block container %}
+<script>history.replaceState(null, 'Colloquium Levensfilosofie', '/');</script>
 <div class="landing" id="landing">
   <div class="heading-wrapper">
     <div class="landing-header">
-      <div class="landing-header-1 load-hidden">Colloquium</div>
-      <div class="landing-header-2 load-hidden">Levensfilosofie</div>
-      <div class="landing-buttons-wrapper load-hidden">
+      <div class="landing-header-1{% if not no_animation %} load-hidden{% endif %}">Colloquium</div>
+      <div class="landing-header-2{% if not no_animation %} load-hidden{% endif %}">Levensfilosofie</div>
+      <div class="landing-buttons-wrapper{% if not no_animation %} load-hidden{% endif %}">
         <button onclick="location.href='{% url 'annonce_list' %}';" class="landing-button button-link">Bekijk onze symposia</button>
         <button onclick="let sectionHeight = document.getElementById('wie-zijn-wij').getBoundingClientRect().top; console.log(sectionHeight); window.scrollTo({top: sectionHeight - 150, behavior: 'smooth'});" class="landing-button button-link">Wie zijn wij?</button>
       </div>
@@ -55,6 +56,9 @@
         Het doel van het Colloquium Levensfilosofie is om, verspreid over het academische jaar, vijf extra-curriculaire minisymposia te organiseren over verschillende filosofisch en maatschappelijk relevante thema’s. Daarbij staat de dialoog over de ethische, existentiële en spirituele aspecten van deze thema’s voorop.
       </p>
       <p>
+        <a href="{% url 'annonce_list' %}">Bekijk onze symposia &#8594;</a>
+      </p>
+      <p>
         Het Colloquium Levensfilosofie is tevens bedoeld als brug tussen de academische filosofie en de samenleving. Het is een laagdrempelig platform voor studenten, docenten en belangstellenden van buiten de universiteit.
       </p>
       <p>
@@ -72,9 +76,12 @@
         Prof. em. dr. Hans Gerding (UL – filosoof)<br>
         Kirsten Kalkman MA (filosoof)<br>
         Dr. Rozemund Uljée (UL – filosoof)<br>
-        Prof. em. dr. Renée van Riessen (UL &amp; PThU – filosoof)<br>
+        Prof. em. dr. Renée van Riessen (UL &amp; PThU – filosoof)<br>
         Dr. Gerard Visser (UL – filosoof)<br>
         Drs. Barbara Zwaan MA (geestelijk verzorger)<br>
+      </p>
+      <p>
+        <a href="{% url 'member_list' %}">Lees meer over onze leden &#8594;</a>
       </p>
     </section>
   </div>
@@ -83,6 +90,7 @@
 
 {% block scripts %}
 <script>
+  {% if not no_animation %}
   ScrollReveal().reveal('.landing-header-1', {
     distance: '50%',
     origin: 'left',
@@ -101,7 +109,7 @@
     opacity: 0,
     duration: 1000,
   });
-
+  {% endif %}
 
   window.onscroll = function() {myFunction()};
 
