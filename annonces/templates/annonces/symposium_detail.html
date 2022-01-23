@@ -9,33 +9,35 @@
 {% if symposium.canceled %}
   {% include 'annonces/_canceled.html' %}
 {% endif %}
-<h1>{{ symposium.title }}</h1>
-{% if not symposium.canceled %}
-  {% include 'annonces/_practical_details.html' %}
-{% endif %}
-{{ symposium.introduction }}
-{% if program and not symposium.canceled %}
-  <table class="program">
-    {% for program_item in program %}
-    <tr>
-      <td>{{ program_item.time }}</td><td>{{ program_item.name }}</td>
-    </tr>
-    {% endfor %}
-  </table>
-{% endif %}
-{% for talk in talks %}
-  <div class="talk__speaker">{{ talk.speaker }}</div>
-  <h2 class="talk__title">{{ talk.title }}</h2>
-  {% if talk.video_id %}
-    {% include 'annonces/_yt_embed.html' with video_id=talk.video_id only %}
+<section class="prose prose-lg prose-headings:font-heading prose-h2:text-4xl mx-auto">
+  <h1>{{ symposium.title }}</h1>
+  {% if not symposium.canceled %}
+    {% include 'annonces/_practical_details.html' %}
   {% endif %}
-  {{ talk.abstract }}
-  <div class="personalia">
-    {{ talk.personalia }}
-  </div>
-{% endfor %}
-{% for vid in symposium.include_vids %}
-  <h3>{{ vid.title }}</h3>
-  {% include 'annonces/_yt_embed.html' with video_id=vid.id only %}
-{% endfor %}
+  {{ symposium.introduction }}
+  {% if program and not symposium.canceled %}
+    <table>
+      {% for program_item in program %}
+      <tr>
+        <td>{{ program_item.time }}</td><td>{{ program_item.name }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  {% endif %}
+  {% for talk in talks %}
+    <div class="talk__speaker">{{ talk.speaker }}</div>
+    <h2 class="talk__title">{{ talk.title }}</h2>
+    {% if talk.video_id %}
+      {% include 'annonces/_yt_embed.html' with video_id=talk.video_id only %}
+    {% endif %}
+    {{ talk.abstract }}
+    <div class="personalia">
+      {{ talk.personalia }}
+    </div>
+  {% endfor %}
+  {% for vid in symposium.include_vids %}
+    <h3>{{ vid.title }}</h3>
+    {% include 'annonces/_yt_embed.html' with video_id=vid.id only %}
+  {% endfor %}
+</section>
 {% endblock %}

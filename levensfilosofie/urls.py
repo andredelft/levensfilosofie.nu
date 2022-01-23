@@ -9,4 +9,5 @@ urlpatterns = [
     path("summernote/", include("django_summernote.urls")),
     path("annonces/", include("annonces.urls")),
     path("leden/", include("leden.urls")),
+    path("__reload__/", include("django_browser_reload.urls")),
 ]

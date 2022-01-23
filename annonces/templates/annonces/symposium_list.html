@@ -3,6 +3,7 @@
 {% block title %}Annonces | Colloquium Levensfilosofie{% endblock %}
 
 {% block body %}
+<section class="prose prose-lg prose-headings:font-heading mx-auto">
 {% for symposium in symposia %}
   {% include 'annonces/_symposium_preview.html' with enable_sr=True hide_notice=True %}
   {% if not forloop.last %}
@@ -11,6 +12,7 @@
 {% empty %}
   <i>Geen symposia gevonden</i>
 {% endfor %}
+</section>
 {% endblock %}
 
 {% block scripts %}

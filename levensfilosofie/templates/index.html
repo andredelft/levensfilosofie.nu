@@ -22,34 +22,14 @@
 
 <div class="content-wrapper">
   {% if annonce %}
-  <div class="container">
+  <div class="container prose prose-lg prose-headings:font-heading prose-h1:mt-8">
     {% include 'annonces/_symposium_preview.html' with symposium=annonce include_separators=True only %}
   </div>
   {% endif %}
 
-  <div class="container large">
-    <aside>
-      <h2 class="header">Agenda</h2>
-      <div class="agenda-list">
-        {% for symposium in upcoming_symposia %}
-        <div class="agenda-item {% if symposium.canceled %}canceled{% endif %}">
-          <h3 class="agenda-item-header">
-            {% if symposium.to_be_announced %}
-              {{ symposium.title }}
-            {% else %}
-              <a href="{% url 'annonce_detail' symposium.slug %}">{{ symposium.title }}</a>
-            {% endif %}
-          </h3>
-          <div>{{ symposium.date }}</div>
-          <div><i>Sprekers</i>: {{ symposium.speakers|dutch_summation }}</div>
-        </div>
-        {% empty %}
-        <div>Geen items in de agenda</div>
-      </div>
-      {% endfor %}
-    </aside>
-    <section id="wie-zijn-wij">
-      <p class="intro">
+  <div class="container flex flex-wrap justify-center gap-x-16 gap-y-24">
+    <section id="wie-zijn-wij" class="prose prose-lg mx-auto lg:mx-0">
+      <p class="lead">
         Wat leert de filosofie van Levinas ons over vriendschap? Hoe verbindt Kierkegaard de angstaanjagende ervaring van leegte met de mogelijkheid van ware vrijheid? …
       </p>
       <p>
@@ -84,6 +64,26 @@
         <a href="{% url 'member_list' %}">Lees meer over onze leden &#8594;</a>
       </p>
     </section>
+    <aside class="prose prose-lg prose-headings:font-heading max-w-[400px] prose-a:no-underline prose-h2:mb-0">
+      <h1 class="header">Agenda</h1>
+      <div class="agenda-list">
+        {% for symposium in upcoming_symposia %}
+        <div class="agenda-item {% if symposium.canceled %}canceled{% endif %}">
+          <h2 class="agenda-item-header">
+            {% if symposium.to_be_announced %}
+              {{ symposium.title }}
+            {% else %}
+              <a href="{% url 'annonce_detail' symposium.slug %}">{{ symposium.title }}</a>
+            {% endif %}
+          </h2>
+          <div>{{ symposium.date }}</div>
+          <div><i>Sprekers</i>: {{ symposium.speakers|dutch_summation }}</div>
+        </div>
+        {% empty %}
+        <div>Geen items in de agenda</div>
+      </div>
+      {% endfor %}
+    </aside>
   </div>
 </div>
 {% endblock %}

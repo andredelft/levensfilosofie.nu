@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  {% load static compress %}
+  {% load static compress tailwind_tags %}
   <head>
     <meta charset="utf-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
@@ -21,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    {% tailwind_css %}
     {% compress css %}
     <link rel="stylesheet" type="text/x-scss" href="{% static 'scss/index.scss' %}">
     {% endcompress %}
@@ -49,8 +50,8 @@
         <span class="header-orn orn leaf"></span>
       </div>
       <div class="links">
-        <button onclick="location.href='{% url 'annonce_list' %}';" class="menu-link button-link">Symposia</button>
-        <button onclick="location.href='{% url 'member_list' %}';" class="menu-link button-link">Leden</button>
+        <a href="{% url 'annonce_list' %}" class="menu-link button-link">Symposia</a>
+        <a href="{% url 'member_list' %}" class="menu-link button-link">Leden</a>
       </div>
     </nav>
     {% block container %}
