@@ -1,4 +1,5 @@
-from django.shortcuts import redirect, render, reverse
+from django.shortcuts import render
+from django.conf import settings
 
 from annonces.models import Symposium
 from datetime import date

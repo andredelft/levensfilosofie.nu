@@ -3,7 +3,7 @@
 {% block title %}Annonces | Colloquium Levensfilosofie{% endblock %}
 
 {% block body %}
-<section class="prose prose-lg prose-headings:font-heading mx-auto">
+<section class="{{prose}}">
 {% for symposium in symposia %}
   {% include 'annonces/_symposium_preview.html' with enable_sr=True hide_notice=True %}
   {% if not forloop.last %}

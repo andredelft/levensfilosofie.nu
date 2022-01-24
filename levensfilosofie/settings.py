@@ -72,6 +72,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "theme.context_processors.provide_tags",
             ],
         },
     },
@@ -178,6 +179,11 @@ TAILWIND_APP_NAME = "theme"
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
+
+TAILWIND_CLASSLISTS = {
+    "prose": "prose prose-lg prose-slate prose-headings:font-heading mx-auto",
+    "background": "bg-sundance-50",
+}
 
 cloudinary.config(**{k.lower(): v for k, v in CLOUDINARY_STORAGE.items()})
 

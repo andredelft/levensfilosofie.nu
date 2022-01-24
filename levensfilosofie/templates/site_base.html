@@ -56,14 +56,14 @@
     </nav>
     {% block container %}
     {% block pre_body %}{% endblock %}
-    <section class="content-wrapper" id="section">
-      <div class="container">
+    <div class="content-wrapper {{background}}" id="section">
+      <div class="container {% block container_class %}{% endblock container_class %}">
         {% block body %}{% endblock %}
       </div>
-    </section>
+    </div>
     {% endblock %}
     <footer>
-      <div class="container">
+      <div class="max-w-4xl container">
         <div>
           <a href="https://www.universiteitleiden.nl/geesteswetenschappen/instituut-voor-wijsbegeerte" class="UL-logo">
             <img src="{% static 'images/UL.svg' %}"/>

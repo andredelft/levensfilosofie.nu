@@ -4,7 +4,7 @@
 {% block title %}Leden | Colloquium Levensfilosofie{% endblock %}
 
 {% block body %}
-<section class="prose prose-lg md:prose-xl prose-headings:font-heading prose-h1:my-0 mx-auto">
+<div class="{{prose}} md:prose-xl mx-auto prose-headings:mb-0 md:prose-headings:mb-0 prose-h1:text-4xl md:prose-h1:text-5xl">
 {% for member in members %}
   <div class="member load-hidden">
     <div class="member-heading">
@@ -18,7 +18,7 @@
 {% empty %}
   <i>Geen leden gevonden</i>
 {% endfor %}
-</section>
+</div>
 {% endblock %}
 
 {% block scripts %}

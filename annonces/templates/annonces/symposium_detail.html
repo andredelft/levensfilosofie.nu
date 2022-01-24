@@ -5,11 +5,12 @@
 {% block og_title %}{{ symposium.title }}{% endblock %}
 {% block og_description %}{{ symposium.introduction|striptags|truncatewords:30 }}{% endblock %}
 
+
 {% block body %}
-{% if symposium.canceled %}
-  {% include 'annonces/_canceled.html' %}
-{% endif %}
-<section class="prose prose-lg prose-headings:font-heading prose-h2:text-4xl mx-auto">
+<section class="{{prose}} prose-h2:text-4xl mx-auto">
+  {% if symposium.canceled %}
+    {% include 'annonces/_canceled.html' %}
+  {% endif %}
   <h1>{{ symposium.title }}</h1>
   {% if not symposium.canceled %}
     {% include 'annonces/_practical_details.html' %}

@@ -20,17 +20,17 @@
   </svg>
 </div>
 
-<div class="content-wrapper">
+<div class="content-wrapper {{background}}">
   {% if annonce %}
-  <div class="container prose prose-lg prose-headings:font-heading prose-h1:mt-8">
+  <div class="container {{prose}} prose-h1:mt-8">
     {% include 'annonces/_symposium_preview.html' with symposium=annonce include_separators=True only %}
   </div>
   {% endif %}
 
   <div class="container flex flex-wrap justify-center gap-x-16 gap-y-24">
-    <section id="wie-zijn-wij" class="prose prose-lg mx-auto lg:mx-0">
+    <section id="wie-zijn-wij" class="{{prose}} lg:mx-0">
       <p class="lead">
-        Wat leert de filosofie van Levinas ons over vriendschap? Hoe verbindt Kierkegaard de angstaanjagende ervaring van leegte met de mogelijkheid van ware vrijheid? …
+        Wat leert de filosofie van Levinas ons over vriendschap? Hoe verbindt Kierkegaard de angstaanjagende ervaring van leegte met de mogelijkheid van ware vrijheid?
       </p>
       <p>
         Het doel van het Colloquium Levensfilosofie is om, verspreid over het academische jaar, vijf extra-curriculaire minisymposia te organiseren over verschillende filosofisch en maatschappelijk relevante thema’s. Daarbij staat de dialoog over de ethische, existentiële en spirituele aspecten van deze thema’s voorop.
@@ -64,7 +64,7 @@
         <a href="{% url 'member_list' %}">Lees meer over onze leden &#8594;</a>
       </p>
     </section>
-    <aside class="prose prose-lg prose-headings:font-heading max-w-[400px] prose-a:no-underline prose-h2:mb-0">
+    <aside class="{{prose}} mx-0 max-w-[400px] prose-a:no-underline prose-h2:mb-0">
       <h1 class="header">Agenda</h1>
       <div class="agenda-list">
         {% for symposium in upcoming_symposia %}
