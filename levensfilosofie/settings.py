@@ -72,7 +72,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                "theme.context_processors.provide_tags",
+                "theme.context_processors.tailwind_classes",
             ],
         },
     },
@@ -180,8 +180,8 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
-TAILWIND_CLASSLISTS = {
-    "prose": "prose prose-lg prose-slate prose-headings:font-heading mx-auto",
+TAILWIND_CLASSES = {
+    "prose": "prose prose-lg prose-stone prose-headings:font-heading mx-auto",
     "background": "bg-sundance-50",
 }
 

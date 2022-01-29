@@ -1,7 +1,13 @@
 from django.conf import settings
 
 
-def provide_tags(request):
-    return (
-        settings.TAILWIND_CLASSLISTS if hasattr(settings, "TAILWIND_CLASSLISTS") else {}
-    )
+DEFAULT_CLASSES = {"prose": "prose"}
+
+
+def tailwind_classes(request):
+
+    classes = DEFAULT_CLASSES.copy()
+    if hasattr(settings, "TAILWIND_CLASSES"):
+        classes.update(settings.TAILWIND_CLASSES)
+
+    return classes
