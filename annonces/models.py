@@ -20,11 +20,6 @@ class Symposium(models.Model):
         max_length=100,
         blank=True,
         null=True,
-        help_text=(
-            "Uit veiligheidsoverwegingen verschijnt de zoomlink pas 3 dagen "
-            "voor het symposium begint op de website, en hij verdwijnt daarna "
-            "ook weer automatisch."
-        ),
     )
     to_be_announced = models.BooleanField(
         "Nog aan te kondigen",
@@ -67,9 +62,7 @@ class Symposium(models.Model):
     def save(self, *args, **kwargs):
         if not self.slug:
             main_title = self.title.split(":")[0]
-            self.slug = (
-                f"{self.date.strftime('%Y-%m-%d')}-{slugify(main_title)}"
-            )
+            self.slug = f"{self.date.strftime('%Y-%m-%d')}-{slugify(main_title)}"
             self.slug = self.slug[: self.SLUG_LENGTH]
         return super().save(*args, **kwargs)
 
@@ -121,7 +114,9 @@ class ProgramItem(models.Model):
     @property
     def time(self):
         if self.time_to:
-            return f"{self.time_from.strftime('%-H:%M')}–{self.time_to.strftime('%-H:%M')}"
+            return (
+                f"{self.time_from.strftime('%-H:%M')}–{self.time_to.strftime('%-H:%M')}"
+            )
         else:
             return f"{self.time_from.strftime('%-H:%M')}"
 

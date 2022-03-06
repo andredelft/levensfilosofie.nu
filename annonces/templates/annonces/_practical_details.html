@@ -13,7 +13,7 @@
   {% if symposium.place %}
   <li><i>Locatie</i>: {{ symposium.place }}</li>
   {% endif %}
-  {% if symposium.zoom_link and symposium|is_soon %}
+  {% if symposium.zoom_link and not symposium|is_over %}
   <li><i>Zoom-link</i>: <a href="{{ symposium.zoom_link }}" target="_blank" rel="noopener noreferrer">{{ symposium.zoom_link }}</a></li>
   {% endif %}
 </ul>
