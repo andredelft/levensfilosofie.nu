@@ -4,11 +4,10 @@ from django.conf import settings
 from annonces.models import Symposium
 from datetime import date
 
-TODAY = date.today()
-
 
 def home(request):
-    upcoming_symposia = Symposium.objects.filter(date__gte=TODAY).order_by("date")
+    today = date.today()
+    upcoming_symposia = Symposium.objects.filter(date__gte=today).order_by("date")
     annonce = upcoming_symposia.filter(to_be_announced=False, canceled=False).first()
 
     return render(
