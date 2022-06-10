@@ -51,14 +51,9 @@
         Het Colloquium Levensfilosofie is opgericht in 2002. Het is voortgekomen uit een initiatief van dr. Gerard Visser die van 1985 tot 2015 medewerker cultuurfilosofie was aan het Instituut voor Wijsbegeerte van Universiteit Leiden. Het Colloquium Levensfilosofie bestaat thans uit:
       </p>
       <p>
-        Ivo Bles MA (filosoof)<br>
-        André van Delft MA, MSc (filosoof en natuurkundige)<br>
-        Prof. em. dr. Hans Gerding (UL – filosoof)<br>
-        Kirsten Kalkman MA (filosoof)<br>
-        Dr. Rozemund Uljée (UL – filosoof)<br>
-        Prof. em. dr. Renée van Riessen (UL &amp; PThU – filosoof)<br>
-        Dr. Gerard Visser (UL – filosoof)<br>
-        Drs. Barbara Zwaan MA (geestelijk verzorger)<br>
+        {% for member in members %}
+        {{ member.name }}{% if not forloop.last %}<br>{% endif %}
+        {% endfor %}
       </p>
       <p>
         <a href="{% url 'member_list' %}">Lees meer over onze leden &#8594;</a>

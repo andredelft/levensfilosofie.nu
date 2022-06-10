@@ -8,45 +8,55 @@ from levensfilosofie.fields import CleanHTMLField
 
 class Member(models.Model):
     prefix = models.CharField(
-        'Prefix', max_length=20, blank=True, null=True,
-        help_text="Bijv.: 'Prof. dr.'"
+        "Prefix", max_length=20, blank=True, null=True, help_text="Bijv.: 'Prof. dr.'"
     )
-    first_name = models.CharField(
-        'Voornaam', max_length=20, blank=True, null=True
-    )
+    first_name = models.CharField("Voornaam", max_length=20, blank=True, null=True)
     preposition = models.CharField(
-        'Tussenvoegsel', max_length=20, blank=True, null=True
+        "Tussenvoegsel", max_length=20, blank=True, null=True
     )
-    last_name = models.CharField('Achternaam', max_length=20)
+    last_name = models.CharField("Achternaam", max_length=20)
     suffix = models.CharField(
-        'Suffix', max_length=20, blank=True, null=True,
-        help_text="Bijv.: 'MA'"
+        "Suffix", max_length=20, blank=True, null=True, help_text="Bijv.: 'MA'"
     )
-    personalia = CleanHTMLField('Personalia')
-    picture = CloudinaryField('Afbeelding', blank=True, null=True)
+    personalia = CleanHTMLField("Personalia", blank=True, null=True)
+    picture = CloudinaryField("Afbeelding", blank=True, null=True)
+    hidden = models.BooleanField(
+        "Verborgen",
+        default=False,
+        help_text="Verberg dit lid in de ledenpagina (lid zal alleen bij naam op de startpagina worden genoemd)",
+    )
 
     def _yield_name_parts(self):
         for name_part in [
-            self.prefix, self.first_name, self.preposition,
-            self.last_name, self.suffix
+            self.prefix,
+            self.first_name,
+            self.preposition,
+            self.last_name,
+            self.suffix,
         ]:
             if name_part:
                 yield name_part
 
     @property
     def name(self):
-        return ' '.join(name_part for name_part in self._yield_name_parts())
+        return " ".join(name_part for name_part in self._yield_name_parts())
 
     def picture_preview(self):
         if self.picture:
             return mark_safe(
-                self.picture.image(transformation=[{
-                    'height': 150, 'width': 150, 'crop': 'thumb',
-                    'gravity': 'face'
-                }])
+                self.picture.image(
+                    transformation=[
+                        {
+                            "height": 150,
+                            "width": 150,
+                            "crop": "thumb",
+                            "gravity": "face",
+                        }
+                    ]
+                )
             )
         else:
-            return ''
+            return ""
 
     def __str__(self):
         return self.name
@@ -54,3 +64,4 @@ class Member(models.Model):
     class Meta:
         verbose_name = "Lid"
         verbose_name_plural = "Leden"
+        ordering = ["last_name", "first_name"]

@@ -5,5 +5,5 @@ from leden.models import Member
 
 class MemberList(ListView):
     model = Member
-    ordering = ['last_name', 'first_name']
-    context_object_name = 'members'
+    context_object_name = "members"
+    queryset = Member.objects.filter(hidden=False)
