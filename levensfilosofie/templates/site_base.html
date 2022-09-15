@@ -38,6 +38,7 @@
     <meta name="msapplication-TileColor" content="#214478">
     <meta name="msapplication-config" content="{% static 'favicon/browserconfig.xml' %}">
     <meta name="theme-color" content="#ffffff">
+    {% block head %}{% endblock head %}
   </head>
 
   <body>
@@ -56,14 +57,14 @@
     </nav>
     {% block container %}
     {% block pre_body %}{% endblock %}
-    <div class="content-wrapper {{background}}" id="section">
+    <div class="content-wrapper {{background}} {% block content_wrapper_class %}{% endblock %}" id="section">
       <div class="container {% block container_class %}{% endblock container_class %}">
         {% block body %}{% endblock %}
       </div>
     </div>
     {% endblock %}
     <footer>
-      <div class="max-w-4xl container">
+      <div class="container max-w-4xl">
         <div>
           <a href="https://www.universiteitleiden.nl/geesteswetenschappen/instituut-voor-wijsbegeerte" class="UL-logo">
             <img src="{% static 'images/UL.svg' %}"/>

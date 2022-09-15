@@ -15,6 +15,9 @@ class Symposium(models.Model):
     time_from = models.TimeField("Begintijd", null=True, blank=True)
     time_to = models.TimeField("Eindtijd", null=True, blank=True)
     place = models.CharField("Locatie", max_length=200, null=True, blank=True)
+    cover_image_name = models.CharField(
+        "Omslagfoto", max_length=200, null=True, blank=True
+    )
     zoom_link = models.CharField(
         "Zoom Link",
         max_length=100,
