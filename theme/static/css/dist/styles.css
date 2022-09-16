@@ -1226,10 +1226,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 400px;
 }
 
-.max-h-\[33vh\] {
-  max-height: 33vh;
-}
-
 .max-h-\[50vh\] {
   max-height: 50vh;
 }
