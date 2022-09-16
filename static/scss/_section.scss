@@ -79,3 +79,9 @@
 #wie-zijn-wij {
   max-width: 600px;
 }
+
+@include sm-height {
+  .cover-image {
+    margin-top: 0;
+  }
+}

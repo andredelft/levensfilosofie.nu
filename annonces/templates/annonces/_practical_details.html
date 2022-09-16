@@ -13,7 +13,10 @@
   {% if symposium.place %}
   <li><i>Locatie</i>: {{ symposium.place }}</li>
   {% endif %}
-  {% if symposium.zoom_link and not symposium|is_over %}
+  {% if not symposium|is_over %}
+  {% if symposium.zoom_link %}
   <li><i>Zoom-link</i>: <a href="{{ symposium.zoom_link }}" target="_blank" rel="noopener noreferrer">{{ symposium.zoom_link }}</a></li>
+  {% endif %}
+  <li>Toegang is gratis en aanmelden is niet nodig.</li>
   {% endif %}
 </ul>
