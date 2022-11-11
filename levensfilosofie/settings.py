@@ -181,7 +181,7 @@ INTERNAL_IPS = [
 ]
 
 TAILWIND_CLASSES = {
-    "prose": "prose prose-lg prose-stone prose-headings:font-heading mx-auto",
+    "prose": "prose md:prose-lg prose-stone prose-headings:font-heading mx-auto",
     "background": "bg-sundance-50",
 }
 
