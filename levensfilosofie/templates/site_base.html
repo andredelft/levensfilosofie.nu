@@ -21,11 +21,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    {% tailwind_css %}
     {% compress css %}
     <link rel="stylesheet" type="text/x-scss" href="{% static 'scss/index.scss' %}">
     {% endcompress %}
+    {% tailwind_css %}
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
@@ -51,8 +52,8 @@
         <span class="header-orn orn leaf"></span>
       </div>
       <div class="links">
-        <a href="{% url 'annonce_list' %}" class="menu-link button-link">Symposia</a>
-        <a href="{% url 'member_list' %}" class="menu-link button-link">Leden</a>
+        <a href="{% url 'annonce_list' %}" class="menu-link button-link text-gumbo-dark">Symposia</a>
+        <a href="{% url 'member_list' %}" class="menu-link button-link text-gumbo-dark">Leden</a>
       </div>
     </nav>
     {% block container %}
@@ -71,15 +72,21 @@
           </a>
         </div>
         <div>
-          <ul>
+          <ul class="text-lg">
             <li>Colloquium Levensfilosofie</li>
             <li>Instituut voor Wijsbegeerte</li>
             <li>Universiteit Leiden</li>
           </ul>
         </div>
-        <div>
-          <b>Contact</b><br>
-          <a href="mailto:info@levensfilosofie.nu">info@levensfilosofie.nu</a>
+        <div class="space-y-1">
+          <a href="mailto:info@levensfilosofie.nu" class="flex items-center space-x-2 text-lg text-limed-spruce">
+            <i class="ph-paper-plane-right ph-xl"></i> 
+            <span>info@levensfilosofie.nu</span>
+          </a>
+          <a href="https://instagram.com/levensfilosofie.nu" class="flex items-center space-x-2 text-lg text-limed-spruce">
+            <i class="ph-instagram-logo ph-xl"></i>
+            <span>@levensfilosofie.nu</span>
+          </a>
         </div>
       </div>
     </footer>

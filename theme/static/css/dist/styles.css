@@ -1267,6 +1267,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   row-gap: 6rem;
 }
 
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
 .border {
   border-width: 1px;
 }
@@ -1289,6 +1307,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .italic {
   font-style: italic;
 }
@@ -1299,6 +1327,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .tracking-normal {
   letter-spacing: 0em;
+}
+
+.text-limed-spruce {
+  --tw-text-opacity: 1;
+  color: rgb(61 81 85 / var(--tw-text-opacity));
+}
+
+.text-gumbo-dark {
+  --tw-text-opacity: 1;
+  color: rgb(88 135 145 / var(--tw-text-opacity));
 }
 
 .underline {
