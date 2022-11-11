@@ -1,82 +1,12 @@
-button {
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
-  overflow: visible;
-
-  background: transparent;
-
-  /* inherit font & color from ancestor */
-  color: inherit;
-  font: inherit;
-
-  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
-  line-height: normal;
-
-  /* Corrects font smoothing for webkit */
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-
-  /* Corrects inability to style clickable `input` types in iOS */
-  -webkit-appearance: none;
-}
-
-/* Remove excess padding and border in Firefox 4+ */
-button::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
 html.sr .load-hidden {
   visibility: hidden;
 }
 
 body {
-  // font-family: $font-family-primary;
-  // font-size: 18px;
   min-height: 100vh;
   margin: 0;
   line-height: 1.4;
 }
-
-// :root {
-//   color: $default-text-color;
-// }
-
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   font-family: $font-family-secondary;
-//   line-height: 1.1em;
-//   color: black;
-// }
-
-// h1 {
-//   font-size: 3em;
-//   margin-bottom: 0.2em;
-//   @include sm {
-//     font-size: 2.3em;
-//   }
-// }
-
-// h2 {
-//   font-size: 2em;
-//   margin-bottom: 0;
-//   @include sm {
-//     font-size: 2em;
-//   }
-// }
-
-// h3 {
-//   font-size: 1.5em;
-//   @include sm {
-//     font-size: 1.5em;
-//   }
-// }
 
 .container {
   margin: 0 auto;
@@ -92,9 +22,7 @@ button {
 }
 
 .separator {
-  font-size: 22px;
   font-weight: normal;
-  font-style: italic;
   color: $dark-grey;
   display: flex;
   align-items: center;

@@ -3,11 +3,8 @@ nav.navbar {
   background-color: $header-color;
   padding: 0.5rem;
   box-shadow: 0 -7px 15px grey;
-
-  @include md-height {
-    position: fixed;
-    top: 0;
-  }
+  position: sticky;
+  top: 0;
   box-sizing: border-box;
   width: 100%;
   min-height: 75px;

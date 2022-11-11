@@ -4,7 +4,14 @@
 {% block container %}
 <script>history.replaceState(null, 'Colloquium Levensfilosofie', '/');</script>
 <div class="relative landing" id="landing">
-  <img class="absolute object-cover w-full h-screen" {% include 'annonces/_unsplash_image_props.html' %}>
+  {% comment %} <img class="absolute object-cover w-full h-screen" {% include 'annonces/_unsplash_image_props.html' %}> {% endcomment %}
+  <picture class="absolute flex w-full h-screen">
+    <source srcset="{{ photo.urls.raw }}&h=1000&w=600&fit=crop 1x, {{ photo.urls.raw }}&h=1000&w=600&fit=crop&dpr=2 2x" media="(max-width: 450px)">
+    <source srcset="{{ photo.urls.raw }}&w=768&fit=crop 1x, {{ photo.urls.raw }}&h=768&fit=crop&dpr=2 2x" media="(max-width: 768px)">
+    <source srcset="{{ photo.urls.raw }}&w=1280&fit=crop 1x, {{ photo.urls.raw }}&w=1280&fit=crop&dpr=2 2x" media="(max-width: 1280px)">
+    <source srcset="{{ photo.urls.raw }}&w=1536&fit=crop 1x, {{ photo.urls.raw }}&w=1536&fit=crop&dpr=2 2x" media="(min-width: 1280px)">
+    <img src="{{ photo.urls.regular }}" alt="{{ photo.user.name }}" class="object-cover w-full h-auto">
+  </picture>
   <div class="absolute heading-wrapper">
     <div class="landing-header">
       <div class="landing-header-1{% if not no_animation %} load-hidden{% endif %}">Colloquium</div>
@@ -24,9 +31,9 @@
 </div>
 {% include 'annonces/_unsplash_attribution.html' %}
 
-<div class="content-wrapper {{background}}">
+<div class="content-wrapper {{background}} py-12">
   {% if annonce %}
-  <div class="container {{prose}} prose-h1:mt-8">
+  <div class="container {{prose}}">
     {% include 'annonces/_symposium_preview.html' with symposium=annonce include_separators=True only %}
   </div>
   {% endif %}

@@ -3,8 +3,7 @@
   {% load static compress tailwind_tags %}
   <head>
     <meta charset="utf-8">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=device-dpi'>
     <title>{% block title %}Colloquium Levensfilosofie{% endblock %}</title>
 
     <meta property="og:type" content="website">
@@ -13,7 +12,7 @@
     <meta name="description" property="og:description" content="{% block og_description %}Het Colloquium Levensfilosofie organiseert extra-curriculaire minisymposia over verschillende filosofisch en maatschappelijk relevante thema’s.{% endblock %}">
 
     {% with 'favicon/og_image.jpg' as image_name %}
-    <meta property="og:image" content="https://{{ request.get_host }}{% static image_name %}">
+    <meta property="og:image" content="{% block og_image %}https://{{ request.get_host }}{% static image_name %}{% endblock og_image %}">
     <meta property="og:image:url"  content="https://{{ request.get_host }}{% static image_name %}">
     <meta property="twitter:image" content="https://{{ request.get_host }}{% static image_name %}">
     {% endwith %}
@@ -58,7 +57,7 @@
     </nav>
     {% block container %}
     {% block pre_body %}{% endblock %}
-    <div class="content-wrapper {{background}} {% block content_wrapper_class %}{% endblock %}" id="section">
+    <div class="content-wrapper {{background}} pt-12 md:pt-20 {% block content_wrapper_class %}{% endblock %}" id="section">
       <div class="container {% block container_class %}{% endblock container_class %}">
         {% block body %}{% endblock %}
       </div>

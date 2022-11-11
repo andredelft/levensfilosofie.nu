@@ -2,7 +2,6 @@
   position: relative;
   z-index: 2;
   word-wrap: break-word;
-  padding-top: 160px;
   padding-bottom: 80px;
 
   .container {
@@ -53,7 +52,7 @@
     border: solid 1.5px $border-color;
   }
   .member {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     &:last-of-type {
       margin-bottom: 0px;
     }
