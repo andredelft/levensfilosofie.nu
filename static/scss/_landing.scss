@@ -1,6 +1,6 @@
 .landing {
   min-height: 600px;
-  height: 100vh;
+  height: calc(100vh - 75px);
   background-size: cover;
   background-attachment: scroll;
   background-position: center;

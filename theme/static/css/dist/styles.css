@@ -988,19 +988,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0px;
 }
 
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-.mt-\[75px\] {
-  margin-top: 75px;
-}
-
-.mb-12 {
-  margin-bottom: 3rem;
-}
-
 .block {
   display: block;
 }
@@ -1025,10 +1012,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
-.h-\[400px\] {
-  height: 400px;
-}
-
 .h-full {
   height: 100%;
 }
@@ -1037,16 +1020,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: auto;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
 .max-h-\[50vh\] {
   max-height: 50vh;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-screen {
-  width: 100vw;
 }
 
 .max-w-\[400px\] {
@@ -1117,13 +1100,21 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-fit: cover;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.py-12 {
+.pt-12 {
   padding-top: 3rem;
+}
+
+.pb-12 {
   padding-bottom: 3rem;
 }
 
@@ -1133,18 +1124,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .\!pt-16 {
   padding-top: 4rem !important;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
-}
-
-.pb-12 {
-  padding-bottom: 3rem;
 }
 
 .text-right {
@@ -1228,10 +1207,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Soria, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
-.prose-h1\:mt-8 :is(:where(h1):not(:where([class~="not-prose"] *))) {
-  margin-top: 2rem;
-}
-
 .prose-h1\:text-4xl :is(:where(h1):not(:where([class~="not-prose"] *))) {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1239,11 +1214,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .prose-h2\:mb-0 :is(:where(h2):not(:where([class~="not-prose"] *))) {
   margin-bottom: 0px;
-}
-
-.prose-h2\:text-4xl :is(:where(h2):not(:where([class~="not-prose"] *))) {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .prose-h2\:text-3xl :is(:where(h2):not(:where([class~="not-prose"] *))) {
