@@ -5,7 +5,7 @@
   background-attachment: scroll;
   background-position: center;
   overflow-x: hidden;
-  background-image: url("../images/umit-yildirim.jpg");
+  transform: scaleX(-1);
 
   z-index: 1;
 
@@ -14,6 +14,7 @@
   flex-direction: column;
 
   .heading-wrapper {
+    transform: scaleX(-1);
     font-size: 100px;
     @include md {
       font-size: 70px;

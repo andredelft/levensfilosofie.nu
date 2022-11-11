@@ -31,9 +31,7 @@ CLEAN_HTML_LINE_TABULAR_OVERRIDE = {
 CLEAN_HTML_LINE_OVERRIDE = {
     CleanHTMLLineField: {
         "widget": SummernoteWidget(
-            attrs={
-                "summernote": {"height": "100px", "toolbar": TOOLBAR_CONFIG}
-            }
+            attrs={"summernote": {"height": "100px", "toolbar": TOOLBAR_CONFIG}}
         )
     }
 }
@@ -63,6 +61,7 @@ class SymposiumAdmin(SummernoteModelAdmin):
         "date",
         ("time_from", "time_to"),
         "place",
+        "photo_id",
         "zoom_link",
         "to_be_announced",
         ("canceled", "canceled_message"),

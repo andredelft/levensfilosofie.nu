@@ -21,5 +21,19 @@ def home(request):
             "annonce": annonce,
             "no_animation": "no_animation" in request.GET.keys(),
             "members": members,
+            "photo": {
+                "urls": {
+                    "raw": "https://images.unsplash.com/photo-1625745450753-3c0b0678b2ae?ixid=MnwzMzE4NjN8MHwxfGFsbHx8fHx8fHx8fDE2NjM4NTkxNTA&ixlib=rb-1.2.1",
+                    "full": "https://images.unsplash.com/photo-1625745450753-3c0b0678b2ae?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzE4NjN8MHwxfGFsbHx8fHx8fHx8fDE2NjM4NTkxNTA&ixlib=rb-1.2.1&q=80",
+                    "regular": "https://images.unsplash.com/photo-1625745450753-3c0b0678b2ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMzE4NjN8MHwxfGFsbHx8fHx8fHx8fDE2NjM4NTkxNTA&ixlib=rb-1.2.1&q=80&w=1080",
+                    "small": "https://images.unsplash.com/photo-1625745450753-3c0b0678b2ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMzE4NjN8MHwxfGFsbHx8fHx8fHx8fDE2NjM4NTkxNTA&ixlib=rb-1.2.1&q=80&w=400",
+                    "thumb": "https://images.unsplash.com/photo-1625745450753-3c0b0678b2ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMzE4NjN8MHwxfGFsbHx8fHx8fHx8fDE2NjM4NTkxNTA&ixlib=rb-1.2.1&q=80&w=200",
+                    "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1625745450753-3c0b0678b2ae",
+                },
+                "user": {
+                    "name": "Ümit Yıldırım",
+                    "links": {"html": {"https://unsplash.com/ja/@umityildirim"}},
+                },
+            },
         },
     )

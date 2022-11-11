@@ -1,8 +1,12 @@
 from django.db import models
 from django.template.defaultfilters import slugify
 from django.utils.html import mark_safe
+from django.core.exceptions import ValidationError
 
+from annonces.unsplash import get_unsplash_data
 from levensfilosofie.fields import CleanHTMLField, CleanHTMLLineField
+
+from requests import HTTPError
 
 
 class Symposium(models.Model):
@@ -15,9 +19,16 @@ class Symposium(models.Model):
     time_from = models.TimeField("Begintijd", null=True, blank=True)
     time_to = models.TimeField("Eindtijd", null=True, blank=True)
     place = models.CharField("Locatie", max_length=200, null=True, blank=True)
-    cover_image_name = models.CharField(
-        "Omslagfoto", max_length=200, null=True, blank=True
+    photo_id = models.CharField(
+        "Omslagfoto (Unsplash ID)",
+        max_length=200,
+        null=True,
+        blank=True,
+        help_text=mark_safe(
+            'Zie de API documentatie: <a href="https://unsplash.com/documentation">https://unsplash.com/documentation</a>'
+        ),
     )
+    photo = models.JSONField(default=dict)
     zoom_link = models.CharField(
         "Zoom Link",
         max_length=100,
@@ -37,7 +48,7 @@ class Symposium(models.Model):
     slug = models.SlugField(max_length=SLUG_LENGTH, null=False, unique=True)
     canceled = models.BooleanField("Afgelast", default=False)
     canceled_message = CleanHTMLField(
-        "Bericht bij het aflassen",
+        "Bericht bij het afgelasten",
         blank=True,
         help_text=(
             "Zal verschijnen op de pagina van de annonce en op de "
@@ -67,7 +78,20 @@ class Symposium(models.Model):
             main_title = self.title.split(":")[0]
             self.slug = f"{self.date.strftime('%Y-%m-%d')}-{slugify(main_title)}"
             self.slug = self.slug[: self.SLUG_LENGTH]
+
         return super().save(*args, **kwargs)
+
+    def clean(self, *args, **kwargs):
+        if self.photo_id:
+            try:
+                self.photo = get_unsplash_data(self.photo_id)
+            except HTTPError as e:
+                raise ValidationError(
+                    f"An error occured on Unsplash data request: {e} (ID: {self.photo_id})"
+                )
+        else:
+            self.photo = {}
+        return super().clean(*args, **kwargs)
 
     def __str__(self):
         return f"{self.date.strftime('%d-%m-%Y')}: {self.title}"

@@ -1,2 +1,5 @@
-{% load static %}
-<div class="relative mt-[75px] h-[400px] max-h-[50vh] cover-image"></div>
+<img 
+  class="mt-[75px] h-[400px] md:h-[450px] max-h-[50vh] w-full object-cover" 
+  {% include 'annonces/_unsplash_image_props.html' %}
+>
+{% include 'annonces/_unsplash_attribution.html' %}
