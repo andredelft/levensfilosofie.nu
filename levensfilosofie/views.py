@@ -32,7 +32,7 @@ def home(request):
                 },
                 "user": {
                     "name": "Ümit Yıldırım",
-                    "links": {"html": {"https://unsplash.com/ja/@umityildirim"}},
+                    "links": {"html": "https://unsplash.com/ja/@umityildirim"},
                 },
             },
         },
