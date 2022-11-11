@@ -8,14 +8,15 @@
 
 
 {% block pre_body %}
-{% if symposium.cover_image_name %}
-  {% include 'annonces/_cover_image.html' %}
+{% if symposium.photo %}
+  {% include 'annonces/_cover_image.html' with photo=symposium.photo %}
 {% endif %}
 {% endblock pre_body %}
 
-{% block content_wrapper_class %}{% if symposium.cover_image_name %}!pt-16{% endif %}{% endblock content_wrapper_class %}
+{% block content_wrapper_class %}{% if symposium.photo %}!pt-16{% endif %}{% endblock content_wrapper_class %}
 
 {% block body %}
+
 <section class="{{prose}} prose-h2:text-4xl mx-auto">
   {% if symposium.canceled %}
     {% include 'annonces/_canceled.html' %}
@@ -51,27 +52,3 @@
   {% endfor %}
 </section>
 {% endblock %}
-
-{% block head %}
-  {% if symposium.cover_image_name %}
-  <style>
-    .cover-image {
-      background-image: url('{% static 'images/'|add:symposium.cover_image_name|add:'.jpg' %}');
-      background-size: cover;
-      background-position: center;
-    }
-
-    @media (max-width: 769px) {
-      .cover-image {
-        background-image: url('{% static 'images/'|add:symposium.cover_image_name|add:'-md.jpg' %}');
-      }
-    }
-
-    @media (max-width: 400px) {
-      .cover-image {
-        background-image: url('{% static 'images/'|add:symposium.cover_image_name|add:'-sm.jpg' %}');
-      }
-    }
-  </style>
-  {% endif %}
-{% endblock head %}
