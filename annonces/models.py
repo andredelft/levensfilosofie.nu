@@ -134,7 +134,7 @@ class Talk(models.Model):
 
 class ProgramItem(models.Model):
     symposium = models.ForeignKey(Symposium, on_delete=models.CASCADE)
-    time_from = models.TimeField("Begintijd")
+    time_from = models.TimeField("Begintijd", null=True, blank=True)
     time_to = models.TimeField("Eindtijd", null=True, blank=True)
     name = CleanHTMLLineField("Naam")
 
