@@ -140,15 +140,20 @@ class ProgramItem(models.Model):
 
     @property
     def time(self):
-        if self.time_to:
+        if self.time_from and self.time_to:
             return (
                 f"{self.time_from.strftime('%-H:%M')}–{self.time_to.strftime('%-H:%M')}"
             )
-        else:
+        elif self.time_from:
             return f"{self.time_from.strftime('%-H:%M')}"
+        else:
+            return ""
 
     def __str__(self):
-        return f"{self.time}: {self.name}"
+        if self.time:
+            return f"{self.time}: {self.name}"
+        else:
+            return self.name
 
     class Meta:
         verbose_name = "Programma-item"
