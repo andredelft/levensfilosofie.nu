@@ -71,24 +71,26 @@
       </p>
     </section>
     <aside class="{{prose}} mx-0 max-w-[400px] prose-a:no-underline prose-h2:mb-0">
-      <h1 class="header">Agenda</h1>
-      <div class="agenda-list">
-        {% for symposium in upcoming_symposia %}
-        <div class="agenda-item {% if symposium.canceled %}canceled{% endif %}">
-          <h2 class="agenda-item-header">
-            {% if symposium.to_be_announced %}
-              {{ symposium.title }}
-            {% else %}
-              <a href="{% url 'annonce_detail' symposium.slug %}">{{ symposium.title }}</a>
-            {% endif %}
-          </h2>
-          <div>{{ symposium.date }}</div>
-          <div><i>Sprekers</i>: {{ symposium.speakers|dutch_summation }}</div>
+      <div class="sticky left-0 right-0 max-h-screen overflow-y-auto top-24">
+        <h1 class="header">Agenda</h1>
+        <div class="agenda-list">
+          {% for symposium in upcoming_symposia %}
+          <div class="agenda-item {% if symposium.canceled %}canceled{% endif %}">
+            <h2 class="agenda-item-header">
+              {% if symposium.to_be_announced %}
+                {{ symposium.title }}
+              {% else %}
+                <a href="{% url 'annonce_detail' symposium.slug %}">{{ symposium.title }}</a>
+              {% endif %}
+            </h2>
+            <div>{{ symposium.date }}</div>
+            <div><i>Sprekers</i>: {{ symposium.speakers|dutch_summation }}</div>
+          </div>
+          {% empty %}
+          <div>Geen items in de agenda</div>
         </div>
-        {% empty %}
-        <div>Geen items in de agenda</div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </aside>
   </div>
 </div>

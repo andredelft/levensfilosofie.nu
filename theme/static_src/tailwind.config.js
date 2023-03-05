@@ -34,6 +34,9 @@ module.exports = {
         sans: ["Raleway", ...defaultTheme.fontFamily.sans],
         heading: ["Soria", ...defaultTheme.fontFamily.serif],
       },
+      boxShadow: {
+        inverted: "0 -1px 3px 0 rgb(0 0 0 / 0.1)",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

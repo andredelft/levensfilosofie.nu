@@ -42,7 +42,7 @@
   </head>
 
   <body>
-    <nav class="navbar" id="navbar">
+    <nav class="shadow navbar" id="navbar">
       <div class="brand{% if hide_logo %} hide{% endif %}" id="logo">
         <a href="{% url 'home' %}?no_animation">
           <span class="header-1">Colloquium</span>
@@ -63,7 +63,7 @@
       </div>
     </div>
     {% endblock %}
-    <footer>
+    <footer class="shadow-inverted">
       <div class="container max-w-4xl">
         <div>
           <a href="https://www.universiteitleiden.nl/geesteswetenschappen/instituut-voor-wijsbegeerte" class="UL-logo">
