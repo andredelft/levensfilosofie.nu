@@ -1008,6 +1008,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0px;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.\!mb-24 {
+  margin-bottom: 6rem !important;
+}
+
+.\!mb-12 {
+  margin-bottom: 3rem !important;
+}
+
 .block {
   display: block;
 }
@@ -1026,6 +1042,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hidden {
   display: none;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-\[1\/2\] {
+  aspect-ratio: 1 / 2;
+}
+
+.aspect-\[2\/1\] {
+  aspect-ratio: 2 / 1;
 }
 
 .h-screen {
@@ -1054,6 +1082,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-full {
   width: 100%;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .max-w-\[400px\] {
@@ -1109,6 +1141,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow-y: auto;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1136,6 +1176,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .pt-12 {

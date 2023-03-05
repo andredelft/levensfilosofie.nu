@@ -1,6 +1,15 @@
 <div class="symposium-preview{% if enable_sr %} symposium-sr load-hidden{% endif %}">
   {% if include_separators %}<div class="pb-12 text-lg separator md:text-xl">Annonce</div>{% endif %}
   {% if symposium.canceled and not hide_notice %}{% include 'annonces/_canceled.html' %}{% endif %}
+  {% if symposium.photo %}
+  <div class="not-prose">
+    <picture class="w-full">
+      <source srcset="{{ symposium.photo.urls.raw }}&w=400&h=200&fit=crop&q=30 1x, {{ symposium.photo.urls.raw }}&h=400&h=200&fit=crop&dpr=2&q=30 2x" media="(max-width: 768px)">
+      <source srcset="{{ symposium.photo.urls.raw }}&w=700&h=350&fit=crop&q=30 1x, {{ symposium.photo.urls.raw }}&w=700&h=350&fit=crop&dpr=2&q=30 2x" media="(max-width: 1280px)">
+      <img src="{{ symposium.photo.urls.regular }}" class="object-cover w-full aspect-[2/1] rounded-lg mb-12">
+    </picture>
+  </div>
+  {% endif %}
   <h1>{{ symposium.title }}</h1>
   {% if not symposium.canceled %}
     {% include 'annonces/_practical_details.html' %}
