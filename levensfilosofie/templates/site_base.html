@@ -56,8 +56,8 @@
       </div>
     </nav>
     {% block container %}
-    {% block pre_body %}{% endblock %}
-    <div class="content-wrapper {{background}} pt-12 md:pt-20 {% block content_wrapper_class %}{% endblock %}" id="section">
+    <div class="content-wrapper {{background}} {% block content_wrapper_class %}pt-12 md:pt-20{% endblock %}" id="section">
+      {% block pre_container %}{% endblock pre_container %}
       <div class="container {% block container_class %}{% endblock container_class %}">
         {% block body %}{% endblock %}
       </div>
