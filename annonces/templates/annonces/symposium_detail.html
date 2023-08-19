@@ -21,7 +21,10 @@
   {% if symposium.canceled %}
     {% include 'annonces/_canceled.html' %}
   {% endif %}
-  <h1>{{ symposium.title }}</h1>
+  <div class="not-prose mb-8 text-black">
+    <h1 class="font-heading text-5xl md:text-7xl">{{ symposium.title }}</h1>
+    {% if symposium.subtitle %}<p class="text-2xl md:text-3xl">{{ symposium.subtitle }}</p>{% endif %}
+  </div>
   {% if not symposium.canceled %}
     {% include 'annonces/_practical_details.html' %}
   {% endif %}
@@ -36,8 +39,10 @@
     </table>
   {% endif %}
   {% for talk in talks %}
-    <div class="talk__speaker">{{ talk.speaker }}</div>
-    <h2 class="talk__title">{{ talk.title }}</h2>
+    <div class="not-prose mt-8 sm:mt-16">
+      <p class="italic text-lg md:text-xl mb-2">{{ talk.speaker }}</p>
+      <h2 class="font-heading text-4xl md:text-5xl text-black">{{ talk.title }}</h2>
+    </div>
     {% if talk.video_id %}
       {% include 'annonces/_yt_embed.html' with video_id=talk.video_id only %}
     {% endif %}

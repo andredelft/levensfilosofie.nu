@@ -10,7 +10,10 @@
     </picture>
   </a>
   {% endif %}
-  <h1><a class="no-underline" href="{% url 'annonce_detail' symposium.slug %}">{{ symposium.title }}</a></h1>
+  <a class="no-underline not-prose block mb-4" href="{% url 'annonce_detail' symposium.slug %}">
+    <h2 class="font-heading text-5xl">{{ symposium.title }}</h1>
+    {% if symposium.subtitle %}<p class="text-xl">{{ symposium.subtitle }}</p>{% endif %}
+  </a>
   {% if not symposium.canceled %}
     {% include 'annonces/_practical_details.html' %}
   {% endif %}

@@ -57,6 +57,7 @@ class ProgramItemAdmin(SummernoteInlineModelAdmin, admin.TabularInline):
 class SymposiumAdmin(SummernoteModelAdmin):
     fields = (
         "title",
+        "subtitle",
         "introduction",
         "date",
         ("time_from", "time_to"),

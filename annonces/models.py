@@ -10,10 +10,10 @@ from requests import HTTPError
 
 
 class Symposium(models.Model):
-
     SLUG_LENGTH = 200
 
     title = models.CharField("Titel", max_length=300)
+    subtitle = models.CharField("Ondertitel", max_length=300, null=True, blank=True)
     introduction = CleanHTMLField("Introductie", null=True, blank=True)
     date = models.DateField("Datum", unique=True)
     time_from = models.TimeField("Begintijd", null=True, blank=True)
@@ -25,7 +25,7 @@ class Symposium(models.Model):
         null=True,
         blank=True,
         help_text=mark_safe(
-            'Zie de API documentatie: <a href="https://unsplash.com/documentation">https://unsplash.com/documentation</a>'
+            'Zie de <a href="https://unsplash.com/documentation">API documentatie</a>.'
         ),
     )
     photo = models.JSONField(default=dict)
@@ -94,7 +94,8 @@ class Symposium(models.Model):
         return super().clean(*args, **kwargs)
 
     def __str__(self):
-        return f"{self.date.strftime('%d-%m-%Y')}: {self.title}"
+        name = f"{self.date.strftime('%d-%m-%Y')}: {self.title}"
+        return f"{name}: {self.subtitle}" if self.subtitle else name
 
     class Meta:
         indexes = [
