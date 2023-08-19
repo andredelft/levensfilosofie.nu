@@ -58,6 +58,10 @@ class Symposium(models.Model):
     )
 
     @property
+    def full_title(self):
+        return f"{self.title}: {self.subtitle}" if self.subtitle else self.title
+
+    @property
     def time(self):
         if self.time_from:
             time_from = self.time_from.strftime("%-H:%M")
@@ -75,8 +79,7 @@ class Symposium(models.Model):
 
     def save(self, *args, **kwargs):
         if not self.slug:
-            main_title = self.title.split(":")[0]
-            self.slug = f"{self.date.strftime('%Y-%m-%d')}-{slugify(main_title)}"
+            self.slug = f"{self.date.strftime('%Y-%m-%d')}-{slugify(self.title)}"
             self.slug = self.slug[: self.SLUG_LENGTH]
 
         return super().save(*args, **kwargs)
@@ -94,8 +97,7 @@ class Symposium(models.Model):
         return super().clean(*args, **kwargs)
 
     def __str__(self):
-        name = f"{self.date.strftime('%d-%m-%Y')}: {self.title}"
-        return f"{name}: {self.subtitle}" if self.subtitle else name
+        return f"{self.date.strftime('%d-%m-%Y')}: {self.full_title}"
 
     class Meta:
         indexes = [
