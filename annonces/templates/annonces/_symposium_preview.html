@@ -4,8 +4,8 @@
   {% if symposium.photo %}
   <a class="block not-prose" href="{% url 'annonce_detail' symposium.slug %}">
     <picture class="w-full">
-      <source srcset="{{ symposium.photo.urls.raw }}&w=400&h=200&fit=crop&q=30 1x, {{ symposium.photo.urls.raw }}&h=400&h=200&fit=crop&dpr=2&q=30 2x" media="(max-width: 700px)">
-      <source srcset="{{ symposium.photo.urls.raw }}&w=700&h=350&fit=crop&q=30 1x, {{ symposium.photo.urls.raw }}&w=700&h=350&fit=crop&dpr=2&q=30 2x" media="(min-width: 700px)">
+      <source srcset="{{ symposium.photo.urls.raw }}&w=400&h=200&fit=crop&q=70 1x, {{ symposium.photo.urls.raw }}&h=400&h=200&fit=crop&dpr=2&q=30 2x" media="(max-width: 700px)">
+      <source srcset="{{ symposium.photo.urls.raw }}&w=700&h=350&fit=crop&q=70 1x, {{ symposium.photo.urls.raw }}&w=700&h=350&fit=crop&dpr=2&q=30 2x" media="(min-width: 700px)">
       <img src="{{ symposium.photo.urls.regular }}" class="object-cover w-full aspect-[3/2] sm:aspect-[2/1] rounded-lg mb-12">
     </picture>
   </a>

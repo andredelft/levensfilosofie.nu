@@ -1,7 +1,7 @@
 <div class="mb-12 max-w-[1000px] mx-auto md:px-4">
   <picture>
-    <source srcset="{{ photo.urls.raw }}&w=640&h=424&fit=crop&q=30 1x, {{ photo.urls.raw }}&w=640&h=424&fit=crop&dpr=2&q=30 2x" media="(max-width: 640px)">
-    <source srcset="{{ photo.urls.raw }}&w=968&h=484&fit=crop&q=30 1x, {{ photo.urls.raw }}&w=968&h=484&fit=crop&dpr=2&q=30 2x" media="(min-width: 980px)">
+    <source srcset="{{ photo.urls.raw }}&w=640&h=424&fit=crop&q=70 1x, {{ photo.urls.raw }}&w=640&h=424&fit=crop&dpr=2&q=30 2x" media="(max-width: 640px)">
+    <source srcset="{{ photo.urls.raw }}&w=968&h=484&fit=crop&q=70 1x, {{ photo.urls.raw }}&w=968&h=484&fit=crop&dpr=2&q=30 2x" media="(min-width: 980px)">
     <img src="{{ photo.urls.regular }}" alt="{{ photo.user.name }}" class="object-cover w-full aspect-[3/2] sm:aspect-[2/1] md:rounded-lg">
   </picture>
   {% include 'annonces/_unsplash_attribution.html' %}
