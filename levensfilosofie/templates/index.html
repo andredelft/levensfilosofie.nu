@@ -87,7 +87,8 @@
             <div><i>Sprekers</i>: {{ symposium.speakers|dutch_summation }}</div>
           </div>
           {% empty %}
-          <div>Geen items in de agenda</div>
+          {% comment %} <div>Geen items in de agenda</div> {% endcomment %}
+          <div>Het eerstvolgende symposium zal plaatsvinden in maart.</div>
         </div>
         {% endfor %}
       </div>
