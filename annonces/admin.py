@@ -62,6 +62,7 @@ class SymposiumAdmin(SummernoteModelAdmin):
         "date",
         ("time_from", "time_to"),
         "place",
+        "entrance",
         "photo_id",
         "zoom_link",
         "to_be_announced",

@@ -14,7 +14,7 @@ gunicorn==20.0.4
 whitenoise==5.1.0
 
 # Clean HTML
-lxml==4.6.3
+lxml==4.9.3
 Markdown==3.3.4
 markdownify==0.9.4
 mdx-linkify==2.1

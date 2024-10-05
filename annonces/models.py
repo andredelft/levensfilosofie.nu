@@ -19,6 +19,15 @@ class Symposium(models.Model):
     time_from = models.TimeField("Begintijd", null=True, blank=True)
     time_to = models.TimeField("Eindtijd", null=True, blank=True)
     place = models.CharField("Locatie", max_length=200, null=True, blank=True)
+    entrance = models.CharField(
+        "Toegang",
+        max_length=10,
+        choices=[
+            ("voluntary", "Vrijwillige bijdrage"),
+            ("free", "Vrij"),
+        ],
+        default="voluntary",
+    )
     photo_id = models.CharField(
         "Omslagfoto (Unsplash ID)",
         max_length=200,
