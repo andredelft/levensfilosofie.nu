@@ -15,7 +15,7 @@
   {% endif %}
   {% if not symposium|is_over %}
     {% if symposium.zoom_link and symposium|is_soon %}
-      <li><i>Zoom-link</i>: <a href="{{ symposium.zoom_link }}" target="_blank" rel="noopener noreferrer">{{ symposium.zoom_link }}</a></li>
+      <li><i>Zoom-link</i>: <a href="{{ symposium.zoom_link }}" target="_blank" rel="noopener noreferrer">Klik hier</a>.</li>
     {% endif %}
     <li><i>Toegang</i>: {{ symposium.get_entrance_display }}. Aanmelden is niet nodig.</li>
   {% endif %}
