@@ -4,6 +4,10 @@
   word-wrap: break-word;
   padding-bottom: 80px;
 
+  > * + * {
+    margin-top: 3rem;
+  }
+
   .container {
     padding: 0 20px;
   }

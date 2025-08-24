@@ -1,20 +1,18 @@
 # Django
-Django==3.2.15
-django-compressor==2.4.1
-django-heroku==0.3.1
+Django==3.2.*
+django-compressor==2.*
 django-libsass==0.9
-django-summernote==0.8.11.6
-django-cloudinary-storage==0.3.0
-django-tailwind==3.1.1
-dj-database-url==0.5.0
+django-summernote==0.8.*
+django-cloudinary-storage==0.3.*
+dj-database-url==0.*
 
 # Django deployment
 python-decouple==3.4
-gunicorn==20.0.4
-whitenoise==5.1.0
+gunicorn==20.*
+whitenoise==5.*
 
 # Clean HTML
-lxml==4.9.3
-Markdown==3.3.4
-markdownify==0.9.4
-mdx-linkify==2.1
+lxml==4.9.*
+Markdown==3.*
+markdownify==0.*
+mdx-linkify==2.*

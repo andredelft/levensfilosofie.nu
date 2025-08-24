@@ -17,8 +17,8 @@
       <div class="landing-header-1{% if not no_animation %} load-hidden{% endif %}">Colloquium</div>
       <div class="landing-header-2{% if not no_animation %} load-hidden{% endif %}">Levensfilosofie</div>
       <div class="landing-buttons-wrapper{% if not no_animation %} load-hidden{% endif %}">
-        <button onclick="location.href='{% url 'annonce_list' %}';" class="landing-button button-link">Bekijk onze symposia</button>
-        <button onclick="let sectionHeight = document.getElementById('wie-zijn-wij').getBoundingClientRect().top; console.log(sectionHeight); window.scrollTo({top: sectionHeight - 150, behavior: 'smooth'});" class="landing-button button-link">Wie zijn wij?</button>
+        <a href="{% url 'annonce_list' %}" class="landing-button button-link">Bekijk onze symposia</a>
+        <button onclick="let sectionHeight = document.getElementById('wie-zijn-wij').getBoundingClientRect().top; window.scrollTo({top: sectionHeight - 150, behavior: 'smooth'});" class="landing-button button-link">Wie zijn wij?</button>
       </div>
     </div>
   </div>
@@ -31,15 +31,15 @@
 </div>
 {% include 'annonces/_unsplash_attribution.html' %}
 
-<div class="content-wrapper {{background}} py-12">
+<div class="content-wrapper bg-sundance-50 py-12">
   {% if annonce %}
-  <div class="container {{prose}}">
+  <div class="container prose md:prose-lg prose-stone prose-headings:font-heading mx-auto">
     {% include 'annonces/_symposium_preview.html' with symposium=annonce include_separators=True only %}
   </div>
   {% endif %}
 
   <div class="container flex flex-wrap justify-center gap-x-16 gap-y-24">
-    <section id="wie-zijn-wij" class="{{prose}} lg:mx-0">
+    <section id="wie-zijn-wij" class="prose md:prose-lg prose-stone prose-headings:font-heading mx-auto lg:mx-0">
       <p class="lead">
         Wat leert de filosofie van Levinas ons over vriendschap? Hoe verbindt Kierkegaard de angstaanjagende ervaring van leegte met de mogelijkheid van ware vrijheid?
       </p>
@@ -70,7 +70,7 @@
         <a href="{% url 'member_list' %}">Lees meer over onze leden &#8594;</a>
       </p>
     </section>
-    <aside class="{{prose}} mx-0 max-w-[400px] prose-a:no-underline prose-h2:mb-0">
+    <aside class="prose md:prose-lg prose-stone prose-headings:font-heading mx-auto mx-0 max-w-[400px] prose-a:no-underline prose-h2:mb-0 lg:prose-h2:mb-0">
       <div class="sticky left-0 right-0 max-h-screen overflow-y-auto top-24">
         <h1 class="header">Agenda</h1>
         <div class="agenda-list">
@@ -92,6 +92,9 @@
         {% endfor %}
       </div>
     </aside>
+  </div>
+  <div class="container">
+    {% include '_banner.html' %}
   </div>
 </div>
 {% endblock %}

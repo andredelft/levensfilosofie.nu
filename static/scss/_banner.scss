@@ -1,0 +1,54 @@
+.banner {
+  display: grid;
+  border-radius: 0.5rem;
+  border: 1px solid $border-color;
+  background: $yellow-100;
+  overflow: hidden;
+  align-items: center;
+
+  @media (min-width: 48rem) {
+    grid-template-columns: 300px 1fr;
+  }
+
+  &__image {
+    object-fit: cover;
+
+    @media (min-width: 48rem) {
+      height: 100%;
+    }
+  }
+
+  &__content {
+    padding: 1.5rem 1.5rem 1rem;
+  }
+
+  &__header {
+    color: #44403c;
+    font-family: Soria;
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  p {
+    margin: 0.5rem 0;
+    line-height: 1.7777778;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  strong {
+    color: #1c1917;
+  }
+
+  &__img-attribution {
+    font-size: 0.7em;
+    color: #78716c;
+    text-align: right;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}

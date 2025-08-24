@@ -1,7 +1,6 @@
 from pathlib import Path
 from decouple import config, UndefinedValueError
 import dj_database_url
-import django_heroku
 import cloudinary
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -38,9 +37,6 @@ INSTALLED_APPS = [
     "compressor",
     "django_summernote",
     "cloudinary",
-    "tailwind",
-    "theme",
-    "django_browser_reload",
 ]
 
 MIDDLEWARE = [
@@ -52,7 +48,6 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
-    "django_browser_reload.middleware.BrowserReloadMiddleware",
 ]
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
@@ -72,7 +67,6 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                "theme.context_processors.tailwind_classes",
             ],
         },
     },
@@ -145,6 +139,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
 STATIC_URL = "/static/"
 
 STATICFILES_DIRS = (BASE_DIR / "static",)
@@ -174,17 +170,8 @@ DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-TAILWIND_APP_NAME = "theme"
-
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
-TAILWIND_CLASSES = {
-    "prose": "prose md:prose-lg prose-stone prose-headings:font-heading mx-auto",
-    "background": "bg-sundance-50",
-}
-
 cloudinary.config(**{k.lower(): v for k, v in CLOUDINARY_STORAGE.items()})
-
-django_heroku.settings(locals())
