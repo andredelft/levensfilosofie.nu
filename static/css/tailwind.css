@@ -478,10 +478,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia: ;
 }
 
-.container {
-  width: 100%;
-}
-
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
