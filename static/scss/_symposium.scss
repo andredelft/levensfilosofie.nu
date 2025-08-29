@@ -1,0 +1,6 @@
+.symposium {
+  &__subtitle {
+    @include text-2xl;
+    font-weight: 400;
+  }
+}

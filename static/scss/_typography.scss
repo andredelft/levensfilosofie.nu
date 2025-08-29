@@ -1,0 +1,39 @@
+$core-font-size-lg: 1.125rem;
+$core-font-size-xl: 1.25rem;
+$core-font-size-2xl: 1.5rem;
+$core-font-size-3xl: 1.875rem;
+
+$core-line-height-lg: 1.75rem;
+$core-line-height-xl: 1.75rem;
+$core-line-height-2xl: 2rem;
+$core-line-height-3xl: 2.25rem;
+
+@mixin text-xl {
+  font-size: $core-font-size-lg;
+  line-height: $core-line-height-lg;
+
+  @include md {
+    font-size: $core-font-size-xl;
+    line-height: $core-line-height-xl;
+  }
+}
+
+@mixin text-2xl {
+  font-size: $core-font-size-xl;
+  line-height: $core-line-height-xl;
+
+  @include md {
+    font-size: $core-font-size-2xl;
+    line-height: $core-line-height-2xl;
+  }
+}
+
+@mixin text-3xl {
+  font-size: $core-font-size-2xl;
+  line-height: $core-line-height-2xl;
+
+  @include md {
+    font-size: $core-font-size-3xl;
+    line-height: $core-line-height-3xl;
+  }
+}
