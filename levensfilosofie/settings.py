@@ -101,7 +101,7 @@ SUMMERNOTE_CONFIG = {
             ["view", ["fullscreen", "codeview", "help"]],
         ]
     },
-    "disable_attachment": True,
+    # "disable_attachment": True,
 }
 
 # Password validation
