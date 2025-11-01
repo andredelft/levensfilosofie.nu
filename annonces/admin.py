@@ -65,6 +65,7 @@ class SymposiumAdmin(SummernoteModelAdmin):
         "entrance",
         "photo_id",
         "zoom_link",
+        "extra_announcement",
         "to_be_announced",
         ("canceled", "canceled_message"),
     )

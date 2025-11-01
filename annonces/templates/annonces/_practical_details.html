@@ -19,4 +19,7 @@
     {% endif %}
     <li><i>Toegang</i>: {{ symposium.get_entrance_display }}. Aanmelden is niet nodig.</li>
   {% endif %}
+  {% if symposium.extra_announcement %}
+    <li>{{ symposium.extra_announcement }}</li>
+  {% endif %}
 </ul>

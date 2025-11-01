@@ -44,6 +44,9 @@ class Symposium(models.Model):
         blank=True,
         null=True,
     )
+    extra_announcement = models.CharField(
+        "Extra mededeling", max_length=200, null=True, blank=True
+    )
     to_be_announced = models.BooleanField(
         "Nog aan te kondigen",
         default=False,
